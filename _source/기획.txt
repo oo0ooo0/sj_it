@@ -1,0 +1,79 @@
+*프로젝트 브리프 (~10/14)
+  -주제		: 개인포트폴리오
+	  	  -title oo0ooo0 2019 portfolio
+
+  -목표		: 취업 (에이전시)  
+		  
+  -방향		: 반응형 
+  -고객		: 채용자. 퍼소나. 인사담당자 //웹디자인을 의뢰하는 클라이언트
+			- 웹퍼블리셔 신입 채용우대사항
+				:js / JQuery/ 웹표준/ 웹접금성/ 반응형웹구현
+
+  -사용자니즈	: 구인페이지 우대조건 참고 // 트랜드 
+		-> 트랜드 /그라디언트, 빅타이포, 기하학도형, 
+		-> 스크립트 기술력
+		-> 웹표준/ 웹접근성 			
+
+  -컨텐츠		: 웹퍼블리싱 이미지
+		 깃허브데스크탑 링크 
+		+ 인터렉션(프로세싱을 웹에 적용)
+
+
+*
+*이미지 	https://unsplash.com/
+	https://pixabay.com/ko/
+*그라데이션
+	https://webgradients.com/
+
+*아이콘
+	https://www.flaticon.com
+	https://fontawesome.com
+
+*포트폴리오 
+	https://www.behance.net/galleries/interaction/ui-ux
+	https://www.awwwards.com/
+*웹폰트
+	https://fonts.google.com/
+
+
+
+
+
+
+** 기초데이터정리
+로고 : 그라디언 pink->green
+타이틀: oo0ooo0
+메뉴: main work jounal contact
+
+
+*main 
+메인 이미지 + 문구
+
+*work 
+각 작업별
+모티브페이지
+스케치이미지
+퍼블리싱 페이지 이미지
+깃허브 링크
+경력 자격증 
+
+*jounal
+작업일지 인스타그램 공유 
+드로잉 글 
+
+*contact 
+이메일
+인스타그램
+저널링계정
+
+
+
+
+
+
+++유아이 시나리오 
+다양한 환경에서 명확한 정보전달이 가능한 반응형 웹 
+
+++ 아이디어스케치
+-브레인스토밍
+-마인드멥

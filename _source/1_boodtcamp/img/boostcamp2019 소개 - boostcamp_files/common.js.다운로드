@@ -1,0 +1,20 @@
+$(document).ready(function(){
+	$('#btnOpenMenu, #btnCloseMenu').click(function() {
+		var $el = $('#snMenu')
+		var isActive = $el.hasClass('active');
+		if(!isActive) $el.addClass('active');
+        else $el.removeClass('active');
+    });
+    
+    $('.faq-wrap .tab ul li').click(function(e) {
+        e.preventDefault();
+
+        var $el = $(this);
+        var idx = $el.index();
+        $('.faq-wrap .tab ul li').removeClass('selected');
+        $el.addClass('selected');
+
+        $('.faq-wrap .tab-cnts').hide();
+        $('.faq-wrap .tab-cnts').eq(idx).show();
+    })
+});
