@@ -1,0 +1,15 @@
+body {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    ;
+    color: dimgray;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {}
+
+section {}
+
+h1 {
+    color: aliceblue;
+    font-size: 48;
+}
