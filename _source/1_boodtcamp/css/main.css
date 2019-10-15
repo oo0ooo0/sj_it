@@ -1,15 +1,29 @@
 body {
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-    ;
-    color: dimgray;
-    font-family: 'Noto Sans KR', sans-serif;
+    
 }
 
-header {}
-
-section {}
-
-h1 {
-    color: aliceblue;
-    font-size: 48;
+a{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    
 }
+a:link {
+    color: rgb(31, 30, 30);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(31, 30, 30);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color:crimson;
+  }
+  
+  /* selected link */
+  a:active {
+font: bold;
+  }
+  

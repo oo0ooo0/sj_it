@@ -1,0 +1,64 @@
+* html 문법 형식
+<html lang="ko">
+<태그 속성="속성값"></태그>
+</html>
+
+* 태그는 다른 태그를 포함할 수 있다.
+<head>
+    <title>Document</title>
+</head>
+
+* 예외적으로 닫는 태그가 없는것도 있다.
+br, hr, meta
+
+* 메타데이터
+이미지 퍼오기: http://boostcamp.connect.or.kr/images/meta_logo.png
+
+* 사이트 메타정보 기입
+https://engedicampus.com/
+
+* 파비콘 설정
+http://boostcamp.connect.or.kr/images/pavicon_32.ico
+
+* 파비콘 만들기
+https://www.flaticon.com/
+1. 이미지 만들고, 32 사이즈로 줄였죠.
+2. 변환(구글 검색: 파비콘 변환)
+https://engedicampus.com 커뮤니티
+http://tools.dynamicdrive.com/favicon/
+
+* 시멘틱 구조 태그 작성
+- 한글 로렘입숨, lo lorem
+http://hangul.thefron.me/
+
+* ul, ol 리스트 스타일 구경가기
+https://www.w3schools.com/
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+ 
+* 웹의 창시자
+
+* 참고 사이트(추천)
+생활코딩(유투브)
+https://www.youtube.com/user/egoing2
+https://opentutorials.org/course/1
+
+* 시멘틱 구조
+
+* https://ncs.go.kr/
+
+* 구글 검색: 2019 웹디자인 트렌드
+
+
+
+
+
+
+
+
+
+
