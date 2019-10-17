@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout_003</title>
+    <style>
+        body {
+            margin: 0;
+            border: 20px solid palegreen;
+            box-sizing: border-box;
+            padding: 50px;
+            width: 100%;
+
+        }
+
+        p {
+            box-sizing: border-box;
+            margin: 0 0 20px;
+            border: 10px solid powderblue;
+            /* line-height: 150px;  
+         line-height는      행간 */
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            color: rgb(45, 136, 106);
+            box-sizing: border-box;
+            width: 100%;
+
+        }
+
+        #last {
+            margin-bottom: 0;
+        }
+
+        .orange {
+            border: 10px solid orange;
+        }
+
+        /* 스크린크기가 최소768보작아지면 50%가됨  */
+        @media screen and (min-width: 768px) {
+            p {
+                border: 10px solid pink;
+                width: 45%;
+                display: inline-block;
+
+            }
+
+            .orange {
+                margin-right: 50px;
+            }
+
+            /* 스크린크기가 최소1024보커지면 25%가됨  */
+        @media screen and (min-width: 1024px) {
+                p {
+                    border: 10px solid purple;
+                    width: 23%;
+                    margin-right: 50px;
+                }
+
+                .orange {
+                    margin-right: 50px;
+                }
+
+                #last {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        /* 
+직접적인지명일 수록 우선순위가 높다. 클래스 아이디의 선택자가 태기네임 보다 지명도가 높다. */
+    </style>
+</head>
+
+<body>
+    <p class="orange">1</p>
+    <p>2</p>
+    <p class="orange">3</p>
+    <p id="last">4</p>
+
+</body>
+
+</html>

@@ -6,7 +6,9 @@
 #Note,#webgradients, #openprocessing, 
 #openprocessing.org /sketch / 771186,
 #interaction_anomation,
-#nomadcoders
+#nomadcoders,
+#iPhone_5/SE,
+#manu_bar
 
 
 

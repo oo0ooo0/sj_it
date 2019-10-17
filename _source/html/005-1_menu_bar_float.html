@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/94b8e6bbb3.js" crossorigin="anonymous"></script>
+    <title>html_005_menu_bar</title>
+    <style>
+        .desktop {
+            display: none;
+        }
+
+        h1 {
+            /* border: 3px solid pink; */
+            float: left;
+            margin-left: 30px;
+
+        }
+
+        #triger {
+            /* border: 3px solid powderblue; */
+            font-size: 50px;
+            float: right;
+            margin-right: 30px;
+        }
+
+        header>div {
+            /* border: 2px solid yellowgreen; */
+            clear: both;
+            height:300px;
+            background-image: url("bgi.jpg");
+            background-size: cover;
+            background-position-y: center;
+            transition: height 0.5s;
+        }
+
+        @media screen and (min-width: 786px) {
+            .desktop {
+                display: block;
+            }
+
+            #triger {
+                display: none;
+            }
+
+            ul {
+                border: 3px solid rgb(181, 176, 230);
+                padding-left: 0;
+                float: right;
+                margin-right: 30px;
+                margin-top: 50px;
+
+
+            }
+
+            li {
+                border: 3px solid peru;
+                display: inline-block;
+                list-style: none;
+
+            }
+
+            li:nth-child(2) {
+                border: 2px solid darkkhaki;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            header>div {
+                height: 600px;
+            }
+            h1{
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>logo</h1>
+            <div class="mobile" id="triger">&equiv;</div>
+            <!-- <i class="fas fa-bars"></i> -->
+            <ul class="desktop">
+                <li><a href="#">boostcamp 2019</a></li>
+                <li><a href="#">모집안내</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="img"></div>
+    </header>
+    <div>notics</div>
+
+</body>
+
+</html>
