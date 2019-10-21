@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        body, h1 {
+            margin: 0;
+        }
+        h1 {
+            background-color: yellow;
+            border: 3px solid black;
+            position: fixed;
+            top: 0;
+            /* left: 0; */
+            width: 100%;
+        }
+        div {
+            border: 3px solid blue;
+            padding: 50px;
+            font-size: 25px;
+            text-align: center;
+            height: 700px;
+        }
+        #box1 {
+            background-color: palevioletred;
+            margin-top: 49px;
+        }
+        #box2 {
+            background-color: aqua;
+        }
+        #box3 {
+            background-color: lightsalmon;
+        }
+        #top {
+            border: 3px solid red;
+            border-radius: 35px;
+            width: 70px;
+            height: 70px;
+            background-color: black;
+            color: white;
+            box-sizing: border-box;
+            padding: 0;
+            padding-top: 10px;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>position이란?</h1>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+
+    <div id="top"><a href="#">top</a></div>
+    <script>
+        $("#top").click(function(){
+            $("html, body").animate({scrollTop: 0}, 500);
+        });
+    </script>
+</body>
+</html>
