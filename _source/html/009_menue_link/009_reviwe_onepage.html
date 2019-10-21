@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/94b8e6bbb3.js" crossorigin="anonymous"></script>
+
+    <style>
+        body,
+        nav,
+        div,
+        p,
+        h2,
+        h1,
+        ol,
+        li {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav>h1 {
+            text-align: center;
+            font-size: 60px;
+        }
+        nav {
+            box-sizing: border-box;
+            border: 10px solid black;
+            background-color: rgb(221, 255, 221);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: 150px;
+        }
+
+
+        nav>ol {
+            margin-top:10px;
+            text-align: center;
+            height: 40px;
+        }
+
+        nav>ol>li {
+            display: inline-block;
+        }
+
+        nav>ol>li:nth-child(1),
+        nav>ol>li:nth-child(2)
+        {
+            margin-right:20px;
+        }
+        nav a{
+            font-size:20px;
+            text-decoration: none;
+            color:peru;
+            }
+
+            nav a:hover{
+                color: rgb(90, 148, 223);
+                font-weight: bold;
+            }
+
+        #main>* {
+            padding: 30px 20px;
+            background-color: gainsboro;
+        }
+
+        #section1 {
+            margin-top: 150px;
+            background-color: gainsboro;
+        }
+
+        #section2 {
+            background-color:  gainsboro;
+
+        }
+
+        #section3 {
+            background-color: ;
+
+        }
+        #up {
+            border: 10px solid peru;
+            border-radius: 60%;
+            box-sizing: border-box;
+            background-color: palegreen;
+            position: fixed;
+            top: 88%;
+            right: 1%;
+            width: 100px;
+            height:100px;
+            text-align: center;
+        }
+        #up>*,i {
+            margin: 0;
+            padding: 0;
+        }
+        i {
+            font-size: 40px;
+         
+        }
+        #up>a{
+            text-decoration:none;
+            color:peru;
+        }
+   
+        #upI{
+            /* border: 3px solid blue; */
+            margin-bottom: -15px;
+        }
+
+        #upH{
+            /* border: 3px solid blue; */
+            margin-top: 0px;
+        }
+
+        #up:hover{
+            background-color: rgb(238, 153, 153);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>HTML</h1>
+        <ol>
+            <li><a href="#">html이란</a> </li>
+            <li><a href="#section2">css란</a></li>
+            <li><a href="#section3">Javascript란</a></li>
+        </ol>
+    </nav>
+    <div id="up">
+        <a href="#">
+            <div id="upI">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div id="upH">
+                <h1>UP</h1>
+                </div>
+        </a>
+    </div>
+    <div id="main">
+        <section id="section1">
+            <h2>html이란</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores,
+                iste
+                iusto voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur
+                adipisci
+                assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem
+                minus
+                asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum
+                aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum
+                molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam
+                similique
+                fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ut laborum molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur?
+                Possimus
+                aliquam similique fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores, iste iusto voluptatum
+                dolorum
+                eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores, iste
+                iusto
+                voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur adipisci
+                assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem
+                minus
+                asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum
+                aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum
+                molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam
+                similique
+                fugiat. Amet ipsum aspernatur adipisci assumenda eos.</p>
+        </section>
+        <section id="section2">
+            <h2>css란</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores,
+                iste
+                iusto voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur
+                adipisci
+                assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem
+                minus
+                asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum
+                aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum
+                molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam
+                similique
+                fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ut laborum molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur?
+                Possimus
+                aliquam similique fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores, iste iusto voluptatum
+                dolorum
+                eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores, iste
+                iusto
+                voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur adipisci
+                assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem
+                minus
+                asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum
+                aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum
+                molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam
+                similique
+                fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ut laborum molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur?
+                Possimus
+                aliquam similique fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores, iste iusto voluptatum
+                dolorum
+                eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores, iste
+                iusto
+                voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur adipisci
+                assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem
+                minus
+                asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum
+                aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum
+                molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam
+                similique
+                fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ut laborum molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur?
+                Possimus
+                aliquam similique fugiat. Amet ipsum aspernatur adipisci assumenda eos.</p>
+        </section>
+        <section id="section3">
+            <h2>Javascript란</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores,
+                iste
+                iusto voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur
+                adipisci
+                assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem
+                minus
+                asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum
+                aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum
+                molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam
+                similique
+                fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ut laborum molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur?
+                Possimus
+                aliquam similique fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores, iste iusto voluptatum
+                dolorum
+                eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur adipisci assumenda eos.Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem minus asperiores, iste
+                iusto
+                voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum aspernatur adipisci
+                assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum molestias quidem
+                minus
+                asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam similique fugiat. Amet ipsum
+                aspernatur adipisci assumenda eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum
+                molestias quidem minus asperiores, iste iusto voluptatum dolorum eius aspernatur? Possimus aliquam
+                similique
+                fugiat. Amet ipsum aspernatur adipisci assumenda eos.</p>
+        </section>
+    </div>
+</body>
+
+</html>
