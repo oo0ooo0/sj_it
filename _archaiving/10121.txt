@@ -1,0 +1,12 @@
+191021journaling 
+•
+•
+•
+dispaly:flex;  
+position:absolute/relative;  
+top/right/left/bottom:0;
+background: content-box radial-gradient(crimson, skyblue);
+•
+•
+•
+#css #dispaly:flex #position #artisitic #dribbblers #desktop #dribbble #wireframe #webdesignin #adobexd #adobe #project_vurt
