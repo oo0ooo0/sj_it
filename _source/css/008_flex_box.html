@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+/* 여기는 플랙스로 마진잡기
+ */
+ .container{
+        border: 10px solid rgb(231, 10, 10);
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .box{
+        border: 3px solid blue;
+        background-color: yellow;
+        /* flex:1; */
+        width:30%;
+    }
+
+    /* 여기는 마진으로 여백잡기
+    .container{
+        border: 10px solid rgb(231, 10, 10);
+        height: 100px;
+        box-sizing: border-box;
+
+    }
+    .box{
+        border: 3px solid blue;
+        background-color: yellow;
+        float:left;
+        height: 100px;
+        width:30%;
+        box-sizing: border-box;
+        margin-right: 2.5%;
+    }
+    
+    #box1{
+        margin-left:2.5%;
+    } */
+    </style>
+</head>
+<body>
+    <h1>flex_box</h1>
+    <div class="container">
+        <div id="box1" class="box">notic</div>
+        <div id="box2" class="box">gallury</div>
+        <div id="box3" class="box">banner</div>
+    </div>
+</body>
+</html>

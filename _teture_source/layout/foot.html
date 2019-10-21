@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>foot</title>
+    <style>
+        /* 초기화코드 */
+        body,
+        p {
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            font-size: 14px;
+        }
+
+        footer p,
+        footer address {
+            /* border: 1px solid yellow; */
+        }
+
+        footer address {
+            font-style: normal;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            height: 1500px;
+            background-color: burlywood;
+        }
+
+        #footLogo {
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        /* 태블릿 세로버전 이상 --------------------------------- */
+        @media screen and (min-width: 768px) {
+            #footLogo {
+                float: left;
+            }
+
+            #footAddress {
+                float: right;
+                text-align: left;
+            }
+
+            footer {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+
+    </section>
+    <footer>
+        <p id="footLogo">LifeLovePeople</p>
+
+        <div id="footAddress">
+            <address>
+                Phone. <a href="tel:010-4713-0892">010-4713-0892</a><br>
+                Email. <a href="mailto:lifelovepeople@gmail.com">lifelovepeople@gmail.com</a><br>
+                서울시 은평구 은평터널로 5길 10<br>
+                SNS. <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Youtube</a> | <a
+                    href="#">naverCafe</a>
+            </address>
+            <p id="copyright">Copyright ⓒ LifeLovePeople</p>
+        </div>
+    </footer>
+</body>
+
+</html>

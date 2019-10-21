@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://kit.fontawesome.com/94b8e6bbb3.js" crossorigin="anonymous"></script>
+        <title>html_005_menu_bar</title>
+        <style>
+            * {
+                list-style-type: none;
+            }
+
+            .deskTop {
+                margin-right: 30px;
+                display: none;
+            }
+
+            .headerBox {
+                display: flex;
+                justify-content: space-between;
+                border: 5px solid pink;
+            }
+
+            ul {
+                padding: 0;
+            }
+
+            h1 {
+                border: 5px solid blue;
+                display: inline-flex;
+                /* display: inline-block; */
+
+            }
+
+            #trigger {
+                border: 5px solid red;
+                font-size: 50px;
+                display: inline-flex;
+
+                /* display: inline-block; */
+            }
+
+
+
+            @media screen and (min-width: 768px) {
+                .headerBox {
+                    display: inline-block;
+                }
+
+                li {
+                }
+
+                .deskTop {
+                    padding-top: 70px;
+                    text-align: right;
+                    display: inline-flex;
+                    
+s
+                }
+
+                #trigger {
+                    display: none;
+                }
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="headerBox">
+            <h1>logo</h1>
+            <div id="trigger"><a href="#">&equiv;</a></div>
+            <!-- <i class="fas fa-bars"></i> -->
+        </div>
+        <ul class="deskTop">
+            <li><a href="#">boostcamp 2019</a></li>
+            <li><a href="#">모집안내</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </body>
+
+</html>

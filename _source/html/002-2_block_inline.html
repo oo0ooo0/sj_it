@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html-002-2_block/inline</title>
+    <style>
+        *{
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    h1{
+        border: solid 10px palevioletred;
+    }
+    p{
+        border: solid 10px peru;
+    }
+    span{
+        border: solid 2px plum;
+        width: 500px;
+        /*inline make width just the width of this contents.
+        but we can make inline objects 
+        +pedding 
+        or
+        change to block level use 'display block'
+        or
+        change to "display: inline block"
+        */
+    }
+
+    /* display: block */
+
+    strong{
+        border: solid 5px palegreen;
+    }
+    b{
+        border: solid 5px powderblue;
+    }
+    .block{
+        display: block;
+    }
+    .inlineBlock{
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+    <h1>difference of block level object & inline object </h1>
+    <p><strong>p tag</strong>  is <b>block level</b> object</p>
+<span>strong tag is green  / b tag is blue  strong & b tag is inline</span>
+
+<p class="block">p tag / display: block</p>
+<p class="inlineBlock">display: inline-block;<br>we can't stad for width 'display:inline-block</p>
+</body>
+</html>
