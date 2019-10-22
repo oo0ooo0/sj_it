@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        header,
+        ul,
+        li,
+        main,
+        section,
+        footer,
+        nav,
+        h1,
+        article {
+            margin: 0;
+            padding: 0;
+            color: white
+        }
+
+        #container {
+            background-color: rgb(0, 0, 0);
+            width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            /* border: 2px solid blue; */
+
+        }
+
+        nav {
+            /* border: 2px solid rgb(0, 255, 64); */
+            height: 100px;
+            padding: 0 20px;
+
+        }
+
+        header h1 {
+            float: left;
+            margin-top: 30px;
+            background-color: rgb(2, 138, 93);
+            font-size: 50px;
+        }
+
+        header ul {
+            margin-top: 40px;
+            /* border: 2px solid rgb(255, 0, 149); */
+            list-style: none;
+            float: right;
+
+
+        }
+
+        header li {
+            display: inline-block;
+            /* background-color: aquamarine; */
+            font-size: 30px;
+            margin-right: 20px;
+
+        }
+
+
+        #section1 {
+            margin-top: 40px;
+            height: 300px;
+            background: content-box radial-gradient(crimson, rgb(192, 255, 247));
+        }
+
+        #section2 {
+            /* border: 1px solid rgb(0, 255, 64); */
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        section>article {
+            display: inline-block;
+            background: content-box radial-gradient(rgb(217, 220, 20), rgb(192, 255, 247));
+            height: 200px;
+
+        }
+
+        .article1 {
+            width: 360px;
+            box-sizing: border-box;
+        }
+
+        .article2 {
+            width: 700px;
+            box-sizing: border-box;
+
+        }
+
+        #section3 {
+            height: 250px;
+
+        }
+
+        #section3 div {
+            background: content-box radial-gradient(crimson, skyblue);
+            border-radius: 50%;
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin-right: 60px;
+            font-size: 11px;
+            position: relative;
+        }
+
+        #section3 div:nth-child(1) {
+            margin-left: 60px;
+          
+
+        }
+
+        #section3 .img {
+            background: content-box radial-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
+            margin:0 auto;
+            position: absolute;
+            top:10px;
+            width: 80px;
+            height: 80px;
+            /* border: 1px solid rgb(0, 255, 64); */
+        }
+
+        #section3 p{
+            position: absolute;
+            top:85px;
+            left:30px;
+text-align: center;
+
+        }
+
+        footer {
+            /* border:2px solid thistle; */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* #section3 {
+            border: 2px solid pink;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #section3>div {
+            background: content-box radial-gradient(crimson, skyblue);
+            border-radius: 50%;
+            height: 200px;
+            width: 200px */
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <h1>LOGHO</h1>
+                <ul>
+                    <li>VURT</li>
+                    <li>EVENT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="section1">
+                img
+            </section>
+            <section id="section2">
+                <article class="article1"></article>
+                <article class="article2"></article>
+            </section>
+            <section id="section3">
+                <div>
+                    <div class="img"></div>
+                    <p>SCOPÁVIK Night
+                        <br>19/10/25/23:00
+                        <br>Xanexx / Ve Bogel /
+                        <br> Scøpe / VJ Pano
+                    </p>
+                </div>
+                <div><div class="img"></div>
+                <p>SCOPÁVIK Night
+                    <br>19/10/25/23:00
+                    <br>Xanexx / Ve Bogel /
+                    <br> Scøpe / VJ Pano
+                </p></div>
+                <div><div class="img"></div>
+                <p>SCOPÁVIK Night
+                    <br>19/10/25/23:00
+                    <br>Xanexx / Ve Bogel /
+                    <br> Scøpe / VJ Pano
+                </p></div>
+                <div><div class="img"></div>
+                <p>SCOPÁVIK Night
+                    <br>19/10/25/23:00
+                    <br>Xanexx / Ve Bogel /
+                    <br> Scøpe / VJ Pano
+                </p></div>
+            </section>
+        </main>
+        <footer>this is footer</footer>
+    </div>
+</body>
+
+</html>
