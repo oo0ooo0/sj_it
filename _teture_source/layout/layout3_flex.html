@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        header,
+        nav,
+        section,
+        aside,
+        footer {
+            border: 3px solid black;
+        }
+
+        ul,
+        li {
+            border: 2px solid blue;
+        }
+
+        header {
+            background-color: cadetblue;
+            text-align: center;
+        }
+
+        footer {
+            background-color: gray;
+        }
+
+        nav {
+            background-color: coral;
+            /* flex: 1; */
+            width: 20%;
+        }
+
+        section {
+            background-color: aquamarine;
+            /* flex: 3; */
+            width: 50%;
+        }
+
+        aside {
+            background-color: burlywood;
+            /* flex: 1; */
+            width: 20%;
+        }
+        #container {
+            display: flex;
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>flex로 배치하기</h1>
+    </header>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+            </ul>
+        </nav>
+        <section><h2>섹션1</h2></section>
+        <aside>배너</aside>
+    </div>
+
+    <footer>
+        <p>copyright</p>
+        <address>기타 주소 정보</address>
+    </footer>
+</body>
+
+</html>

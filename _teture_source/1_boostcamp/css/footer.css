@@ -1,0 +1,14 @@
+footer {
+    background-color: white;
+    color: #000;
+    font-size: 15px;
+}
+footer a {
+    color: #000;
+}
+footer a:hover {
+    color: #5fa8fc;
+}
+footer address {
+    font-style: normal;
+}

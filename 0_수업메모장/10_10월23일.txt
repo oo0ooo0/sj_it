@@ -1,0 +1,37 @@
+* html tag 빈도수
+
+* 웹 - a 링크
+1. 파일 링크 - guide.html
+2. 웹주소 링크 - 새창열기 target="_blank"
+3. 메일링크: mailto:메일주소 
+4. 전화링크: tel:전화번호
+5. id 링크(원페이지) 페이지 이동
+
+* html 태그 에 스타일을 직접 주는 것 (X)
+* 문서 내에 스타일을 정의
+* 외부 파일로 스타일 정의 ( O )
+- common.css : 서브페이지와 공동으로 사용
+- footer.css : 하단
+- nav.css : 메뉴 
+- index.css: 각 페이지
+- guide.css, intro.css, faq.css :  각 페이지
+
+
+
+* 스타일의 우선순위
+태그 < 클래스선택자 < ID 선택자 < 태그에 직접 준 스타일 < !important 
+태그 < 클래스선택자 < ID 선택자 <  !important 
+
+* 구글 웹폰트 - 3~4개를 넘지 않는 게
+본문고딕, 본문명조 - Noto Sans KR
+타이틀(명조) - Noto Serif KR
+강조
+영문 - Roboto
+
+* 상대적 경로 ./ ../ 
+
+* html 마크업
+  CSS 스타일 가이드 
+  섹션
+
+
