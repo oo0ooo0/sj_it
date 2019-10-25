@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>012_nth_type</title>
+    <style>
+        #parent {
+            /* border: 10px solid palevioletred; */
+            font-size: 50px;
+        }
+
+        #parent>div {
+            border: 5px solid palegreen;
+
+        }
+
+        /* #parent:first-child{
+     background-color: red;
+        
+    } */
+
+
+
+        /* 
+    #parent:last-child{
+     background-color: red;
+        
+    } */
+
+        #parent div:first-child {
+            background-color: red;
+        }
+
+
+        #parent div:last-child {
+            background-color: orange;
+        }
+
+
+
+        #parent div:nth-child(5) {
+            background-color: olive;
+        }
+
+
+        #parent div:nth-last-child(2) {
+            background-color: blue;
+        }
+
+
+
+        /* 짝수 */
+        #parent div:nth-last-child(even) {
+         font-style: inherit;
+        }
+
+        #parent div:nth-child(2n) {
+            color: violet;
+            font-size: 90px;
+        }
+
+
+
+
+
+
+        /* 홀수 */
+        #parent div:nth-last-child(odd) {
+        font-style: italic;            
+        }
+
+        #parent div:nth-child(2n-1) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h3> nth of type
+        child
+        ".class"
+        "#id"
+        ---:hover
+        ---::before/after
+    </h3> -->
+
+    <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+    </div>
+
+    <div>other div</div>
+</body>
+
+</html>

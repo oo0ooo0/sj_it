@@ -1,0 +1,160 @@
+header {
+    /* background-color: #5a96ff; */
+    background-image: linear-gradient(120deg, #0c3483 0%, #5a96ff 100%);
+    /* background-image: linear-gradient(0deg, #13547a 0%, #ec6002 100%); */
+    /* w3school */
+    /* background-image: radial-gradient(red, yellow, green); */
+    /* background-image: radial-gradient(red 5%, yellow 15%, green 60%); */
+    /* background-image: radial-gradient(circle, red, yellow, green); */
+    /* background-image: radial-gradient(closest-side at 20% 10%, red, yellow, black); */
+    color: white;
+}
+
+#section1 {
+    background-color: #000;
+    color: white;
+}
+
+#section2 {
+    background-color: #fff;
+}
+
+header p:nth-of-type(1) {
+    /* border: 5px solid red; */
+    font-size: 32px;
+    margin-bottom: 260px;
+}
+
+header p:nth-of-type(2) {
+    /* border: 5px solid blue; */
+    font-size: 30px;
+    padding-bottom: 80px;
+    /* font-weight: 100; */
+}
+
+header strong {
+    /* border: 3px solid yellow; */
+    font-size: 70px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 55px;
+    display: block;
+}
+
+header .inner::before {
+    content: "";
+    /* position: absolute;가 있어서  display: block;을 따로 안써줘도 크기가 잡힘 */
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0.116), rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 150px;
+    right: -200px;
+}
+
+/* #circle {
+    width: 600px;
+    height: 600px;
+    background-image: linear-gradient(30deg, #6d90e4 0%, rgba(0,0,0,0) 65%);
+    border-radius: 300px;
+    position: absolute;
+    top: 150px;
+    right: -200px;
+} */
+
+#section1 {
+    /* background-image: url("../img/line-01.png"), url("../img/line-02.png"); */
+    background-image: url("../img/line-01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position-x: left, right; */
+}
+#section1 .btn {
+    margin-top:40px;
+    }
+
+#section2 {
+    padding: 150px 0;
+    background-image: url("../img/line-02.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+
+#section3 ol {
+    margin-top: 50px;
+    /* border: 3px solid green; */
+}
+#section3 ol {
+    margin-top: 50px;
+    /* border: 3px solid green; */
+}
+
+#section3 li p {
+    background-color: white;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+/* 날짜 밑에만 보더넣기 */
+
+#section3 li p:nth-of-type(1) {
+    margin-bottom: 0px;
+    border-bottom: 5px solid #e5f1ff;
+    /* border: 1px solid black; */
+    color: black;
+    font-weight: lighter;
+    padding: 10px 0;
+}
+
+#section3 li p:nth-of-type(2) {
+    margin-bottom: 0px;
+    border-bottom: 5px solid #e5f1ff;
+    /* border: 1px solid black; */
+    color: #5a96ff;
+    font-weight: lighter;
+    padding: 20px 0;
+}
+
+#section3 li {
+    /* border: 3px solid  violet; */
+    /* display: inline-block;  이거하면 중간에 여백이 개커 미쳤어 못생겼어*/
+    float: left;
+    /* float: left; 는 모집안내 버튼까지 같이붙어 ㅋㅋㅋㅋㅋ 버튼에 clear both를 주자 */
+    width: 179.666666px;
+    /* 1075의 공간에서 6개의 li를 나란히 주기위해서
+    1075/6=179.666666 */
+    margin-right: 20px;
+}
+
+#section3 li:last-child {
+    margin-right: 0;
+}
+
+/* 뭐지 왜안먹지  그건 common.css에서 btn에 display:inline-block을 줬기때문
+  #section3 .btn {
+   clear: both;
+} */
+
+/* 그럼 영향을 받을수있는 가장 윗 부분에 줘보자 */
+
+#section3 ol::after {
+    content: "";
+    clear: both;
+    /* 뭐야 왜안되 */
+    display: block;
+    /* 아..  */
+}
+
+
+#section3 .btn {
+position: absolute;
+top:0;
+right:0;
+
+}
+
+.btn:hover{
+    box-shadow: 2px 2px 6px palevioletred;
+}

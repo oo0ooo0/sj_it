@@ -26,8 +26,10 @@ header {
 
 .inner {
     /* border: 1px solid rgb(216, 216, 216); */
-    width: 1200px;
+    width: 90%;
     margin: 0 auto;
+    min-width:600px;
+    max-width: 1200px;
 }
 
 ol, ul {

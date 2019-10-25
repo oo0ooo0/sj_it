@@ -41,3 +41,18 @@ header p:nth-of-type(2){
 header strong{
     /* text-shadow: 2px 2px 20px black; */
 }
+
+#firstInner{
+    position: relative;
+}
+
+#cilcle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0.116), rgba(255, 255, 255, 0.034));
+    background-color: ;
+    position: absolute;
+    top:0;
+    right: 0;
+}

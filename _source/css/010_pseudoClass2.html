@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pseudoClass2</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .inner {
+            background-color: palegreen;
+            border: 13px solid blue;
+            margin: 0 auto;
+            width: 90%;
+            position: relative;
+        }
+
+        header {
+            background-color: cornflowerblue;
+        }
+
+        nav {
+            background-color: yellow;
+            height: 100px;
+        }
+
+        main {
+            background-color: rgb(232, 160, 241);
+        }
+
+        #cilcle {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: rgba(238, 130, 238);
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+
+        .gnb {
+            position: relative;
+        }
+
+        .inner::before {
+            content: "dddddddddddddddddddddddddddddd";
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(238, 130, 238, 0.507);
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <header>
+
+        <div class="inner">
+            <div id="cilcle"></div>
+            <div class="gnb">
+                <h1>pseudoClass // 가상선택자</h1>
+                <nav> 가상선택자를 쓰는이유 <span class="orange">.</span> </nav>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div id="text1">text_lorem_ Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente aperiam
+            laudantium est temporibus, sequi minima atque accusantium vero voluptatibus delectus qui velit, cum earum.
+            Libero ea eos minus unde. </div>
+    </main>
+</body>
+
+</html>

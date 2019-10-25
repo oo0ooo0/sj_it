@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pseudoClass</title>
+    <style>
+        /* css ::befor/after content can't finde my spac
+        폰트를 조절해서 기존의것을 안보이게 하고 css에서 텍스트로 수정할 수 있음 */
+    #text1::before{
+        content: "hi (before)    //";
+        font-size: 20px;
+        background-color: palegreen;
+        border: 3px solid blue;
+    }
+    #text1::after{
+        content: "    //bye (after)";
+        font-size: 20px;
+        border: 3px solid red;
+        background-color: palevioletred;
+    }
+
+    #text1{
+        font-size: 0;
+        border: 10px solid black;
+    }
+
+
+    h1::before{
+        content: ".";
+        /* background: content-box radial-gradient(crimson, skyblue); */
+        /* background-image: url("img/bgi.jpg"); */
+        color:coral;
+        font-size: 50px;
+        /* display: inline-block; */
+        /* width:100px; */
+        /* height: 100px; */
+        /* 왜 안되!!!!!!!!!!!!!! 그림넣고 싶어!!!!!!! */
+    }
+
+    .orange{
+        color:coral;
+        font-size:50px;
+        
+    }
+    </style>
+</head>
+<body>
+    <p>css에서 찍은 점은 블록이 안잡혀 
+        html에서 찍ㅇㄴ점은 리더기에도 읽혀
+        그니까 접근성을 위해서 html을 최소화하기 위해서 
+    </p>
+    <h1>pseudoClass // 가상선택자</h1>
+    <h2>가상선택자를 쓰는이유 <span class="orange">.</span> </h2>
+    <div id="text1">text</div>
+</body>
+</html>
