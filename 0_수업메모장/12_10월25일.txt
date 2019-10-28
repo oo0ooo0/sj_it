@@ -1,0 +1,35 @@
+* https://engedicampus.com/project100
+
+* 자바스크립트 문법 형식
+console.log("안녕");
+
+객체.메서드(매개인자);
+Object.Method();
+
+. 구문법 : ~ 의, ~를
+
+* dom, bom
+
+* document.getElementById("text")
+
+* 가상선택자 pseudo 클래스
+
+* 자식 선택자 
+first-child
+last-child
+nth-child
+
+* entity code
+
+
+
+
+
+
+
+
+
+
+
+
+

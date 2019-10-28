@@ -1,0 +1,10 @@
+* 구글 검색 - html tag 빈도수
+- https://www.advancedwebranking.com/html/
+- html - 150개 이상
+
+* float, position, display:inline-block, flex
+- float: 대부분의 레이아웃 쓰인다.
+- display:inline-block: 한줄짜리 - 메뉴에 적당, 메뉴를 한줄로 적당
+- position: float으로 하기 어려울때, 애매할때, 독립적으로 배치하여야 할때
+- flex: 균등하게 레이아웃을 배치할 때, 단 브라우저 미지원 하위 브라우저(조심스럽게 쓰이는)
+ flex를 사용할때는 부모 컨테이너가 있어야 한다.
