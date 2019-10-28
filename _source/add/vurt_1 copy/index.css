@@ -1,0 +1,290 @@
+body, header, ul, li, main, section, footer, nav, h1, h6, article {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+body {
+    margin: 0 auto;
+}
+
+#inner {
+    margin: 0 auto;
+    width: 1100px;
+    background-color: black;
+    border: 10px solid red;
+    position: relative;
+}
+
+a, address {
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+/* header  */
+
+header {}
+
+nav {
+    height: 200px;
+    padding: 50px 20px 0 20px;
+}
+
+header h1 {
+    /* border: 2px solid blue; */
+    float: left;
+    background: center / contain no-repeat url("img/logo.jpg");
+    width: 400px;
+    height: 200px;
+    /* border: 2px solid blue; */
+}
+
+header ul {
+    width: 300px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+header li {
+    /* border: 2px solid blue; */
+    display: inline-block;
+}
+
+header li :first-child {
+    float: left;
+}
+
+header li :last-child {
+    float: right;
+}
+
+/* section1 section2 */
+
+#section1 {
+    /* border: 3px solid powderblue; */
+    height: 800px;
+    background: center / contain no-repeat url(" https://www.residentadvisor.net/images/clubs/lg/vurt_interiorpics.jpg");
+    background-attachment: fixed;
+}
+
+#section2 {
+    padding: 100px;
+    margin-top: 90px;
+    background: center / contain no-repeat url(" https://scontent-dfw5-1.cdninstagram.com/vp/611fd2cfdd2984e30cfb7829de6377fd/5DC789C8/t51.2885-15/e35/p1080x1080/66514742_113741393286214_885843562825788060_n.jpg?_nc_ht=scontent-dfw5-1.cdninstagram.com");
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* section3 */
+
+#section3 {
+    padding: 50px 0;
+    height: 250px;
+    margin: 50px 0;
+    ;
+}
+
+#section3 div {
+    background: center / contain no-repeat url("https://f4.bcbits.com/img/a1902504576_10.jpg");
+    border-radius: 50%;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 60px;
+    font-size: 11px;
+    position: relative;
+}
+
+#section3 div:nth-child(1) {
+    margin-left: 60px;
+}
+
+#section3 .img {
+    background: center / contain no-repeat url("https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-0/p200x200/74224156_2800433139967895_8840959929914228736_n.jpg?_nc_cat=111&_nc_oc=AQliI2ReQiEv1IjL7hEYY693YfdIL2tX__OCJtwbE-QPWxtqD2Ui6DVKOxE_lUpjrLg&_nc_ht=scontent-icn1-1.xx&oh=3cdc57eb0103896fae1a82f6151d4b7b&oe=5E1FB17E");
+    margin: 0 auto;
+    position: absolute;
+    top: 25px;
+    width: 80px;
+    height: 80px;
+    /* border: 1px solid rgb(0, 255, 64); */
+}
+
+#section3 p {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    text-align: center;
+}
+
+/* section4 */
+
+#section4 {
+    /* border: 3px solid powderblue; */
+    padding: 0 20px;
+    height: 600px;
+    margin-bottom: 100px;
+    /* position: relative; */
+}
+
+#section4>div {
+    /* position: absolute; */
+    top: 0;
+    /* border: 3px solid powderblue; */
+    display: inline-block;
+    width: 450px;
+}
+
+#section4>div:first-child {
+    float: left;
+}
+
+#section4>div:last-child {
+    float: right;
+}
+
+#section4 .img {
+    height: 300px;
+}
+
+#section4>div:first-child>.img {
+    /* border: 3px solid rgb(11, 226, 255); */
+    background: center / contain no-repeat url("https://10mag.com/directory/wp-content/uploads/2018/10/746be3b5e6095d53fd92ec0760bc843d-1920x1600.jpg");
+    background-size: cover;
+}
+
+#section4>div:last-child>.img {
+    /* border: 3px solid rgb(11, 226, 255); */
+    background: center / contain no-repeat url(" https://f4.bcbits.com/img/0016103313_10.jpg");
+    background-size: cover;
+}
+
+#section4 .text {
+    padding-left: 30px;
+}
+
+#section4 h2 {
+    margin-left: -20px;
+}
+
+#section4 h6 {
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 900px;
+    color: cadetblue;
+}
+
+/* footer */
+
+footer {
+    height: 300px;
+    padding: 10% 8% 2% 8%;
+    color: rgb(151, 161, 161);
+}
+
+#footLogo {
+    /* border: 3px solid rgb(92, 75, 73); */
+    float: left;
+    background: center / contain no-repeat url("img/foot.jpg");
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+footer>div {
+    margin-top: 10px;
+    float: right;
+    text-align: left;
+}
+
+address {
+    color: rgb(151, 161, 161);
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mobile {
+    display: none;
+}
+
+body::before {
+    display: none;
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width:768px) {
+    .mobile {
+        display: block;
+    }
+    .mobile h1 {
+        border: 10px solid rgb(0, 255, 64);
+        position: absolute;
+        top: 10px;
+        left: 0px;
+    }
+    #triger {
+        border: 3px solid red;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        font-size: 50px;
+        color: seashell;
+    }
+    .nobile {
+        display: none;
+    }
+    #inner {
+        width: 100%;
+    }
+    .mobile ul {
+        background-color: #5fa8fce5;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 0;
+        height: 100%;
+        z-index: 1;
+        display: none;
+    }
+    header li {
+        display: block;
+        border: 3px solid red;
+        margin-right: 0px;
+        font-size: 20px;
+        /* margin-bottom: 30px; */
+        height: 20px;
+        background-color: none;
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        height: 100%;
+        width: 100vh;
+        background-color: rgba(255, 0, 0, 0.75);
+        top: 0;
+        left: 0;
+        /* z-index: 1; */
+    }
+}

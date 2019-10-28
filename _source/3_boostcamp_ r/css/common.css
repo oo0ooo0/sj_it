@@ -127,28 +127,7 @@ li {
     .mobile {
         display: block;
     }
-    header li:last-child {
-        /* border: 3px solid red; */
-        /* background-color: palevioletred; */
-    }
-    header li:last-child a {
-        color: #5fa8fc;
-        background-color: white;
-        padding: 5px 20px;
-        border-radius: 19px;
-    }
-    header ul {
-        background-color: #5fa8fc77;
-        position: fixed;
-        top:0;
-        right:0;
-        height: 100%;
-        width: 200px;
-    }
-    header li {
-        display: block !important;
-        /* border: 3px solid red; */
-        margin-left: 0;
-        margin-right: 50px;
+    .desktop {
+        display: none;
     }
 }
