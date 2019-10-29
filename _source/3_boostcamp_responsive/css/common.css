@@ -6,6 +6,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
     padding: 0;
 }
 
+.mobile {
+    display: none;
+}
+
 body {
     color: #4a90e2;
     background-color: #e5f1ff;
@@ -45,28 +49,29 @@ em {
 .NotoSerif {
     font-family: 'Noto Serif KR', serif;
 }
-
 .btn {
     display: inline-block;
     font-size: 18px;
     color: white;
     text-align: center;
     padding: 16px 30px;
-    /* margin-top: 40px; */
+    margin-top: 40px;
     /* margin-bottom: 60px; */
+    /* clear: both; 인라인 속성은 clear 가 안됨 */
+}
+.btn:hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .btn1 {
     background-color: #5fa8fc;
 }
-
 .btn1:hover {
     background-color: #000;
     color: #fff;
 }
-
 .btn2 {
-    border: 2px solid white;
+    border: 1px solid white;
     background-color: none;
 }
 
@@ -81,12 +86,13 @@ em {
 }
 
 .inner {
-    /* border: 3px solid red; */
+    /* border: 10px solid red; */
     max-width: 1200px;
     /* width: 1200px; */
     margin: 0 auto;
     position: relative;
     /* overflow: hidden; */
+    overflow: hidden;
 }
 
 li {
@@ -117,11 +123,7 @@ li {
     color: #000;
 }
 
-.mobile {
-    display: none;
-}
-
-/* tablet ver */
+/* 태블릿 버전 세로 768 */
 
 @media screen and (max-width:768px) {
     .mobile {
@@ -129,5 +131,20 @@ li {
     }
     .desktop {
         display: none;
+    }
+}
+
+
+
+
+
+
+/* 패딩이 양쪽 30 30 이니까 1260부터로 해야지 띵 튕기는게 없어 */
+@media screen and (max-width:1260px){
+    .inner{
+
+ /* 기존 max-width: 100%;을 갱신합니다 */
+        max-width: 100%; 
+        padding: 0 30px;
     }
 }

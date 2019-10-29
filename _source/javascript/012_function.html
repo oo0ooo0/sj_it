@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #myTime {
+            border: 3px solid blue;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        #date {
+            border: 3px solid blue;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #time {
+            border: 3px solid blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+
+
+
+
+<body>
+    <div id="myTime">
+        <div id="date">1</div>
+        <div id="time">1</div>
+
+        <script>
+            //변수 선언과 할당
+            var myDate = new Date();
+            var month = myDate.getMonth();
+            var date = myDate.getDate();
+            var day = myDate.getDay();
+            var hour = myDate.getHours();
+            var minute = myDate.getMinutes();
+            var second = myDate.getSeconds();
+            if (second < 10) {
+                second = "0" + second;
+            }
+            if (minute < 10) {
+                minute = "0" + minute;
+            }
+            if (hour < 10) {
+                hour = "0" + hour;
+            }
+
+            //배열만들고
+            var myDay = ["일", "월", "화", "수", "목", "금", "토"];
+
+
+
+            // //먼저 한번 찍어주고 (값이 1초뒤에나올거니까)  => 아래 setInterval전에 myTimeOb(); 한번 선언해 줘서 지워줘도되 
+            // document.getElementById("date").innerText = month + "월" + date + "일" + myDay[day] + "요일";
+            // document.getElementById("time").innerText = hour + ':' + minute + ':' + second;
+
+
+
+            //함수선언 
+            // 그리고 안에 개체생성???
+            function myTimeOb() {
+                myDate = new Date();
+                month = myDate.getMonth();
+                date = myDate.getDate();
+                day = myDate.getDay();
+                hour = myDate.getHours();
+                minute = myDate.getMinutes();
+                second = myDate.getSeconds();
+                if (second < 10) {
+                    second = "0" + second;
+                }
+                if (minute < 10) {
+                    minute = "0" + minute;
+                }
+                if (hour < 10) {
+                    hour = "0" + hour;
+                }
+
+                document.getElementById("date").innerText = month + "월" + date + "일" + myDay[day] + "요일";
+                document.getElementById("time").innerText = hour + ':' + minute + ':' + second;
+
+                console.log(myTimeOb);
+            }
+
+            //함수호출
+            myTimeOb();
+
+            setInterval(function () {
+                myTimeOb();
+            }, 1000);
+        </script>
+</body>
+
+</html>
