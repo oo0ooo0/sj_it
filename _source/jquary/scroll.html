@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+
+    <script>
+       
+            //console.log($(window).scrollTop());
+            var num = $(window).scrollTop();
+            $('#text').text(num);
+
+
+            $(window).on("scroll", function () {
+                // console.log($(window).scrollTop());
+                console.log(num)
+                var num = $(window).scrollTop();
+                $('#text').text(num);
+
+                if (num >= 400) {
+                    $('#text').text("ok" + num);
+                    $("#text").css("color", "red");
+                } else {
+                    $('#text').text("no" + num);
+                    $("#text").css("color", "black");
+                }
+
+            });
+
+
+      
+    </script>
+
+    <style>
+        body {
+            background-color: olive;
+            height: 1800px;
+        }
+
+        #text {
+            position: fixed;
+            font-size: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="text">0 </div>
+</body>
+
+</html>

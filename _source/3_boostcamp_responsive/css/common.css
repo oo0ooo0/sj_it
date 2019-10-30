@@ -5,7 +5,18 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
     margin: 0;
     padding: 0;
 }
-
+.t_333 {
+    color: #333;
+}
+.t_666 {
+    color: #666;
+}
+.t_999 {
+    color: #999;
+}
+.t_aaa {
+    color: #aaa;
+}
 .mobile {
     display: none;
 }
@@ -15,6 +26,7 @@ body {
     background-color: #e5f1ff;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 20px;
+
 }
 
 section {
@@ -71,7 +83,7 @@ em {
     color: #fff;
 }
 .btn2 {
-    border: 1px solid white;
+    border: 2px solid white;
     background-color: none;
 }
 
@@ -86,13 +98,13 @@ em {
 }
 
 .inner {
-    /* border: 10px solid red; */
+    /* border: 5px solid yellow; */
     max-width: 1200px;
+    /* padding: 0 30px; */
     /* width: 1200px; */
     margin: 0 auto;
     position: relative;
     /* overflow: hidden; */
-    overflow: hidden;
 }
 
 li {
@@ -122,9 +134,17 @@ li {
 .text_black {
     color: #000;
 }
+@media screen and (max-width:1260px) {
+    .inner {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .desktop_1260 {
+        display: none;
+    }
+}
 
 /* 태블릿 버전 세로 768 */
-
 @media screen and (max-width:768px) {
     .mobile {
         display: block;
@@ -132,19 +152,12 @@ li {
     .desktop {
         display: none;
     }
-}
-
-
-
-
-
-
-/* 패딩이 양쪽 30 30 이니까 1260부터로 해야지 띵 튕기는게 없어 */
-@media screen and (max-width:1260px){
-    .inner{
-
- /* 기존 max-width: 100%;을 갱신합니다 */
-        max-width: 100%; 
-        padding: 0 30px;
+    body {
+        text-align: center;
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 16px 20px;
     }
 }
