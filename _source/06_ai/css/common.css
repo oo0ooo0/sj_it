@@ -1,57 +1,54 @@
-@import (googlr_font)
-/* 초기화 코드 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900|Noto+Serif+KR:400,500,700|Roboto:400,500,900&display=swap');
+/* clear */
 
 body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
     margin: 0;
     padding: 0;
 }
 
-.t_333 {
-    color: #333;
-}
-
-.t_666 {
-    color: #666;
-}
-
-.t_999 {
-    color: #999;
-}
-
-.t_aaa {
-    color: #aaa;
-}
-
-.mobile {
-    display: none;
-}
-
 body {
-    color: #4a90e2;
-    background-color: #e5f1ff;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 20px;
+    color: #222222;
 }
 
 section {
-    padding-top: 70px;
-    padding-bottom: 60px;
-    /* border: 2px solid red; */
+    /* padding-top: 70px;
+    padding-bottom: 60px; */
+    border: 2px solid red;
+    padding: 70px;
+}
+
+h1 {
+    font-size: 30px;
+    /* margin-top: 70px; */
+    /* margin-bottom: 36px; */
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 30px;
     /* margin-top: 70px; */
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
+}
+
+h3 {
+    font-size: 54px;
+    /* margin-top: 70px; */
+    /* margin-bottom: 36px; */
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #111111;
+    cursor: pointer;
 }
 
 a:hover {
-    color: #000;
+    color: #009070;
+}
+
+li {
+    list-style: none;
 }
 
 em {
@@ -67,32 +64,32 @@ em {
 }
 
 .btn {
+    color: #333333;
     display: inline-block;
-    font-size: 18px;
-    color: white;
+    font-size: 28px;
     text-align: center;
-    padding: 16px 30px;
-    margin-top: 40px;
+    padding: 20px;
     /* margin-bottom: 60px; */
     /* clear: both; 인라인 속성은 clear 가 안됨 */
 }
 
 .btn:hover {
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    background-color: #333333;
+    /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); */
 }
 
 .btn1 {
-    background-color: #5fa8fc;
+    background-color: none;
 }
 
 .btn1:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: rgb(150, 145, 145);
+    color: #000;
 }
 
 .btn2 {
-    border: 2px solid white;
-    background-color: none;
+    background-color: 009070;
 }
 
 .btn2:hover {
@@ -115,10 +112,6 @@ em {
     /* overflow: hidden; */
 }
 
-li {
-    list-style: none;
-}
-
 .blind {
     font-size: 0;
 }
@@ -129,45 +122,36 @@ li {
 
 .float_right {
     float: right;
+    /* border: 5px solid yellow; */
 }
 
 .float_clear {
     clear: both;
 }
 
-.text_yellow {
-    color: yellow;
+.text_green {
+    color: #2ebc76;
 }
 
-.text_black {
-    color: #000;
+.text_gray {
+    color: #999999;
 }
 
-@media screen and (max-width:1260px) {
+/* re */
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
     .inner {
         max-width: 100%;
         padding: 0 30px;
     }
-    .desktop_1260 {
-        display: none;
+    .desktop {
+        display: none !important;
     }
-}
-
-/* 태블릿 버전 세로 768 */
-
-@media screen and (max-width:768px) {
     .mobile {
         display: block;
-    }
-    .desktop {
-        display: none;
-    }
-    body {
-        text-align: center;
-        font-size: 18px;
-    }
-    .btn {
-        font-size: 16px;
-        padding: 16px 20px;
     }
 }

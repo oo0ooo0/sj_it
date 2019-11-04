@@ -28,50 +28,104 @@
 
     <title>AIHACKATON2018</title>
     <script src="js/jquery-3.4.1.js"></script>
+
+
+
+
     <script>
+
+        $("#top").css("cursor", "pointer");
+
+        $("#top").on("click", function () {
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+        });
+
+
+        var num = $(window).scrollTop();
+        console.log(num);
+        if (300 < num && num < 1100) {
+            $("#top").css("display", "block");
+        } else {
+            $("#top").css("display", "none");
+        }
+
+        $(window).on("scroll", function () {
+            // console.log($(window).scrollTop());
+            num = $(window).scrollTop();
+            console.log(num);
+            if (300 < num && num < 1100) {
+                $("#top").css("display", "block");
+            } else {
+                $("#top").css("display", "none");
+            }
+
+
+        });
     </script>
+
+
+
+
+
+
+
 </head>
 
 <body>
     <div id="back"></div>
     <header>
         <div class="inner">
-            <!-- <div id="circle"></div> -->
+            <div id="triger" class="mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1 class="float_left"><a href="https://www.naver.com/"><span class="blind">NAVER</span></a></h1>
+            <h2 class="float_left"><a href="index.html"><span class="blind">AI HACKATON 2018</span></a></h2>
+
             <div id="gnb">
-                <nav>
-                    <h1 class="float_left"><a href="index.html"><span class="blind"></span></a></h1>
+                   
                     <ul id="desktopMenu" class="float_right">
-                        <li class="desktop"><a href="intro.html">manu_1</a></li>
-                        <li class="desktop"><a href="guide.html">manu_2</a></li>
-                        <li class="desktop"><a href="faq.html">manu_3</a></li>
-                        <li><a href=""target="_blank" title="새창열기">link_gogo</a></li>
+                            <li class="desktop"><a href="#section_intro">Intro</a></li>
+                            <li class=""><a href="#section_schedule">Schedule</a></li>
+                            <li class="mobile"><a href="#">Award</a></li>
+                            <li class=""><a href="#section_mission">Mission</a></li>
+                            <li class="desktop"><a href="#section_Registration">Registration</a></li>
+                            <li class=""><a href="#section_Share">Share</a></li>
+                            <li class="desktop"><a href="#section_FAQ">FAQ</a></li>
+                            <li><a href="https://github.com/Naver-AI-Hackathon/AI-Vision/issues" target="_blank" title="새창열기">Q&A</a></li>
                     </ul>
 
-                    <ul id="mobileMenu" class="float_right mobile">
-                        <div id="menuClose">&Cross;</div>
-                        <li class="desktop"><a href="intro.html">manu_1</a></li>
-                        <li class="desktop"><a href="guide.html">manu_2</a></li>
-                        <li class="desktop"><a href="faq.html">manu_3</a></li>
-                        <li><a href=""target="_blank" title="새창열기">link_gogo</a></li>
-                    </ul>
-                    <div class="mobile" id="triger">&equiv;</div>
 
-                    <!-- 모바일 메뉴 제어 스크립트  -->
-                    <script>
-                        document.getElementById("triger").onclick = function () {
-                            console.log("햄버거버튼 클릭");
-                            document.getElementById("mobileMenu").style.display = "block";
-                            document.getElementById("back").style.display = "block";
-                        };
-                        document.getElementById("menuClose").onclick = function () {
-                            console.log("닫기버튼 클릭");
-                            document.getElementById("mobileMenu").style.display = "none";
-                            document.getElementById("back").style.display = "none";
-                        }
-                    </script>
+                    <!-- 모바일메뉴 -->
+                    
+                        <button id="m_gnb_close" class="mobile"> &times;  </button>
+                    <ul id="mobile_gnb" class="mobile">   
+                            <!-- <li id="m_gnb_close"> &times; </li>          -->
+                            <li class=""><a href="#section_intro">Intro</a></li>
+                            <li class=""><a href="#section_schedule">Schedule</a></li>
+                            <li class=""><a href="#">Award</a></li>
+                            <li class=""><a href="#section_mission">Mission</a></li>
+                            <li class=""><a href="#section_Registration">Registration</a></li>
+                            <li class=""><a href="#section_Share">Share</a></li>
+                            <li class=""><a href="#section_FAQ">FAQ</a></li>
+                            <li><a href="https://github.com/Naver-AI-Hackathon/AI-Vision/issues" target="_blank" title="새창열기">Q&A</a></li>
+                        </ul>
 
-                </nav>
-               
+                        <script>
+                                function openNav() {
+                                  document.getElementById("mySidenav").style.width = "250px";
+                                  document.getElementById("main").style.marginLeft = "250px";
+                                  document.getElementById("ham").style.display = "none";
+                                }
+                        
+                                function closeNav() {
+                                  document.getElementById("mySidenav").style.width = "0px";
+                                  document.getElementById("main").style.marginLeft = "0px";
+                                  document.getElementById("ham").style.display = "block";
+                                }
+                              </script>
+                    
             </div>
         </div>
     </header>
@@ -84,9 +138,10 @@
 
 
 
-    <section id="section1">
+    <section id="section_intro" class="section_intro" >
         <div class="inner">
-            </div>
+            <h3>AL Vision</h3>
+        </div>
     </section>
 
 
@@ -95,12 +150,32 @@
 
 
 
-    
 
-    
-    <section id="section2">
+
+
+    <section id="section_schedule" class="section_schedule">
         <div class="inner">
+            <h3>Schedule</h3>
+        </div>
+    </section>
+
+
+
+    <section id="section_award" class="section_award">
+            <div class="inner">
+                <h3>Award</h3>
             </div>
+        </section>
+
+
+
+
+
+
+    <section id="section_mission" class="section_mission">
+        <div class="inner">
+            <h3>Mission</h3>
+        </div>
     </section>
 
 
@@ -109,14 +184,51 @@
 
 
 
-    
 
-    
-    <section id="section3">
-        <div class="inner">
+    <section id="section_Registration" class="section_Registration">
+            <div class="inner">
+                <h3>Registration</h3>
             </div>
-    </section>
-
+        </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <section id="section_Share" class="section_Share">
+            <div class="inner">
+                <h3>Share</h3>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        <section id="section_FAQ" class="section_FAQ">
+            <div class="inner">
+                <h3>FAQ</h3>
+            </div>
+        </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       
 
 
 
@@ -136,19 +248,14 @@
             <address>
                 <span class="t_666">© 2019 (company). All rights reserved.</span><br>
 
-                <span class="t_666">CONNECT</span><br>
-                <span class="t_666">mail. </span><a
-                    href="mailto:(mail)">(mail)</a><br>
-                <span class="t_666">phone. </span><a href="tel:(mobile)">(mobile)</a>
+                <span class="t_666">NAVER CLOVA </span><br>
+
+                <ul>
+                    <li>Powered by<a href="#">NAVER</a></li>
+                    <li><a href="#">LINE</a></li>
+                    <li><a href="#">NBP</a></li>
+                </ul>
             </address>
-
-
-            <ul>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">instargram</a></li>
-                <li><a href="#">blog</a></li>
-            </ul>
-        
         </div>
     </footer>
 
