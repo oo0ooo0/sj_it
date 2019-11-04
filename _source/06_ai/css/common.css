@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900|Noto+Serif+KR:400,500,700|Roboto:400,500,900&display=swap');
+@import (googlr_font)
 /* 초기화 코드 */
 
 body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
     margin: 0;
     padding: 0;
 }
+
 .t_333 {
     color: #333;
 }
+
 .t_666 {
     color: #666;
 }
+
 .t_999 {
     color: #999;
 }
+
 .t_aaa {
     color: #aaa;
 }
+
 .mobile {
     display: none;
 }
@@ -26,7 +31,6 @@ body {
     background-color: #e5f1ff;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 20px;
-
 }
 
 section {
@@ -61,6 +65,7 @@ em {
 .NotoSerif {
     font-family: 'Noto Serif KR', serif;
 }
+
 .btn {
     display: inline-block;
     font-size: 18px;
@@ -71,6 +76,7 @@ em {
     /* margin-bottom: 60px; */
     /* clear: both; 인라인 속성은 clear 가 안됨 */
 }
+
 .btn:hover {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
@@ -78,10 +84,12 @@ em {
 .btn1 {
     background-color: #5fa8fc;
 }
+
 .btn1:hover {
     background-color: #000;
     color: #fff;
 }
+
 .btn2 {
     border: 2px solid white;
     background-color: none;
@@ -134,6 +142,7 @@ li {
 .text_black {
     color: #000;
 }
+
 @media screen and (max-width:1260px) {
     .inner {
         max-width: 100%;
@@ -145,6 +154,7 @@ li {
 }
 
 /* 태블릿 버전 세로 768 */
+
 @media screen and (max-width:768px) {
     .mobile {
         display: block;
