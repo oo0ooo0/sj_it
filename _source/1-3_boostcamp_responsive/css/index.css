@@ -19,6 +19,77 @@ header {
     background-color: #fff;
 }
 
+
+
+/* animation test */
+/* 
+.ani1{
+    border: 5px solid red;
+    animation: aaa 1s ease-in-out 0 infinite alternate none;
+    animation-name: aaa;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+}
+
+@keyframes aaa{
+   0%{
+    opacity: 0;
+   }
+   100%{
+    opacity: 1;
+
+   }
+}
+   .ani2{
+    animation-name: bbb;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes bbb{
+        50%{ 
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.ani3{
+    animation-name: ccc;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ccc{
+    from{ 
+        opacity: 0;
+    }
+
+    to{opacity: 1;}
+        
+    }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
 header p:nth-of-type(1) {
     /* border: 5px solid red; */
     font-size: 32px;

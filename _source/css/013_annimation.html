@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+    h1{
+    margin-top: 0;
+    animation-name: moveTop;
+    animation-duration: 1s;
+    /* animation-delay: 2s; */
+    }
+
+    @keyframes moveTop{
+        0%{
+            margin-top: 0;
+        }
+
+        50%{
+            margin-top: 300px;
+            opacity: 20%;
+            color: peru;  
+        }
+
+        100%{
+            margin-top: 0px;  
+        }
+    }
+
+
+    p{
+        border: 1px solid black;
+        width: 10%;
+
+        /* 줄바꿈 ㄴㄴ */
+        white-space: nowrap;
+
+        /* 보더넘어로 넘치는 글자 안보이게하기 */
+        overflow: hidden;
+  
+        animation-name: moveRight;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+
+    }
+
+    @keyframes moveRight{
+         to{
+             width:100%;
+            }
+    }
+
+
+    #qq{
+        font-size: 30px;
+        border: 1px solid olive;
+        /* margin: 0 auto; */
+        width: 300px;
+        text-align: center;
+        padding: 15px;
+        border-radius:38px;
+        animation-name: moveLeft;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        margin-left:0;
+        }
+    
+    @keyframes moveLeft{
+        to{
+            margin:300px;
+        }
+    }
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+    <h1>annimation</h1>
+    <p>make animation with CSS</p>
+    <p id="qq">It's so cooool</p>
+</body>
+</html>
