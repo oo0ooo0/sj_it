@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900|Noto+Serif+KR:400,500,700|Roboto:400,500,900&display=swap');
 /* clear */
 
-body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
+body, section, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
     margin: 0;
     padding: 0;
 }
@@ -143,6 +143,24 @@ em {
     display: none;
 }
 
+.mobile_t {
+    display: none;
+}
+
+#desktopMenu .mobile {
+    display: none;
+}
+
+@media screen and (max-width:1080px) {
+    .inner {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .mobile_t {
+        display: block;
+    }
+}
+
 @media screen and (max-width:768px) {
     .inner {
         max-width: 100%;
@@ -153,5 +171,18 @@ em {
     }
     .mobile {
         display: block;
+    }
+    #desktopMenu .mobile {
+        display: inline-block;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .inner {
+        max-width: 100%;
+        padding: 0 10px;
     }
 }

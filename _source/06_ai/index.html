@@ -28,57 +28,24 @@
 
     <title>AIHACKATON2018</title>
     <script src="js/jquery-3.4.1.js"></script>
-
-
-
-
-    <script>
-
-        $("#top").css("cursor", "pointer");
-
-        $("#top").on("click", function () {
-            $("html, body").animate({ scrollTop: 0 }, 1000);
-        });
-
-
-        var num = $(window).scrollTop();
-        console.log(num);
-        if (300 < num && num < 1100) {
-            $("#top").css("display", "block");
-        } else {
-            $("#top").css("display", "none");
-        }
-
-        $(window).on("scroll", function () {
-            // console.log($(window).scrollTop());
-            num = $(window).scrollTop();
-            console.log(num);
-            if (300 < num && num < 1100) {
-                $("#top").css("display", "block");
-            } else {
-                $("#top").css("display", "none");
-            }
-
-
-        });
-    </script>
-
-
-
-
-
-
-
+    <script src="js/top.js"></script>
+    <script src="js/menu.js"></script>
 </head>
+
+
+
+
+
+
 
 <body>
     <div id="back"></div>
     <header>
         <div class="inner">
-            <div id="triger" class="mobile">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div id="triger" class="mobile mobile_t">
+                <span class="triger_span"></span>
+                <span class="triger_span"></span>
+                <span class="triger_span"></span>
             </div>
             <h1 class="float_left"><a href="https://www.naver.com/"><span class="blind">NAVER</span></a></h1>
             <h2 class="float_left"><a href="index.html"><span class="blind">AI HACKATON 2018</span></a></h2>
@@ -89,7 +56,7 @@
                             <li class="desktop"><a href="#section_intro">Intro</a></li>
                             <li class=""><a href="#section_schedule">Schedule</a></li>
                             <li class="mobile"><a href="#">Award</a></li>
-                            <li class=""><a href="#section_mission">Mission</a></li>
+                            <li class=""><span id="greenBar"></span><a href="#section_mission">Mission</a></li>
                             <li class="desktop"><a href="#section_Registration">Registration</a></li>
                             <li class=""><a href="#section_Share">Share</a></li>
                             <li class="desktop"><a href="#section_FAQ">FAQ</a></li>
@@ -99,8 +66,8 @@
 
                     <!-- 모바일메뉴 -->
                     
-                        <button id="m_gnb_close" class="mobile"> &times;  </button>
-                    <ul id="mobile_gnb" class="mobile">   
+                        <button id="m_gnb_close" class="mobile mobile_t" > &times;  </button>
+                    <ul id="mobile_gnb" class="mobile mobile_t">   
                             <!-- <li id="m_gnb_close"> &times; </li>          -->
                             <li class=""><a href="#section_intro">Intro</a></li>
                             <li class=""><a href="#section_schedule">Schedule</a></li>
@@ -112,19 +79,6 @@
                             <li><a href="https://github.com/Naver-AI-Hackathon/AI-Vision/issues" target="_blank" title="새창열기">Q&A</a></li>
                         </ul>
 
-                        <script>
-                                function openNav() {
-                                  document.getElementById("mySidenav").style.width = "250px";
-                                  document.getElementById("main").style.marginLeft = "250px";
-                                  document.getElementById("ham").style.display = "none";
-                                }
-                        
-                                function closeNav() {
-                                  document.getElementById("mySidenav").style.width = "0px";
-                                  document.getElementById("main").style.marginLeft = "0px";
-                                  document.getElementById("ham").style.display = "block";
-                                }
-                              </script>
                     
             </div>
         </div>
@@ -156,14 +110,15 @@
     <section id="section_schedule" class="section_schedule">
         <div class="inner">
             <h3>Schedule</h3>
+            <h3 id="section_award" >Award</h3>
         </div>
     </section>
 
 
 
-    <section id="section_award" class="section_award">
+    <section id="section_mento" class="section_award">
             <div class="inner">
-                <h3>Award</h3>
+                <h3>Mentor</h3>
             </div>
         </section>
 
