@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+    $(function(){
+    console.log($("#div1").offset().top);
+    console.log($("#div2").offset().top);
+    console.log($("#div3").offset().top);
+    console.log("*************************");
+    console.log($("#child").offset().top);
+    console.log($("#child").offset().left);
+    console.log("*************************");
+
+    console.log($("#child").position().top);
+    console.log($("#child").position().left);
+    });
+</script>
+    <style>
+    body{
+        margin: 0;
+    }
+    div{
+        border: 10px solid palegreen;
+        height:300px;
+    }
+
+    #child{
+        height: 100px;
+        width:100px;
+        background-color: orange;
+        position: absolute;
+        top:100px;
+        right:0; 
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    
+    <div id="div1">1</div>
+    <div id="div2">2</div>
+    <div id="div3">
+        3
+    <div id="child">child</div>
+    </div>
+
+
+    <script>
+        $(function(){
+
+        });
+            // $("#div1").css("border", "5px solid red ")
+            </script>
+</body>
+</html>
