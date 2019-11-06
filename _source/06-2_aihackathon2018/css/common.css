@@ -1,0 +1,106 @@
+/* 구글 폰트 로드 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900|Noto+Serif+KR:400,500,700|Roboto:400,500,900&display=swap');
+
+/* 초기화 코드 */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
+    margin: 0;
+    padding: 0;
+}
+.mobile {
+    display: none;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+}
+section {  
+    border: 2px solid blue;
+    height: 800px;
+    padding: 70px 0;
+}
+h3 {
+    font-size: 54px;
+    color: #222;
+}
+a {
+    text-decoration: none;
+    color: #111;
+}
+a:hover {
+    color: #009070;
+}
+em {
+    font-style: normal;
+}
+.Roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.NotoSerif {
+    font-family: 'Noto Serif KR', serif;
+}
+.btn {
+    /* display: inline-block; */
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    /* margin-top: 40px; */
+    /* margin-bottom: 60px; */
+    /* clear: both; 인라인 속성은 clear 가 안됨 */
+}
+.btn:hover {
+    /* box-shadow: 2px 2px 6px rgba(0,0,0,0.3); */
+    background-color: #333;
+    color: white;
+}
+.btn1 {
+    /* background-color: white; */
+}
+.btn1:hover {
+    /* background-color: #000;
+    color: #fff; */
+}
+.btn2 {
+    /* border: 2px solid white;
+    background-color: none; */
+}
+.btn2:hover {
+    /* background-color: #5fa8fc;
+    color: #fff; */
+}
+.btn3 {
+    /* border-radius: 16px;
+    background-color: white; */
+}
+.inner {
+    /* border: 3px solid pink; */
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    /* overflow: hidden; */
+}
+li {
+    list-style: none;
+}
+.blind {
+    font-size: 0;
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right;
+}
+.float_clear {
+    clear: both;
+}
+@media screen and (max-width: 768px){
+    .desktop {
+        border: 3px solid red;
+        display: none !important;
+    }
+    .mobile {
+        display: block;
+    }
+}
+

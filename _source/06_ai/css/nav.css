@@ -73,6 +73,7 @@
  }
 
 #gnb li a:hover{
+    transition: 0.3s ease-in-out;
     color: #009070 !important;
 }
 #gnb li a:active{
