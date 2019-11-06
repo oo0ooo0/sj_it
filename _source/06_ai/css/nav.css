@@ -47,17 +47,24 @@
      display: inline-block;
      /* border: 2px solid paleturquoise; */
      margin-right: 30px;
-     border: 1px solid green;
+     /* border: 1px solid green; */
      position: relative;
  }
+
+/* 
+ header #desktopMenu li:first-child a{
+    border: 2px solid paleturquoise; 
+ } */
 
  header #gnb #greenBar {
      border-bottom: 2px solid #009070;
      position: absolute;
      top: 43px;
-     width: 39px;
      left: 0;
  }
+
+
+
 
  /* --------------------------------- */
 

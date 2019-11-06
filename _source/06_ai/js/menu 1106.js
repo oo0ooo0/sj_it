@@ -1,4 +1,4 @@
-//This is jquery;;
+//this is js
 
 window.onload = function() {
   var menuOpen = false;
@@ -44,8 +44,8 @@ window.onload = function() {
   //d윈도우 리사이즈
 
   window.onresize = function() {
-    // console.log("window.innerWidth" + window.innerWidth);
-    // console.log("click4");
+    console.log("window.innerWidth" + window.innerWidth);
+    console.log("click4");
 
     if (window.innerWidth > 1080) {
       document.getElementById("mobile_gnb").style.display = "none";
@@ -61,42 +61,13 @@ window.onload = function() {
   };
 
   //초록 바제어
-  // console.log(document.getElementById("#greenBar").offsetTop);
-  // console.log(document.getElementById("#greenBar").offsetLeft);
-
-
-
-//clear
-$("#gnb1 a").css("color","#009070");
-$("#greenBar").css("width",$("#gnb1").width());
-
-// $("header #desktopMenu li:first-child a").css("color","#00970");
-// console.log("#gnb li:first-child").width;
-// console.log("#gnb li:last-child").width;
-// console.log($("#gnb2").width());
-console.log($("#gnb1").position().left);
-console.log($("#gnb2").position().left);
-
-
-
-//menu control
-
-// js //  document.getElementById("gnb").style.border ="2px solid red";
-// jq // $("#gnb").css("border","2px solid pink");
-
-// $("gnb li").on("click", function(){
-//   console.log("click");
-// });
-
-$("#gnb2").on("click", function(){
-  $("#greenBar").css("width",$("#gnb2").width());
-  $("#gnb1 a").css("color", "#000");
-  $("#gnb2 a").css("color", "#009070");
-});
-  
-
-
-
+  console.log(document.getElementById("greenBar").offsetTop);
+  console.log(document.getElementById("greenBar").offsetLeft);
 };
 
 
+
+//menu controll
+
+document.getElementById("gnb").style.border ="2px solid red";
+$("#gnb").css("border","2px solid pink");
