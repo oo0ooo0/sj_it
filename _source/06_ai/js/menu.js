@@ -74,8 +74,8 @@ $("#greenBar").css("width",$("#gnb1").width());
 // console.log("#gnb li:first-child").width;
 // console.log("#gnb li:last-child").width;
 // console.log($("#gnb2").width());
-console.log($("#gnb1").position().left);
-console.log($("#gnb2").position().left);
+// console.log($("#gnb1").position().left);
+// console.log($("#gnb2").position().left);
 
 
 
@@ -96,7 +96,9 @@ $("#gnb2").on("click", function(){
   
 
 
-
+//practice
+// $("html").animate({scrollTop:800}, "slow");
+console.log("sec2  "+$("#section_schedule").offset().top);
 };
 
 
