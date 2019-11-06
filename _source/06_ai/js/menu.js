@@ -84,17 +84,24 @@ var menu4X = $("#gnb4").position().left;
 var menu5X = $("#gnb5").position().left;
 var menu6X = $("#gnb6").position().left;
 var menu7X = $("#gnb7").position().left;
-var menu8X = $("#gnb8").position().left;
-console.log("#gnb1 위치:" + $("#gnb1").position().left);
-console.log("#gnb2 위치:" + $("#gnb2").position().left);
-console.log("#gnb3 위치:" + $("#gnb3").position().left);
-console.log("#gnb4 위치:" + $("#gnb4").position().left);
+// var menu8X = $("#gnb8").position().left;
+// console.log("#gnb1 위치:" + $("#gnb1").position().left);
+// console.log("#gnb2 위치:" + $("#gnb2").position().left);
+// console.log("#gnb3 위치:" + $("#gnb3").position().left);
+// console.log("#gnb4 위치:" + $("#gnb4").position().left);
 // $("header #desktopMenu li:first-child a").css("color","#00970");
 // console.log("#gnb li:first-child").width;
 // console.log("#gnb li:last-child").width;
 // console.log($("#gnb2").width());
 // console.log($("#gnb1").position().left);
 // console.log($("#gnb2").position().left);
+
+
+
+
+//브라우저사이즈별로 변수선언
+
+
 
 
 
@@ -109,60 +116,121 @@ console.log("#gnb4 위치:" + $("#gnb4").position().left);
 
 $("#gnb1").on("click", function(){
   $("#greenBar").css("width",$("#gnb1").width());
-  $("#greenBar").css("left",menu1X);
-  // $("#gnb1 li a").css("color", "#000");
+  $("#gnb2 a").css("color", "black");
+  $("#gnb3 a").css("color", "black");
+  $("#gnb4 a").css("color", "black");
+  $("#gnb5 a").css("color", "black");
+  $("#gnb6 a").css("color", "black");
+  $("#gnb7 a").css("color", "black");
+  $("#gnb8 a").css("color", "black");
   $("#gnb1 a").css("color", "#009070");
+  $("#greenBar").animate({left: menu1X});
+  $("html").animate({scrollTop: $("#section1").offset().top},"slow");
 });
 
 $("#gnb2").on("click", function(){
   $("#greenBar").css("width",$("#gnb2").width());
+  $("#gnb1 a").css("color", "black");
+  $("#gnb3 a").css("color", "black");
+  $("#gnb4 a").css("color", "black");
+  $("#gnb5 a").css("color", "black");
+  $("#gnb6 a").css("color", "black");
+  $("#gnb7 a").css("color", "black");
+  $("#gnb8 a").css("color", "black");
+  $("#gnb2 a").css("color", "#009070");
   // $("#greenBar").css("left",menu2X);
   $("#greenBar").animate({left: menu2X});
-  $("#gnb1 a").css("color", "black");
-  $("#gnb2 a").css("color", "#009070");
-  $("html").animate({scrollTop: $("#section_schedule").offset().top},"slow");
+  $("html").animate({scrollTop: $("#section2").offset().top},"slow");
 });
 
 $("#gnb3").on("click", function(){
   $("#greenBar").css("width",$("#gnb3").width());
-  $("#greenBar").css("left",menu3X);
+  $("#gnb1 a").css("color", "black");
   $("#gnb2 a").css("color", "black");
-  $("#gnb3 a").css("color", "#009070");
+  $("#gnb4 a").css("color", "black");
+  $("#gnb5 a").css("color", "black");
+  $("#gnb6 a").css("color", "black");
+  $("#gnb7 a").css("color", "black");
+  $("#gnb8 a").css("color", "black");
+  // $("#greenBar").css("left",menu3X);
+  $("#gnb3 a").css("color", "#009070");  
+  $("#greenBar").animate({left: menu3X});
+  $("html").animate({scrollTop: $("#section3").offset().top},"slow");
 });
 
 $("#gnb4").on("click", function(){
   $("#greenBar").css("width",$("#gnb4").width());
-  $("#greenBar").css("left",menu4X);
+  $("#gnb1 a").css("color", "black");
   $("#gnb2 a").css("color", "black");
+  $("#gnb3 a").css("color", "black");
+  $("#gnb5 a").css("color", "black");
+  $("#gnb6 a").css("color", "black");
+  $("#gnb7 a").css("color", "black");
+  $("#gnb8 a").css("color", "black");
   $("#gnb4 a").css("color", "#009070");
+  // $("#greenBar").css("left",menu4X);
+  $("#greenBar").animate({left: menu4X});
+  $("html").animate({scrollTop: $("#section4").offset().top},"slow");
 });
 
 $("#gnb5").on("click", function(){
   $("#greenBar").css("width",$("#gnb5").width());
-  $("#greenBar").css("left",menu5X);
+  $("#gnb1 a").css("color", "black");
+  $("#gnb2 a").css("color", "black");
+  $("#gnb3 a").css("color", "black");
   $("#gnb4 a").css("color", "black");
+  $("#gnb5 a").css("color", "black");
+  $("#gnb7 a").css("color", "black");
+  $("#gnb8 a").css("color", "black");
   $("#gnb5 a").css("color", "#009070");
+  // $("#greenBar").css("left",menu5X);
+  $("#greenBar").animate({left: menu5X});
+  $("html").animate({scrollTop: $("#section5").offset().top},"slow");
 });
 
 $("#gnb6").on("click", function(){
   $("#greenBar").css("width",$("#gnb6").width());
-  $("#greenBar").css("left",menu6X);
+  $("#gnb1 a").css("color", "black");
+  $("#gnb2 a").css("color", "black");
+  $("#gnb3 a").css("color", "black");
+  $("#gnb4 a").css("color", "black");
   $("#gnb5 a").css("color", "black");
+  $("#gnb7 a").css("color", "black");
+  $("#gnb8 a").css("color", "black");
   $("#gnb6 a").css("color", "#009070");
+  // $("#greenBar").css("left",menu6X);
+  $("#greenBar").animate({left: menu6X});
+  $("html").animate({scrollTop: $("#section6").offset().top},"slow");
 });
   
 $("#gnb7").on("click", function(){
   $("#greenBar").css("width",$("#gnb7").width());
-  $("#greenBar").css("left",menu7X);
+  $("#gnb1 a").css("color", "black");
+  $("#gnb2 a").css("color", "black");
+  $("#gnb3 a").css("color", "black");
+  $("#gnb4 a").css("color", "black");
+  $("#gnb5 a").css("color", "black");
   $("#gnb6 a").css("color", "black");
+  $("#gnb8 a").css("color", "black");
   $("#gnb7 a").css("color", "#009070");
+  // $("#greenBar").css("left",menu7X);
+  $("#greenBar").animate({left: menu7X});
+  $("html").animate({scrollTop: $("#section7").offset().top},"slow");
 });
   
 $("#gnb8").on("click", function(){
   $("#greenBar").css("width",$("#gnb8").width());
-  $("#greenBar").css("left",menu8X);
+  $("#gnb1 a").css("color", "black");
+  $("#gnb2 a").css("color", "black");
+  $("#gnb3 a").css("color", "black");
+  $("#gnb4 a").css("color", "black");
+  $("#gnb5 a").css("color", "black");
+  $("#gnb6 a").css("color", "black");
   $("#gnb7 a").css("color", "black");
   $("#gnb8 a").css("color", "#009070");
+  // $("#greenBar").css("left",menu8X);
+  $("#greenBar").animate({left: menu8X});
+  $("html").animate({scrollTop: $("#section8").offset().top},"slow");
 });
   
 
