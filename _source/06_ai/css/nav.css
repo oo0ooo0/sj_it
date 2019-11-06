@@ -16,6 +16,7 @@
 
  header .inner {
      padding: 30px;
+     position: fixed;
      /* border: 5px solid rgb(84, 147, 177); */
  }
 
@@ -43,12 +44,16 @@
      position: absolute;
  }
 
+ #gnb{
+    position: relative;
+
+ }
+
  header #desktopMenu li {
      display: inline-block;
      /* border: 2px solid paleturquoise; */
      margin-right: 30px;
      /* border: 1px solid green; */
-     position: relative;
  }
 
 /* 
