@@ -111,7 +111,6 @@ $("#gnb1").on("click", function(){
   $("#greenBar").css("width",$("#gnb1").width());
   $("#greenBar").css("left",menu1X);
   // $("#gnb1 li a").css("color", "#000");
-
   $("#gnb1 a").css("color", "#009070");
 });
 
@@ -121,6 +120,7 @@ $("#gnb2").on("click", function(){
   $("#greenBar").animate({left: menu2X});
   $("#gnb1 a").css("color", "black");
   $("#gnb2 a").css("color", "#009070");
+  $("html").animate({scrollTop: $("#section_schedule").offset().top},"slow");
 });
 
 $("#gnb3").on("click", function(){
