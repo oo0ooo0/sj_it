@@ -61,9 +61,15 @@ window.onload = function() {
   };
 
   //초록 바제어
+        //js
   // console.log(document.getElementById("#greenBar").offsetTop);
   // console.log(document.getElementById("#greenBar").offsetLeft);
-
+      //jq
+// console.log("greenBarTob" +$("#greenBar").offset().top);
+// console.log("greenBarL" +$("#greenBar").offset().left);
+console.log("greenBarTob::" +$("#greenBar").position().top);
+console.log("greenBarLeft::" +$("#greenBar").position().left);
+console.log ("height");
 
 
 //clear
