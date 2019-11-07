@@ -1,12 +1,14 @@
 header {
     /* border: 5px solid red; */
+    top:0;
     height: 80px;
-    background-color: rgba(255, 255, 255, 0.876);
-    padding: 30px;
-    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 30px 0px 30px;
+    /* box-sizing: border-box; */
     position: fixed;
     width: 100%;
     border-bottom: 0.12px solid #ccc;
+    z-index: 100;
 }
 
 header h1, h2 {
@@ -18,19 +20,18 @@ header h1 a {
     /* border: 3px solid red; */
     display: inline-block;
     width: 67px;
-    background-image: url("../img/sp_all_v4.png");
+    
 }
 
 header h2 a {
     /* border: 3px solid red; */
     display: inline-block;
     width: 175px;
-    background-image: url("../img/sp_all_v4.png");
     background-position-x: -66px;
 }
 
 header #gnb {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     float: right;
     /* margin-top: 20px; */
     position: relative;
@@ -143,7 +144,7 @@ header #gnb #greenBar {
         top: 25px;
         right: 85px;
         margin-right: -17px;
-        z-index: 1;
+        z-index: 99;
         border: none;
         background-color: transparent;
         color: white;
@@ -225,7 +226,7 @@ header #gnb #greenBar {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
     h1 {
         display: none;
     }

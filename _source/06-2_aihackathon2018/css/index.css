@@ -1,0 +1,91 @@
+/* section0-------------------------------
+------------------ */
+
+#section0{
+    /* border: 10px solid pink; */
+   /* height: 470px; */
+    padding:0;
+    height: 700px;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+
+#section0 video{
+    /* border: 10px solid red; */
+    /* width: 100%; */
+    margin-top: 75px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+/* section1-------------------------------
+------------------ */
+
+
+
+#section1{
+    border: 5px solid blue;
+    padding-top:0;
+    /* background-color: aqua; */
+    background-image: url("../img/bg_intro.png");
+    background-repeat: no-repeat;
+    margin-top: -120px; 
+    position: relative;
+    z-index: 97;
+   
+}
+
+#section1 strong{
+    margin-top: 18px;
+    font-size: 42px;
+}
+
+
+#section1 h3{
+    border: 3px solid red;
+    /* position: absolute; */
+    /* background-position-x: 66px; */
+    background-position-y: -66px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 235px;
+    /* margin-top:0;  */
+    position: relative;
+    top: -60px;
+}
+
+
+
+#section1_txt{
+    text-align: center;
+}
+
+
+
+
+h3{
+    /* border: 1px solid red;  */
+}
+/* 
+@media screen and (max-width: 768px){
+
+    #section0 video{
+        border: 10px solid red;
+    margin-top: 120px; 
+    }
+    #section0{
+        border: 10px solid red;
+       height: 0px;
+        padding:0;
+    } 
+}
+ */

@@ -1,5 +1,8 @@
 /* 구글 폰트 로드 */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900|Noto+Serif+KR:400,500,700|Roboto:400,500,900&display=swap');
+.img{
+    background-image: url("../img/sp_all_v4.png");
+}
 
 /* 초기화 코드 */
 body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
@@ -12,18 +15,25 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 body {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 17px;
+    text-align: center;
+    font-weight:300; 
+}
+footer{
+    
 }
 section {  
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 800px;
     padding: 70px 0;
+    /* text-align: center; */
+    
 }
 h3 {
-    font-size: 54px;
+    font-size: 26px;
     color: #222;
 }
 a {
-    text-decoration: none;
+    text-decoration: none; `
     color: #111;
 }
 a:hover {
@@ -37,6 +47,9 @@ em {
 }
 .NotoSerif {
     font-family: 'Noto Serif KR', serif;
+}
+.blind{
+    font-size: 0;
 }
 .btn {
     /* display: inline-block; */
@@ -94,9 +107,33 @@ li {
 .float_clear {
     clear: both;
 }
+
+
+
+/* txt---------------------------------------------- */
+.title{
+    font-size:26px;
+    font-weight: 400;
+}
+
+.description{
+    font-size:13px;
+    color: #999999;    
+}
+
+
+.t_green{
+    color: #009070;
+}
+
+mark{
+    background-color: #333;
+    color:white;
+    padding:0 5px;
+}
 @media screen and (max-width: 768px){
     .desktop {
-        border: 3px solid red;
+        /* border: 3px solid red; */
         display: none !important;
     }
     .mobile {

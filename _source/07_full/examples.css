@@ -128,6 +128,28 @@ header {
 	z-index: 70;
 }
 
+#msound{
+position: fixed;
+bottom: 10px;
+z-index: 101;
+/* position: relative; */
+}
+
+#msound p {
+	font-size: 9px;
+	margin-top:-3px; 
+	text-align: center;
+	z-index: 99;
+}
+#msound p a{
+
+	color: #2828287a;
+	text-decoration:none;
+}
+#msound p :hover{
+	color: #28282825;
+}
+
 header h1 .logo {
 	/* border: 1px solid blue; */
 	margin-left: 2px;
@@ -138,6 +160,20 @@ header h1 .logo {
 	left:0;
 	/* position: absolute; */
 }
+/* .logo:hover{
+	animation-name: why;
+	animation-duration: 0.1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	transition: 0.1s ease-in-out;
+}
+@keyframes why {
+	from{}
+	to{
+		top: 80px; 
+	}
+} */
 
 .txt {
 	/* desk */
@@ -211,31 +247,8 @@ header h1 .logo {
 	top: 9px;
 }
 
-.why {
-	width: 100px;
-	height: 100px;
-	position: absolute;
-}
 
-.why {
-	top: 40%;
-	left: 50%;
-	animation-name: moveBet;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	/* animation-direction: alternate; */
-	transition: 1s ease-in-out;
-	animation-timing-function: steps(10);
-}
-
-@keyframes moveBet {
-	from{}
-	to{
-		background-position-x:-1900px; 
-	}
-}
-
-#download {
+/* #download {
 	margin: 10px 0 0 0;
 	padding: 15px 10px;
 	color: #fff;
@@ -261,13 +274,13 @@ header h1 .logo {
 	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
+} */
+/* 
 #download a {
 	text-decoration: none;
 	color: #fff;
-}
-
+} */
+/* 
 #download:hover {
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
 	background-color: #2F96B4;
@@ -277,7 +290,7 @@ header h1 .logo {
 	-ms-transition: background-position .1s linear;
 	-o-transition: background-position .1s linear;
 	transition: background-position .1s linear;
-}
+} */
 
 #infoMenu {
 	height: 20px;
@@ -310,72 +323,10 @@ header h1 .logo {
 	position: relative;
 }
 
-#examplesList {
-	display: none;
-	background: #282828;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	padding: 20px;
-	float: left;
-	position: absolute;
-	bottom: 29px;
-	right: 0;
-	width: 638px;
-	text-align: left;
-}
-
-#examplesList ul {
-	padding: 0;
-}
-
-#examplesList ul li {
-	display: block;
-	margin: 5px 0;
-}
-
-#examplesList ul li a {
-	color: #BDBDBD;
-	margin: 0;
-}
-
-#examplesList ul li a:hover {
-	color: #f2f2f2;
-}
-
-#examplesList .column {
-	float: left;
-	margin: 0 20px 0 0;
-}
-
-#examplesList h3 {
-	color: #f2f2f2;
-	font-size: 1.2em;
-	margin: 0 0 15px 0;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-	padding: 0 0 5px 0;
-}
-
-/* Demos Menu
- * --------------------------------------- */
-
-#demosMenu {
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	z-index: 999;
-}
 
 
 
-
-
-
-
-/* section4 */
+/* section 2 3 Gallert=y  */
 
 div.photos {
 	display: inline-block;
