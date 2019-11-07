@@ -24,53 +24,123 @@
 <body>
 
 
-    
 
-    <ul id="menu">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">About</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">Vision</a></li>
-        <li data-menuanchor="3rdPage"><a href="#3rdPage">Work</a></li>
-        <li data-menuanchor="4thPage"><a href="#4thpage">contact</a></li>
-        <!-- <li data-menuanchor="lastPage"><a href="#lastPage">Last</a></li> -->
-        <!-- <li data-menuanchor="lastlast"><a href="#lastlast">lastlast</a></li> -->
-    </ul>
+    <header>
+        <nav>
+            <div class="navL">
+                <h1>
+                    <img class="logo" src="img/4-3.gif" alt="logo">
+                </h1>
 
+                <div class="txt">
+                    <p>KWON.JA-MIN</p>
+                    <p><a href="mailto:kkjjajja@gmail.com">kkjjajja@gmail.com</a> </p>
+                    <p><a href="https://www.instagram.com/wwjdncopprb"> instagram. wwjdncopprd</a></p>
+                </div>
+            </div>
+
+            <ul id="menu" class="navR">
+                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">About</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">Vision</a></li>
+                <li data-menuanchor="3rdPage"><a href="#3rdPage">Work</a></li>
+                <li data-menuanchor="4thPage"><a href="#4thPage">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <div id="fullpage">
+
         <div class="section active bg" id="section0">
             <h1>About</h1>
-        </div>
-        <div class="section" id="section1">
-            <div class="slide" id="slide1">
-                <div class="intro">
-                    <h1>Vision1</h1>
-                    <!-- <iframe data-src="auto-height.html"></iframe> -->
-                </div>
-            </div>
-            <div class="slide" id="slide2">
-                <div class="intro">
-                    <h1>Vision2</h1>
-                    <p>
-                        We are using the class `active` on this section and in this particular horizontal slide. This
-                        way it will appear on the viewport on page load, instead of the 1st section 1st slide.
-                    </p>
-                    <p>You can apply the same logic to horizontal slides</p>
-                </div>
-            </div>
-            <div class="slide" id="slide3">
-                <h1>Vision</h1>
-            </div>
+            <p>Web Design<br>Web Publishing<br>HTML CSS JAVASCRIPT Github<br>Adobe _ Photoshop Illustrator Premiere<br>and_ Drawing Processing Arduino p5.js
+            </p>
+            
+           
 
         </div>
-        <div class="section bg" id="section2">
+
+        <div class="section" id="section1">
             <div class="intro">
-                <h1>Work</h1>
+                <h1>Vision as a Web Programmer</h1>
+                <img src="img/vision.png" alt="visionImg">
+                <!-- <iframe data-src="auto-height.html"></iframe> -->
             </div>
         </div>
+
+
+
+        <div class="section " id="section2">
+            <div class="intro">
+                <h1>Work_Web</h1>
+                <div class="photos">
+                        <a class="photo" target="_blank" href="img/5.png">
+                            <img src="img/5.png" alt="img">
+                        </a>
+                        <a class="photo" target="_blank" href="img/5.png">
+                            <img src="img/5.png" alt="img">
+                        </a>
+    
+                        <a class="photo" target="_blank" href="img/5.png">
+                            <img src="img/5.png" alt="img">
+                        </a>
+    
+                        <a class="photo" target="_blank" href="img/5.png">
+                            <img src="img/5.png" alt="img">
+                        </a>
+    
+                        <a class="photo" target="_blank" href="img/5.png">
+                            <img src="img/5.png" alt="img">
+                        </a>
+                        <a class="photo" target="_blank" href="img/5.png">
+                            <img src="img/5.png" alt="img">
+                        </a>
+                        <a class="photo desktop" target="_blank" href="img/5.png">
+                            <img src="img/5.png" alt="img">
+                        </a>
+                        <a class="photo desktop" target="_blank" href="img/5.png">
+                            <img src="img/5.png" alt="img">
+                        </a> 
+                    </div>
+            </div>
+        </div>
+
+
+
         <div class="section" id="section3">
             <div class="intro">
-                <h1>Contact</h1>
+                <h1>Work_others</h1>
+
+                <div class="photos">
+                    <a class="photo" target="_blank" href="img/5.png">
+                        <img src="img/5.png" alt="img">
+                    </a>
+                    <a class="photo" target="_blank" href="img/5.png">
+                        <img src="img/5.png" alt="img">
+                    </a>
+
+                    <a class="photo" target="_blank" href="img/5.png">
+                        <img src="img/5.png" alt="img">
+                    </a>
+
+                    <a class="photo" target="_blank" href="img/5.png">
+                        <img src="img/5.png" alt="img">
+                    </a>
+
+                    <a class="photo" target="_blank" href="img/5.png">
+                        <img src="img/5.png" alt="img">
+                    </a>
+                    <a class="photo" target="_blank" href="img/5.png">
+                        <img src="img/5.png" alt="img">
+                    </a>
+                    <a class="photo desktop" target="_blank" href="img/5.png">
+                        <img src="img/5.png" alt="img">
+                    </a>
+                    <a class="photo desktop" target="_blank" href="img/5.png">
+                        <img src="img/5.png" alt="img">
+                    </a> 
+                </div>
+
             </div>
         </div>
         <!-- <div class="section" id="section3">
@@ -89,8 +159,8 @@
     <script type="text/javascript" src="examples.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', 'pink'],
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage', 'lastlast'],
+            sectionsColor: ['#dcffcc', '#9fdfcd', '#baabda', '#d79abc', '#ccddff', 'pink'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage', 'lastlast'],
             menu: '#menu',
             lazyLoad: true
         });

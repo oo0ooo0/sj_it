@@ -182,7 +182,8 @@ em {
 
 @media screen and (max-width:320px) {
     .inner {
-        max-width: 100%;
+       
+        max-width: 200%;
         padding: 0 10px;
     }
 }
