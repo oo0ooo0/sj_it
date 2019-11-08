@@ -1,0 +1,158 @@
+
+
+/* header
+ * --------------------------------------- */
+
+
+
+header {
+	/* border: 10px solid pink; */
+
+	background-color: #f0fcf0;
+	position: fixed;
+	top: 0;
+	z-index: 70;
+	width: 100%;
+	padding: 10px 30px;
+	box-sizing: border-box;
+	position: relative;
+
+
+	/* m */
+	/* padding: 30px; */
+}
+
+.navL {
+	/* border: 10px solid pink; */
+	/* mobile */
+	/* display: flex;
+	justify-content: center; 
+	width: 100%;*/
+}
+
+
+#menu {
+	/* m */
+	/* display: flex;
+	justify-content: center; */
+
+	/* desk */
+	top: 25px;
+	position: fixed;
+	right: 10px;
+	height: 40px;
+	z-index: 70;
+}
+
+#msound{
+position: fixed;
+bottom: 10px;
+z-index: 101;
+/* position: relative; */
+}
+
+#msound p {
+	font-size: 9px;
+	margin-top:-3px; 
+	text-align: center;
+	z-index: 99;
+}
+#msound p a{
+
+	color: #2828287a;
+	text-decoration:none;
+}
+#msound p :hover{
+	color: #28282825;
+}
+
+header h1 .logo {
+	/* border: 1px solid blue; */
+	margin-left: 2px;
+	width: 70px;
+	height: 70px;
+	box-sizing: border-box;
+	top:0;
+	left:0;
+	/* position: absolute; */
+}
+/* .logo:hover{
+	animation-name: why;
+	animation-duration: 0.1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	transition: 0.1s ease-in-out;
+}
+@keyframes why {
+	from{}
+	to{
+		top: 80px; 
+	}
+} */
+
+.txt {
+	/* desk */
+	position: absolute;
+	top: 15px;
+	left: 100px;
+	
+	padding: 0 0.8em;
+	height: 40px;
+	z-index: 70;
+}
+
+.txt a {
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration: none;
+}
+
+.txt a:hover {
+	color: #629b8a;
+	text-decoration: none;
+	transition: 0.2s ease-in-out;
+}
+
+
+#menu li {
+	/* border: 1px solid blue; */
+	
+	height: 35px;
+	display: inline-block;
+	margin: 10px;
+	background: rgba(0, 0, 0, 0.123);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	transition: 0.2s ease-in-out;
+}
+
+#menu li.active {
+	background: #95cfbe;
+	transition: 0.2s ease-in-out;
+}
+
+#menu li a {
+	/* border: 1px solid yellow; */
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+#menu li.active a:hover {
+	/* color: green; */
+}
+
+#menu li:hover {
+	background: #95cfbe;
+}
+
+#menu li a, #menu li.active a {
+	padding: 9px 18px;
+	display: block;
+}
+
+#menu li.active a {
+	/* color: rgb(184, 71, 165); */
+}
+
+
+

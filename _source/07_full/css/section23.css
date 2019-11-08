@@ -1,0 +1,83 @@
+
+
+
+/* section 2 3 Gallert=y  */
+
+div.photos {
+	display: inline-block;
+	/* border: 10px solid red; */
+	margin: 2em 2em;
+	/* width: 95%; */
+}
+
+a.photo {
+	/* border: 5px solid green; */
+	/* m */
+	/* width: 50%; */
+
+	/* d */
+	width: 25%;
+
+	/* c */
+	display: block;
+	float: left;
+	
+
+}
+
+a.photo img {
+	/* border: 1px solid blue; */
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media Q
+ * --------------------------------------- */
+
+
+ @media screen and (max-width:1260px) {
+  .desktop{
+	  display: block;
+  }
+
+  .photos .desktop {
+	display: block;
+  }
+  
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:330px) {
+	header{
+		border: 10px solid pink;
+	}
+	.desktop {
+		display: none ; 
+	  }
+	.photos .desktop {
+		display: none ; 
+	  }
+
+	  a.photo {
+		/* border: 5px solid green; */
+		width: 50%;
+	  }
+
+
+}

@@ -1,0 +1,53 @@
+@CHARSET "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Roboto&display=swap');
+@import "clear.css";
+@import "fullpage.css";
+@import "header.css";
+@import "section0.css";
+@import "section1.css";
+@import "section23.css";
+
+
+
+
+
+
+/* Custom CSS
+ * --------------------------------------- */
+
+body {
+	font-family: 'Fjalla One', sans-serif;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.wrap {
+	/* border: 20px solid red;  */
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+p {
+	font-size: 1em;
+}
+
+.intro p {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+
+.section {
+	text-align: center;
+}
+
+
+
+
+
+
