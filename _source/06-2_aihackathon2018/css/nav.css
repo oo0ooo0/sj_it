@@ -83,7 +83,7 @@ header #gnb #greenBar {
     #gnb .mobile {
         display: inline-block;
     }
-    h1 {
+    header h1 {
         /* border: 1px solid red; */
         margin-left: 20px;
     }
@@ -198,12 +198,12 @@ header #gnb #greenBar {
         padding: 0px 0;
         height: 90px;
     }
-    h1 {
+    header h1 {
         /* border: 1px solid red; */
         margin-left: 0px;
         font-size: 26px;
     }
-    h1, h2 {
+    header h1, h2 {
         float: none !important;
         /* border: 2px solid red; */
         display: inline-block;
@@ -227,7 +227,7 @@ header #gnb #greenBar {
 }
 
 @media screen and (max-width: 370px) {
-    h1 {
+    header h1 {
         display: none;
     }
     #triger {
