@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent div, #parent p {
+            border: 3px solid black;
+        }
+        #parent div:first-child {
+            border: 3px solid red;
+        }
+        #parent p:nth-child(2) {
+            border: 3px solid green;
+        }
+        #parent div:nth-child(3){
+            border: 3px solid red;
+        }
+        #parent p:last-child {
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div>1</div>
+        <p>2</p>
+        <div>3</div>
+        <p>4</p>
+    </div>
+</body>
+
+</html>

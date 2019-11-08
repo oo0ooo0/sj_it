@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #navi {
+            /* display: none;
+            border: 3px solid red; */
+        }
+        #triger {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="triger" onclick='document.getElementById("navi").style.display = "block"'>햄버거버튼</div> -->
+    <div id="triger">햄버거메뉴</div>
+    <div id="navi">보여줄 메뉴</div>
+    <script>
+        // document.getElementById("navi").style.border = "3px solid blue";
+        document.getElementById("navi").style.display = "none";
+
+        document.getElementById("triger").onclick = function(){
+            console.log("버튼을 눌렀구나");
+            document.getElementById("navi").style.display = "block";
+        };
+    </script>
+</body>
+
+</html>

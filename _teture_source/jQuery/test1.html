@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <style>
+        #box1 {
+            border: 3px solid black;
+        }
+        #box2 {
+            border: 3px solid gray;
+        }
+        .bg {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="bg">box1</div>
+    <div id="box2" class="bg">box2</div>
+    <script>
+        // 순수한 자바스크립트로 id선택자 제어
+        document.getElementById("box1").style.border = "3px solid red";
+        console.log(document.getElementById("box1"));
+        console.log(document.getElementsByClassName("bg"));
+        // document.getElementsByClassName("bg").style.border = "3px solid red";
+        $("#box2").css("border", "3px solid blue");
+        $(".bg").css("background-color", "aqua");
+        $("div").css("height", "50px");
+    </script>
+</body>
+</html>

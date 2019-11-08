@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent {
+            border: 10px solid black;
+        }
+
+        #parent>div {
+            border: 10px solid green;
+        }
+
+        #parent div:first-child {
+            border: 10px solid red;
+        }
+
+        #parent div:last-child {
+            border: 10px solid pink;
+        }
+
+        /* 짝수 선택 */
+        #parent div:nth-child(even) {
+            /* background-color: gray; */
+        }
+
+        /* 홀수 선택 */
+        #parent div:nth-child(odd) {
+            /* background-color: yellow; */
+        }
+
+        /* 3의 배수 */
+        #parent div:nth-child(3n+2) {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <div>other</div>
+</body>
+
+</html>

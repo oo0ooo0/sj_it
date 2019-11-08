@@ -1,0 +1,409 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR:400,500,700,900|Supermercado+One&display=swap&subset=korean');
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+	color: #000;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    /* font-size: 100%; */
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	/* font-family: arial,helvetica; */
+	/* color: #333; */
+	/* color: rgba(0,0,0,0.5); */
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-family: 'Supermercado One', cursive;
+	font-size: 60px;
+	/* font-size: 6em; */
+}
+#profile p {
+	font-size: 16px;
+	font-family: 'Noto Sans KR', sans-serif;
+	line-height: 19px;
+	padding-left: 15px;
+	margin-top: 5px;
+	color: #666;
+}
+#profile p a {
+	color: #666;
+}
+#profile p a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+#profile mark {
+	background-color: #333;
+	color: white;
+	padding: 3px 8px;
+	display: inline-block;
+	margin-bottom: 2px;
+}
+.text_black {
+	color: #000;
+}
+p{
+	/* font-size: 2em; */
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	/* border: 1px solid black; */
+	font-weight: bold;
+	display:inline-block;
+	margin: 0 10px;
+	/* color: #000; */
+	/* background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px; */
+}
+#menu li.active{
+	/* background:#666; */
+	/* background: rgba(0,0,0, 0.5); */
+	color: violet;
+}
+#menu li a{
+	text-decoration:none;
+	color: #333;
+}
+#menu li.active a:hover{
+	color: #f45905;
+}
+#menu li:hover{
+	/* background: rgba(255,255,255, 0.8); */
+}
+#menu li a:hover {
+	color: #f45905;
+	border-bottom: 3px solid #f45905;
+}
+#menu li a,
+#menu li.active a{
+	/* border: 2px solid yellow; */
+	padding: 9px 0px;
+	display:block;
+}
+#menu li.active a{
+	color: #c70d3a;
+	border-bottom: 3px solid #c70d3a;
+}
+header {
+	/* border: 5px solid blue; */
+	position:fixed;
+	width: 100%;
+	top:0;
+	left:0;
+	z-index: 70;
+	padding: 30px;
+	box-sizing: border-box;
+}
+#menu{
+	float: right;
+	/* border: 5px solid red; */
+	text-align: right;
+	/* height: 40px; */
+	padding: 0;
+	margin:0;
+}
+#profile {
+	/* border: 5px solid green; */
+	float: left;
+}
+.twitter-share-button{
+	position: fixed;
+	z-index: 99;
+	right: 149px;
+	top: 9px;
+}
+#download{
+	margin: 10px 0 0 0;
+	padding: 15px 10px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #49afcd;
+	background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from( #5bc0de),to( #2f96b4));
+	background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: linear-gradient(top, #5bc0de, #2f96b4);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+	border-color: #2f96b4 #2f96b4 #1f6377;
+	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	vertical-align: middle;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+#download a{
+	text-decoration:none;
+	color:#fff;
+}
+#download:hover{
+	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+	background-color: #2F96B4;
+	background-position: 0 -15px;
+	-webkit-transition: background-position .1s linear;
+	-moz-transition: background-position .1s linear;
+	-ms-transition: background-position .1s linear;
+	-o-transition: background-position .1s linear;
+	transition: background-position .1s linear;
+}
+#infoMenu{
+	height: 20px;
+	color: #f2f2f2;
+	position:fixed;
+	z-index:70;
+	bottom:0;
+	width:100%;
+	text-align:right;
+	font-size:0.9em;
+	padding:8px 0 8px 0;
+}
+#infoMenu ul{
+	padding: 0 40px;
+}
+#infoMenu li a{
+	display: block;
+	margin: 0 22px 0 0;
+	color: #333;
+}
+#infoMenu li a:hover{
+	text-decoration:underline;
+}
+#infoMenu li{
+	display:inline-block;
+	position:relative;
+}
+#examplesList{
+	display:none;
+	background: #282828;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px;
+	float: left;
+	position: absolute;
+	bottom: 29px;
+	right: 0;
+	width:638px;
+	text-align:left;
+}
+#examplesList ul{
+	padding:0;
+}
+#examplesList ul li{
+	display:block;
+	margin: 5px 0;
+}
+#examplesList ul li a{
+	color: #BDBDBD;
+	margin:0;
+}
+#examplesList ul li a:hover{
+	color: #f2f2f2;
+}
+#examplesList .column{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#examplesList h3{
+	color: #f2f2f2;
+	font-size: 1.2em;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding: 0 0 5px 0;
+}
+
+
+
+/* Demos Menu
+ * --------------------------------------- */
+ #demosMenu{
+	position:fixed;
+	bottom: 10px;
+	right:10px;
+	z-index: 999;
+ }
+
+/* my css */
+
+#fullpage {
+	/* border: 10px solid black; */
+}
+
+#me {
+	/* border: 3px solid red; */
+	animation-name: meMove;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes meMove {
+	0% {
+		margin-top: 10px;
+	}
+	50% {
+		margin-top: -10px;
+	}
+	100% {
+		margin-top: 0;
+	}
+}
+#section0 p{
+	font-size: 20px;
+	font-family: 'Supermercado One', cursive;
+}
+#sun {
+	/* border: 3px solid red; */
+	width: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* margin-left: 130px; */
+	margin-left: 200px;
+	margin-top: -170px;
+	animation-name: moveSun;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay: 0.5s;
+}
+@keyframes moveSun  {
+	from {
+		margin-left: 200px;
+	}
+	to {
+		margin-left: 130px;
+	}
+}
+#moon {
+	/* border: 3px solid red; */
+	width: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -230px;
+	margin-top: 20px;
+	animation-name: moveMoon;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes moveMoon {
+	from {
+		margin-left: -300px;
+	}
+	to {
+		margin-left: -230px;
+	}
+}
+#me2 {
+	/* width: 200px; */
+}
+#monster {
+	/* border: 3px solid red; */
+	width: 190px;
+	height: 240px;
+	background: url("../img/monster.png");
+	animation-name: monsterMove;
+	animation-duration: 1s;
+	animation-timing-function: steps(10);
+	position: fixed;
+	bottom: 100px;
+	right: 100px;
+	z-index: 100;
+}
+@keyframes monsterMove {
+	from {
+
+	}
+	to {
+		background-position-x: -1900px;
+	}
+}
+
+#mySound {
+	/* border: 3px solid red; */
+	position: fixed;
+	bottom: 50px;
+	left: 50px;
+	z-index: 101;
+}
+#mySound p {
+	/* border: 1px solid red; */
+	font-size: 13px;
+	/* padding-left: 15px; */
+	text-align: center;
+	margin-top: 3px;
+}
+#mySound p a:hover {
+	color: #c70d3a;
+}

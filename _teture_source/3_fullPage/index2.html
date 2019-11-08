@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Active Slide - fullPage.js</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="profile">
+                <h1><span class="text_black">K</span>im Hye Young</h1>
+                <p>
+                    <mark>Web Designer, Web Publisher, Illustrator</mark><br>
+                    mail. <a href="mailto:lifelovepeop@naver.com">lifelovepeop@naver.com</a>
+                </p>
+            </div>
+            <ul id="menu">
+                <li data-menuanchor="firstPage"><a href="#firstPage">menu1</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">menu2</a></li>
+                <li data-menuanchor="3rdPage"><a href="#3rdPage">menu3</a></li>
+                <li data-menuanchor="4thpage"><a href="#4thpage">menu4</a></li>
+                <!-- <li data-menuanchor="lastPage"><a href="#lastPage">menu5</a></li>
+                <li data-menuanchor="lastPage2"><a href="#lastPage2">menu6</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="mySound">
+        <audio controls autoplay="autoplay">
+            <!-- <source src="horse.ogg" type="audio/ogg"> -->
+            <source src="mp3/Joystock_-_Lounge_Electronica.mp3" type="audio/mpeg">
+            <!-- Your browser does not support the audio element. -->
+
+        </audio>
+        <p>Lounge Electronica <a href="https://licensing.jamendo.com/en/track/1661102/lounge-electronica" 
+            target="_blank"><strong>by JOYSTOCK</strong></a></p>
+    </div>
+
+    <div id="monster"></div>
+
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <h2>Section 1</h2>
+            <!-- <img id="me2" src="img/star2.gif"> -->
+
+            <img id="me" src="img/planet.png" alt="개인의 이상향을 나타내는 행성 이미지">
+            <p>True life is lived when tiny chages occur.</p>
+            <img id="sun" src="img/sun.svg" alt="해">
+            <img id="moon" src="img/moon.svg" alt="달">
+        </div>
+        <div class="section" id="section1">
+            <h2>Section 2</h2>
+        </div>
+        <div class="section" id="section2">
+            <h2>Section 3</h2>
+        </div>
+        <div class="section" id="section3">
+            <h2>Section 4</h2>
+        </div>
+        <!-- <div class="section" id="section4">
+            <h1>Section 5</h1>
+        </div>
+        <div class="section" id="section5">
+            <h1>Section 6</h1>
+        </div> -->
+    </div>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#9be3de', '#beebe9', '#fffdf9', '#ffe3ed', '#ccddff', 'orange'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage', 'lastPage2'],
+            menu: '#menu',
+            lazyLoad: true
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Active Slide - fullPage.js</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <ul id="menu">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">About</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Vision</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">Work</a></li>
+        <li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
+        <!-- <li data-menuanchor="lastPage"><a href="#lastPage">마지막</a></li>
+        <li data-menuanchor="lastPage2"><a href="#lastPage2">진짜 마지막</a></li> -->
+    </ul>
+
+
+
+
+    <div id="fullpage">
+        <div class="section bg" id="section0">
+            <h1>About</h1>
+        </div>
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>Vision</h1>
+                    <iframe data-src="auto-height.html"></iframe>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="intro">
+                    <h1>Slide 2.2</h1>
+                    <p>
+                        We are using the class `active` on this section and in this particular horizontal slide. This
+                        way it will appear on the viewport on page load, instead of the 1st section 1st slide.
+                    </p>
+                    <p>You can apply the same logic to horizontal slides</p>
+                </div>
+            </div>
+            <div class="slide active" id="slide3">
+                <h1>Slide 2.3</h1>
+            </div>
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Work</h1>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="intro">
+                <h1>Contact</h1>
+            </div>
+        </div>
+        <!-- <div class="section" id="section4">
+            <div class="intro">
+                <h1>마지막</h1>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div class="intro">
+                <h1>진짜 마지막</h1>
+            </div>
+        </div> -->
+    </div>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <!-- <script type="text/javascript" src="js/examples.js"></script> -->
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'orange', '#ccddff', 'yellow'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage', 'lastPage2'],
+            menu: '#menu',
+            lazyLoad: true
+        });
+    </script>
+
+</body>
+
+</html>

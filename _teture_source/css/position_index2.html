@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 3000px;
+        }
+
+        nav {
+            background-color: green;
+            height: 50px;
+            position: relative;
+            z-index: 1;
+            left: 0px;
+            top: 0px;
+        }
+
+        p {
+            background-color: hotpink;
+            margin: 0;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0; 
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        #div {
+            background-color: blue;
+            height: 50px;
+        }
+        #container {
+            border: 10px solid black;
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <nav>나는 네브다</nav>
+        <p>단락</p>
+        <div id="div">나는 디브다.</div>
+    </div>
+</body>
+
+</html>

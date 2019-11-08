@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if조건문</title>
+    <script>
+    // 13미만이거나 65세이상이면 요금 2,000원
+    // 13이상이거나 20살보다 작다면 4,000원
+    // 성인 기본 요금은 6,000원
+    var age = 30;
+    if(age < 13 || age >= 65){
+        document.write("입장료는 2,000원입니다.");
+    } else if(age >= 13 && age < 20){
+        document.write("입장료는 4,000원입니다.");
+    } else {
+        document.write("입장료는 6,000원입니다.");
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
