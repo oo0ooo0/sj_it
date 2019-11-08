@@ -8,7 +8,7 @@
 body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
     margin: 0;
     padding: 0;
-}
+}  
 .mobile {
     display: none;
 }
@@ -114,11 +114,13 @@ li {
 .title{
     font-size:26px;
     font-weight: 400;
+
 }
 
 .description{
     font-size:13px;
     color: #999999;    
+    line-height: 22px;
 }
 
 
