@@ -2,19 +2,21 @@
 ------------------ */
 
 #section0{
-    /* border: 10px solid pink; */
+    border: 5px solid pink;
    /* height: 470px; */
     padding:0;
     height: 700px;
-    overflow: hidden;
-    /* background-color: red; */
+    /* overflow: hidden; */
+    box-sizing: border-box;
 }
 
 
 #section0 video{
-    /* border: 10px solid red; */
-    /* width: 100%; */
-    margin-top: 75px;
+    /* border: 5px solid red; */
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 150px;
 } 
 
 
@@ -25,16 +27,9 @@
 
 
 
-#section1 .description{
-    margin-bottom: 70px;
-}
+
  
 
-
-
-#section4{
-    background:url("../img/bg_green.png");
-}
 
 
 
@@ -49,12 +44,12 @@
     /* border: 5px solid blue; */
     padding-top:0;
     /* background-color: aqua; */
-    background-image: url("../img/bg_intro.png");
+    /* background-image: url("../img/bg_intro.png"); */
     background-repeat: no-repeat;
     margin-top: -120px; 
+    /* margin-bottom: 100px;  */
     position: relative;
-    z-index: 97;
-   
+    z-index: 1;
 }
 
 #section1 strong{
@@ -64,14 +59,18 @@
 
 
 #section1 h3{
-    /* border: 3px solid red; */
+    border: 3px solid red;
+    box-sizing: border-box;
     /* position: absolute; */
     /* background-position-x: 66px; */
-    background-position-y: -66px;
+    background-image: url("../img/ai_vision.png");
     background-position-x: center;
     background-repeat: no-repeat;
-    height: 235px;
-    /* margin-top:0;  */
+    background-size: contain;
+    width: 80%;
+    max-width:848px;
+    margin: 0 auto;
+    height: 234px;
     position: relative;
     top: -60px;
 }
@@ -80,25 +79,96 @@
 
 #section1_txt{
     text-align: center;
+    
 }
 
 
 
 
-h3{
-    /* border: 1px solid red;  */
-}
-/* 
-@media screen and (max-width: 768px){
 
-    #section0 video{
-        border: 10px solid red;
-    margin-top: 120px; 
+
+
+
+
+/* section_schedule */
+#section2:before {
+    content:"";
+    display:block;
+    height:140px;
+    background:url("../img/bg_schedule.png") 50% 0 no-repeat;
+}
+#section2 .inner {
+    padding-top:12px;
+    padding-bottom:17px;
+    background:url("../img/bg_black.png") repeat;
+}
+
+
+
+
+
+
+
+#section4{
+    background:url("../img/bg_green.png");
+}
+
+
+
+
+
+@media screen and (max-width: 1200px){
+ 
+    #section1 h3{
+        height: 200px;
+        top:-10px;
     }
     #section0{
-        border: 10px solid red;
-       height: 0px;
-        padding:0;
+        height:760px;
+        padding-top:80px;
+    }
+    #section0 video{
+       margin-top: 0px;
     } 
 }
- */
+
+
+
+
+    /* ipad */
+@media screen and (max-width: 768px){
+    #section0{
+        height:550px;
+    }
+    #section1 h3{
+        height: 160px;
+        top:50px;
+    }
+   
+}
+
+
+    /* iphon6 */
+@media screen and (max-width: 414px){
+    #section0{
+        height:350px;
+    }
+    #section1 h3{
+        height: 100px;
+        top: 70px;
+    }
+
+}
+
+
+
+    /* iphon5 */
+@media screen and (max-width: 320px){
+    #section0{
+        /* height:100% */
+    }
+    #section1 h3{
+        height: 200px;
+    }
+   
+}

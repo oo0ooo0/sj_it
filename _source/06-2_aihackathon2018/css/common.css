@@ -23,8 +23,8 @@ footer{
 }
 section {  
     /* border: 2px solid blue; */
-    height: 800px;
-    padding: 70px 0;
+    /* height: 800px; */
+    /* padding: 70px 0; */
     /* text-align: center; */
     
 }
@@ -152,9 +152,10 @@ display: inline-block;
 
 .inner {
     /* border: 3px solid pink; */
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     position: relative;
+    text-align: center;
     /* overflow: hidden; */
 }
 li {
