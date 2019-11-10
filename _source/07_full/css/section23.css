@@ -6,7 +6,8 @@
 div.photos {
 	display: inline-block;
 	/* border: 10px solid red; */
-	margin: 2em 2em;
+	padding: 2em ;
+	box-sizing: border-box;
 	/* width: 95%; */
 }
 
