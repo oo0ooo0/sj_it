@@ -30,11 +30,27 @@ p {
     font-weight: 500;
     font-size: 26px;
 }
+
+.title2{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 23px;   
+}
 .description {
     font-size: 15px;
     color: #999;
     line-height: 22px;
 }
+.description2 {
+    /* border: 1px solid red; */
+    font-weight: 300;
+    font-size: 12px;
+    color: #555555;
+    margin-top: 5px;
+    line-height: 15px;
+    display: block;
+}
+
 .t_green {
     color: #009070;
 }
@@ -46,6 +62,7 @@ section {
 h3 {
     font-size: 54px;
     color: #222;
+    margin-bottom: 10px;
 }
 a {
     text-decoration: none;
@@ -115,6 +132,13 @@ em {
 /* 초록 바탕에 검정세모그림자 - 비활성버튼*/
 .btn4 {
 
+}
+
+.btn_detail{
+    background: none;
+    border: none;
+    color: #55ddcc;
+    text-decoration: underline;
 }
 .inner {
     /* border: 3px solid pink; */

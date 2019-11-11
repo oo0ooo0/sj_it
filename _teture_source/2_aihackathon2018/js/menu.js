@@ -111,7 +111,7 @@ window.onload = function() {
       document.getElementsByClassName("triger_span")[1].style.opacity = "1";
       document.getElementsByClassName("triger_span")[2].style.transform =
         "translateY(0px) rotate(0deg)";
-    }
+    }   
   };
   //m_gnb_close를 클릭할때(닫기)
   document.getElementById("m_gnb_close").onclick = function() {
