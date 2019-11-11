@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900|Noto+Serif+KR:400,500,700|Roboto:400,500,900&display=swap');
 
 /* 초기화 코드 */
-body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
+body, h1, h2, h3, h4, h5, h6, p, ul, li, ol, dl, dt, dd {
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@ body {
     font-weight: 300;
 }
 mark {
-    background-color: #333;
+    background-color: #111;
     color: white;
     padding: 0 5px;
 }
@@ -30,11 +30,10 @@ p {
     font-weight: 500;
     font-size: 26px;
 }
-
-.title2{
+.title2 {
     font-weight: 500;
     font-size: 21px;
-    line-height: 23px;   
+    line-height: 23px;
 }
 .description {
     font-size: 15px;
@@ -42,15 +41,13 @@ p {
     line-height: 22px;
 }
 .description2 {
-    /* border: 1px solid red; */
-    font-weight: 300;
-    font-size: 12px;
-    color: #555555;
-    margin-top: 5px;
-    line-height: 15px;
+    /* border: 2px solid red; */
     display: block;
+    font-size: 12px;
+    color: #333;
+    line-height: 16px;
+    margin-top: 5px;
 }
-
 .t_green {
     color: #009070;
 }
@@ -62,7 +59,7 @@ section {
 h3 {
     font-size: 54px;
     color: #222;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 a {
     text-decoration: none;
@@ -133,11 +130,10 @@ em {
 .btn4 {
 
 }
-
-.btn_detail{
-    background: none;
+.btn_detail {
+    background-color: transparent;
     border: none;
-    color: #55ddcc;
+    color: #5dc3a0;
     text-decoration: underline;
 }
 .inner {

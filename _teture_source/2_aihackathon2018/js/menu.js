@@ -1,5 +1,5 @@
 // 코드가 다 로드된 뒤 실행(마지막에)
-window.onload = function() {
+// window.onload = function() {
   // 메뉴가 열렸는지 여부 변수 선언
   var menuOpen = false;
   // 초록바를 위한 메뉴 위치 변수 선언
@@ -111,7 +111,7 @@ window.onload = function() {
       document.getElementsByClassName("triger_span")[1].style.opacity = "1";
       document.getElementsByClassName("triger_span")[2].style.transform =
         "translateY(0px) rotate(0deg)";
-    }   
+    }
   };
   //m_gnb_close를 클릭할때(닫기)
   document.getElementById("m_gnb_close").onclick = function() {
@@ -231,4 +231,4 @@ window.onload = function() {
   // 연습
   // $("html").animate({scrollTop: $("#section2").offset().top}, "slow");
   // console.log("section2의 위치: " + $("#section2").offset().top);
-};
+// };

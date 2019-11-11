@@ -1,7 +1,7 @@
-#section0 {  
+#section0 {
     /* border: 5px solid red; */
     padding: 0;
-    height: 700px;
+    height: 600px;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -9,9 +9,8 @@
     margin-top: -150px;
     /* border: 1px solid blue; */
     box-sizing: border-box;
-    width:100%;
-
-
+    width: 100%;
+    min-width: 700px;
 }
 #section1 {
     /* border: 5px solid blue; */
@@ -50,11 +49,6 @@
     color: #222;
     /* margin-bottom: 30px; */
 }
-
-
-
-
-
 #section2 {
     background-image: url("../img/bg2.jpg");
     position: relative;
@@ -84,94 +78,155 @@
 }
 #section2 h3 {
     color: white;
-  
 }
 #section2 ol {
-    /* border: 5px solid blue; */
-    height:263px; 
-    /* ol한테 하이를 안주면 납작해 rmfotj li에 맞춰 늘이고 나묜 그 아래  p에 마진이 먹은거지  p는 common에 마진이 공통으로 잡혔지 */
+    /* border: 1px solid red; */
+    /* margin-bottom: 30px; */
+    height: 264px;
 }
+
 #section2 li {
-    border: 1px solid yellow;
-    /* inner sixe 1200 / 6  */
+    /* border: 1px solid yellow; */
     width: 168px;
     height: 264px;
     float: left;
     /* display: inline-block; */
-    margin-right: 38.4px;
-    box-sizing: border-box;
-    /* display: table-cell;
-    vertical-align: middle; */
     /* background-position-y: -350px; */
-    /* padding-top: 169px; */
-    display: table;
     background-repeat: no-repeat;
     background-position-x: center;
+    /* 1200 168*6=1008  1200-1008=192  192/5=38.4 */
+    margin-right: 38.4px;
+    box-sizing: border-box;
+    /* padding-top: 169px; */
+    display: table;
 }
-
-.schedul_box{
-    /* border:3px solid pink; */
-    width: 100%;
-    height: 84px;
+.schedule_box {
+    /* border: 3px solid pink; */
     display: table-cell;
     vertical-align: middle;
+    height: 84px;
     padding-top: 156px;
 }
-
 #section2 li:nth-child(1) {
-    /* background-position-y: -614px; */
-    background-image: url("../img/s1.png");
+   background-image: url("../img/li_1.png");
 }
 #section2 li:nth-child(2) {
+    background-image: url("../img/li_2.png");
     /* background-position-y: -614px; */
-    background-image: url("../img/s2.png");
+    /* background-position-y: calc(-350px + -264px * 1); */
 }
 #section2 li:nth-child(3) {
+    background-image: url("../img/li_3.png");
     /* background-position-y: -614px; */
-  
-    background-image: url("../img/s3.png");
+    /* background-position-y: calc(-350px + (-264px * 2)); */
 }
 #section2 li:nth-child(4) {
+    background-image: url("../img/li_4.png");
     /* background-position-y: -614px; */
-    background-image: url("../img/s4.png");
+    /* background-position-y: calc(-350px + (-264px * 3)); */
 }
 #section2 li:nth-child(5) {
+    background-image: url("../img/li_5.png");
     /* background-position-y: -614px; */
-    background-image: url("../img/s5.png");
+    /* background-position-y: calc(-350px + (-264px * 4)); */
 }
 #section2 li:nth-child(6) {
-    background-image: url("../img/s6.png");
+    background-image: url("../img/li_6.png");
+    /* background-position-x: -170px; */
     margin-right: 0;
 }
-
-#section2 .description{
-    clear: both;
-    /* display: block; */
+#section2 .description {
+    clear: left;
 }
-
-#section2 mark{
-    /* border: 5px solid blue; */
-    padding: 1px 2px 0px 2px;
-    background-color: rgba(0,0,0,0.3);
-    font-weight: normal;
-    color: #05d6a7;
-    line-height: 26px;
-
+#section2 mark {
+    font-size: 26px;
 }
-
-#section2 strong{
+#section2 strong {
     display: block;
     color: white;
     font-weight: 300;
     margin-top: 6px;
 }
-
-#section2 p{
-    color:#cccc;
-    font-size: 15px;
-    margin-top: 14px;
+#section2 p:nth-of-type(2) {
+    color: #ccc;
+    margin-top: 5px;
 }
 
+#mentor::before{
+    content: "";
+    border: 2px solid red;
+    display: block;
+    height: 200px;
+    width:100%;
+    margin-top: -70px;
+    background: url("https://m-campaign.naver.com/aihackathon2018/im/bg_section_mento.jpg") no-repeat;
+    background-size: contain;
+   
+}
+#mentor{
+    /* border: 2px solid red; */
+    padding-right: 0;
+    padding-left: 0;
+    /* margin-left: 0; */
+    background-color: #f0f0f0;
+}
+#mentor ul {
+    height: 200px;
+}
+#mentor li {
+    float: left;
+    margin-right: 75px;
+    width: 175px;
+    background-position-x: center;
+}
+#mentor li:last-child{
+    margin-right: 0;
+}
+#mentor dt {
+    border: 2px solid pink;
+    font-size: 0;
+}
+#mentor dl::before{
+    content:"";
+    /* border: 1px solid red; */
+    display: block;
+    height: 180px;
+    border-radius:90px;
+    background-color: thistle;
+}
+
+#mentor li:nth-of-type(1) dl::before{
+    background-image: url("../img/lee.png");
+}
+#mentor li:nth-of-type(2) dl::before{
+    background-image: url("../img/lee2.png");
+}
+#mentor li:nth-of-type(3) dl::before{
+    background-image: url("../img/lee.png");
+}
+#mentor li:nth-of-type(4) dl::before{
+    background-image: url("../img/lee2.png");
+}
+#mentor li:nth-of-type(5) dl::before{
+    background-image: url("../img/lee.png");
+}
+
+#mentor dd:nth-of-type(1){
+    font-weight:400;
+    color:#009070;
+}
+#mentor dd:nth-of-type(2){
+    font-size:13px;
+    columns: #333333;;
+}
+
+#section4 img{ 
+    /* display: block; */
+}
+
+#section4 {
+
+}
 #section4 {
     /* background-color: teal; */
     background-image: url("../img/bg1.jpg");
@@ -187,20 +242,17 @@
         padding-right: 20px;
     }
     #section0 {
-        
-    /* border: 1px solid blue ; */
-        height: 600px;
-
+        /* border: 5px solid blue; */
+        height: 500px;
     }
     #section0 video {
-        margin-top:0;
+        margin-top: 0px;
     }
     #section1 h3 {
         /* border: 3px solid blue; */
         height: 200px;
         top: -10px;
     }
-    
     #section1 p:nth-of-type(1) {
         text-align: center;
     }
@@ -208,24 +260,31 @@
         margin-top: 20px;
         text-align: left;
     }
-    #section2 li{
-        width: 30%;
-        margin-right: 5%;
+    #section2 .inner {
+        /* border: 3px solid blue; */
+    }
+    #section2 li {
+        /* border: 2px solid blue; */
+        width: 26%;
+        margin-right: 5.5%;
         margin-bottom: 20px;
     }
-    #section2 li:nth-child(3),
-    #section2 li:nth-child(6) {
-        margin-right: 0;
+    #section2 li:nth-child(1), #section2 li:nth-child(4)  {
+        margin-left: 5.5%;
+    }
+    #section2 li:nth-child(3), #section2 li:nth-child(6) {
+        /* margin-right: 0; */
     }
 }
 /* iPad 768 */
 @media screen and (max-width: 768px){
+    
     #section2::before {
         /* border: 5px solid green; */
         top: -190px;
     }
     #section0 {
-        /* border: 3px solid green; */
+        /* border: 5px solid green; */
         height: 400px;
     }
     #section1 h3 {
@@ -236,6 +295,56 @@
     #section1 p {
         margin-top: 40px;
     }
+    #section2 {
+        
+    }
+    #section2 ol {
+        /* border: 10px solid green; */
+        height: 880px;
+    }
+    #section2 li {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        height: 141px;
+        width: 100%;
+        display: block;
+        /* background-size: cover; */
+        margin-bottom: 0;
+    }
+    .schedule_box {
+        padding-top: 0;
+    }
+    #section2 li:nth-child(1), #section2 li:nth-child(4)  {
+        margin-left: 0;
+    }
+    #section2 li:nth-child(1) {
+        background-image: url("../img/sp_all_v4_m.png");
+        /* background-position-y: -88px; */
+        background-position-y: calc(-88px + -141px * 0);
+    }
+    #section2 li:nth-child(2) {
+        background-image: url("../img/sp_all_v4_m.png");
+        /* -89 + -141 */
+        /* background-position-y: -229px; */
+        background-position-y: calc(-88px + -141px * 1);
+    }
+    #section2 li:nth-child(3) {
+        background-image: url("../img/sp_all_v4_m.png");
+        background-position-y: calc(-88px + -141px * 2);
+    }
+    #section2 li:nth-child(4) {
+        background-image: url("../img/sp_all_v4_m.png");
+        background-position-y: calc(-88px + -141px * 3);
+    }
+    #section2 li:nth-child(5) {
+        background-image: url("../img/sp_all_v4_m.png");
+        background-position-y: calc(-88px + -141px * 4);
+    }
+    #section2 li:nth-child(6) {
+        background-image: url("../img/sp_all_v4_m.png");
+        background-position-y: calc(-88px + -141px * 5);
+    }
 }
 /* iPhone Plus */
 @media screen and (max-width: 414px){
@@ -243,9 +352,7 @@
         /* border: 5px solid yellow; */
         top: -190px;
     }
-    #section0 {
-        height: 400px;
-    }
+
     #section1 h3 {
         /* border: 3px solid yellow; */
         height: 100px;

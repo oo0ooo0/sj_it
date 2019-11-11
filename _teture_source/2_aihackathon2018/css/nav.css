@@ -67,6 +67,9 @@ header #gnb #greenBar {
 }
 
 @media screen and (max-width: 1000px) {
+    #section2 {
+        /* border: 5px solid rgb(214, 52, 165); */
+    }
     header {
         text-align: center;
     }
@@ -191,6 +194,9 @@ header #gnb #greenBar {
     }
     #gnb li:nth-of-type(4) {
         margin-left: 0;
+    }
+    #section2 {
+        /* border: 10px solid aqua; */
     }
 }
 @media screen and (max-width: 768px) {
