@@ -1,4 +1,4 @@
-#section0 {
+#section0 {  
     /* border: 5px solid red; */
     padding: 0;
     height: 700px;
@@ -9,6 +9,9 @@
     margin-top: -150px;
     /* border: 1px solid blue; */
     box-sizing: border-box;
+    width:100%;
+
+
 }
 #section1 {
     /* border: 5px solid blue; */
@@ -23,7 +26,7 @@
     z-index: 1;
 }
 #section1 h3 {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     box-sizing: border-box;
     background-image: url("../img/AIVision.png");
     background-repeat: no-repeat;
@@ -47,13 +50,18 @@
     color: #222;
     /* margin-bottom: 30px; */
 }
+
+
+
+
+
 #section2 {
     background-image: url("../img/bg2.jpg");
     position: relative;
 }
 #section2::before {
     content: "";
-    border: 5px solid red;
+    /* border: 5px solid red; */
     background-image: url("../img/okay.png");
     background-size: contain;
     position: absolute;
@@ -63,7 +71,7 @@
     right: 200px;
 }
 #section2::after {
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     background-image: url("../img/bg_schedule.png");
     /* background-size: contain;
     background-repeat: no-repeat; */
@@ -76,44 +84,101 @@
 }
 #section2 h3 {
     color: white;
+  
+}
+#section2 ol {
+    /* border: 5px solid blue; */
+    height:263px; 
+    /* ol한테 하이를 안주면 납작해 rmfotj li에 맞춰 늘이고 나묜 그 아래  p에 마진이 먹은거지  p는 common에 마진이 공통으로 잡혔지 */
 }
 #section2 li {
     border: 1px solid yellow;
+    /* inner sixe 1200 / 6  */
     width: 168px;
     height: 264px;
     float: left;
     /* display: inline-block; */
-    background-position-y: -350px;
+    margin-right: 38.4px;
+    box-sizing: border-box;
+    /* display: table-cell;
+    vertical-align: middle; */
+    /* background-position-y: -350px; */
+    /* padding-top: 169px; */
+    display: table;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.schedul_box{
+    /* border:3px solid pink; */
+    width: 100%;
+    height: 84px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 156px;
+}
+
+#section2 li:nth-child(1) {
+    /* background-position-y: -614px; */
+    background-image: url("../img/s1.png");
 }
 #section2 li:nth-child(2) {
     /* background-position-y: -614px; */
-    background-position-y: calc(-350px + -264px * 1);
+    background-image: url("../img/s2.png");
 }
 #section2 li:nth-child(3) {
     /* background-position-y: -614px; */
-    background-position-y: calc(-350px + (-264px * 2));
+  
+    background-image: url("../img/s3.png");
 }
 #section2 li:nth-child(4) {
     /* background-position-y: -614px; */
-    background-position-y: calc(-350px + (-264px * 3));
+    background-image: url("../img/s4.png");
 }
 #section2 li:nth-child(5) {
     /* background-position-y: -614px; */
-    background-position-y: calc(-350px + (-264px * 4));
+    background-image: url("../img/s5.png");
 }
 #section2 li:nth-child(6) {
-    background-position-x: -170px;
+    background-image: url("../img/s6.png");
+    margin-right: 0;
 }
-#section2 .description {
-    clear: left;
+
+#section2 .description{
+    clear: both;
+    /* display: block; */
 }
+
+#section2 mark{
+    /* border: 5px solid blue; */
+    padding: 1px 2px 0px 2px;
+    background-color: rgba(0,0,0,0.3);
+    font-weight: normal;
+    color: #05d6a7;
+    line-height: 26px;
+
+}
+
+#section2 strong{
+    display: block;
+    color: white;
+    font-weight: 300;
+    margin-top: 6px;
+}
+
+#section2 p{
+    color:#cccc;
+    font-size: 15px;
+    margin-top: 14px;
+}
+
 #section4 {
     /* background-color: teal; */
     background-image: url("../img/bg1.jpg");
 }
 @media screen and (max-width: 1200px){
     #section2::before {
-        border: 5px solid blue;
+        /* border: 5px solid blue; */
         top: -170px;
         right: 20px;
     }
@@ -122,13 +187,20 @@
         padding-right: 20px;
     }
     #section0 {
+        
+    /* border: 1px solid blue ; */
         height: 600px;
+
+    }
+    #section0 video {
+        margin-top:0;
     }
     #section1 h3 {
-        border: 3px solid blue;
+        /* border: 3px solid blue; */
         height: 200px;
         top: -10px;
     }
+    
     #section1 p:nth-of-type(1) {
         text-align: center;
     }
@@ -136,18 +208,28 @@
         margin-top: 20px;
         text-align: left;
     }
+    #section2 li{
+        width: 30%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+    }
+    #section2 li:nth-child(3),
+    #section2 li:nth-child(6) {
+        margin-right: 0;
+    }
 }
 /* iPad 768 */
 @media screen and (max-width: 768px){
     #section2::before {
-        border: 5px solid green;
+        /* border: 5px solid green; */
         top: -190px;
     }
     #section0 {
-        height: 550px;
+        /* border: 3px solid green; */
+        height: 400px;
     }
     #section1 h3 {
-        border: 3px solid green;
+        /* border: 3px solid green; */
         height: 130px;
         top: 50px;
     }
@@ -158,14 +240,14 @@
 /* iPhone Plus */
 @media screen and (max-width: 414px){
     #section2::before {
-        border: 5px solid yellow;
+        /* border: 5px solid yellow; */
         top: -190px;
     }
     #section0 {
-        height: 500px;
+        height: 400px;
     }
     #section1 h3 {
-        border: 3px solid yellow;
+        /* border: 3px solid yellow; */
         height: 100px;
         top: 70px;
     }
