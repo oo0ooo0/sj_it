@@ -1,12 +1,12 @@
-191021journaling 
+191111journaling 
 •
 •
 •
-dispaly:flex;  
-position:absolute/relative;  
-top/right/left/bottom:0;
-background: content-box radial-gradient(crimson, skyblue);
+Creative Arts & Education || PYORANG
+web design. publishing
+_html, css, imweb
+
 •
 •
 •
-#css #dispaly:flex #position #artisitic #dribbblers #desktop #dribbble #wireframe #webdesignin #adobexd #adobe #project_vurt
+#html#css#imweb#web#webdesign#publishing#wireframe#oo0ooo0_project
