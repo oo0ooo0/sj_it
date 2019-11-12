@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=img, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body, ul{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .inner{
+            border: 3px solid orchid;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+        }
+        
+        nav{
+            border: 3px solid green;
+            width: 100%;
+            /* height: 100px; */
+        }
+        
+        nav .inner{
+            /* width: 100%; */
+
+            height: 100px;
+        }
+
+        header h1{
+            float: left;
+        }
+        #gnb{
+            border: 3px solid blue;
+            float: right;
+        }
+        #gnb>li{
+            display: inline-block;
+        }
+        
+        #slideImg{
+            border: 3px solid red;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="inner">
+            <h1>logo</h1>
+            <ul id="gnb">
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+            </ul>
+        </nav>
+        <div id="slideImg" class="inner">
+            <img src="img/b1.jpg" alt="tree img 1">
+            <img src="img/b2.jpg" alt="tree img 2">
+            <img src="img/b3.jpg" alt="tree img 3">
+        </div>
+    </header>
+
+
+</body>
+
+</html>
