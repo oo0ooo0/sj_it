@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <style>
+    .box{
+        border: 1px solid paleturquoise;
+        width: 200px;
+        height: 200px;
+        border-radius:100px;
+        box-sizing: border-box;
+    }  
+    
+    #box{
+        background-image: url("img/p1.png");
+    }  </style>
+</head>
+<body>
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
+    <div id="box4" class="box"></div>
+    <div id="box5" class="box"></div>
+
+    <script>
+        // jq
+        // console.log($("#box1"));
+
+        // js
+        // console.log(document.getElementById("box1"));
+
+        $("box1").css("background-imge", "url('img/p2.png')");
+
+
+</script>
+</body>
+</html>

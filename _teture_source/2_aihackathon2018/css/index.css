@@ -151,81 +151,56 @@
     color: #ccc;
     margin-top: 5px;
 }
-
-#mentor::before{
-    content: "";
-    border: 2px solid red;
-    display: block;
-    height: 200px;
-    width:100%;
-    margin-top: -70px;
-    background: url("https://m-campaign.naver.com/aihackathon2018/im/bg_section_mento.jpg") no-repeat;
-    background-size: contain;
-   
-}
-#mentor{
-    /* border: 2px solid red; */
-    padding-right: 0;
-    padding-left: 0;
-    /* margin-left: 0; */
-    background-color: #f0f0f0;
-}
 #mentor ul {
-    height: 200px;
+    /* border: 2px solid red; */
+    height: 300px;
 }
 #mentor li {
+    border: 2px solid red;
     float: left;
+    width: 180px;
     margin-right: 75px;
-    width: 175px;
-    background-position-x: center;
+    box-sizing: border-box;
 }
-#mentor li:last-child{
+#mentor li:last-child {
     margin-right: 0;
 }
 #mentor dt {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     font-size: 0;
 }
-#mentor dl::before{
-    content:"";
-    /* border: 1px solid red; */
+#mentor dd:nth-of-type(1) {
+    color: #009070;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#mentor dd:nth-of-type(2) {
+    color: #333;
+    font-size: 13px;
+}
+#mentor dl::before {
+    content: "";
+    /* border: 2px solid red; */
     display: block;
     height: 180px;
-    border-radius:90px;
-    background-color: thistle;
+    border-radius: 90px;
+    /* background-color: thistle; */
+    background-size: cover;
 }
-
-#mentor li:nth-of-type(1) dl::before{
-    background-image: url("../img/lee.png");
+#mentor li:nth-of-type(1) dl::before {
+    background-image: url("../img/p1.png");
 }
-#mentor li:nth-of-type(2) dl::before{
-    background-image: url("../img/lee2.png");
+#mentor li:nth-of-type(2) dl::before {
+    background-image: url("../img/p2.png");
 }
-#mentor li:nth-of-type(3) dl::before{
-    background-image: url("../img/lee.png");
+#mentor li:nth-of-type(3) dl::before {
+    background-image: url("../img/p3.png");
 }
-#mentor li:nth-of-type(4) dl::before{
-    background-image: url("../img/lee2.png");
+#mentor li:nth-of-type(4) dl::before {
+    background-image: url("../img/p4.png");
 }
-#mentor li:nth-of-type(5) dl::before{
-    background-image: url("../img/lee.png");
-}
-
-#mentor dd:nth-of-type(1){
-    font-weight:400;
-    color:#009070;
-}
-#mentor dd:nth-of-type(2){
-    font-size:13px;
-    columns: #333333;;
-}
-
-#section4 img{ 
-    /* display: block; */
-}
-
-#section4 {
-
+#mentor li:nth-of-type(5) dl::before {
+    background-image: url("../img/p5.png");
 }
 #section4 {
     /* background-color: teal; */
