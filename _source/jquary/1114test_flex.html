@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        ul,
+        li,
+        div nav,
+        header,
+        section,
+        aside {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .inner {
+            border: 3px solid violet;
+            width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        header nav .inner {
+            padding: 30px;
+            height: 100px
+        }
+
+        header h1 {
+            float: left;
+        }
+
+        header ul {
+            float: right;
+        }
+
+        header li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+
+        header li:last-child {
+            margin-right: 0px;
+        }
+
+
+
+
+
+
+        /* sectionB************************************************** */
+        /* sectionCr************************************************** */
+
+        #notice,
+        #gallery,
+        #banner {
+            height: 200px;
+            border: 3px solid black;
+            box-sizing: border-box;
+        }
+
+        #sectionC {
+            height: 200px;
+            display: flex;
+        }
+        #notice{
+            flex: 1;
+        }
+        #gallery{
+            flex: 1;
+        }
+        #banner{
+            flex:1;
+        }
+
+        /* sectionDr************************************************** */
+        #sectionD {
+            background-color: thistle;
+            height: 100px;
+            box-sizing: border-box;
+        }
+
+        #sectionD .inner {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #sectionD .logo,
+        #sectionD .copyright,
+        #sectionD .sns {
+            border: 1px solid black;
+            height: 100px;
+        }
+
+        #sectionD .logo{
+            flex:1;
+        }
+        #sectionD .copyright{
+            flex: 4;
+        }
+        #sectionD .sns {
+            flex: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="sectionA">
+        <nav>
+            <div class="inner">
+                <h1>LOGO</h1>
+                <ul>
+                    <li> <a href="#">111</a> </li>
+                    <li> <a href="#">222</a> </li>
+                    <li> <a href="#">333</a> </li>
+                    <li> <a href="#">444</a> </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="sectionB" class="inner">
+
+        <div id="setImg">
+            <img src="img/bb1.png" alt="img1">
+            <img src="img/bb2.png" alt="img2">
+            <img src="img/bb4.png" alt="img3">
+        </div>
+    </div>
+
+    <div id="sectionC" class="inner">
+
+        <section id="notice"> 공지사항</section>
+        <section id="gallery">갤러리</section>
+        <aside id="banner">배너</aside>
+    </div>
+
+
+    <footer id="sectionD">
+        <div class="inner">
+            <div class="logo">logo</div>
+            <address class="copyright">copyright</address>
+            <div class="sns">sns</div>
+        </div>
+    </footer>
+</body>
+
+</html>

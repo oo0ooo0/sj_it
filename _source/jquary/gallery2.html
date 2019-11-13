@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="" content="" initial-scale=1.0>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/gallery2.js"></script>
+    <style>
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .inner {
+            border: 3px solid orchid;
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+
+        }
+
+        nav {
+            background-color: cornflowerblue;
+            width: 100%;
+            /* height: 100px; */
+        }
+
+        nav .inner {
+            height: 100px;
+            padding:10px 30px;
+            box-sizing: border-box;
+        }
+
+        header h1 {
+            float: left;
+        }
+
+        #gnb {
+            /* border: 3px solid blue; */
+            float: right;
+            margin-top: 30px;
+        }
+
+        #gnb>li {
+            display: inline-block;
+            margin-right:10px;
+        }
+
+        #gnb>li:last-child {
+            /* border: 3px solid green; */
+            margin-right:0px;
+        }
+
+        #slideImg{
+            
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+
+        #slideSet{
+            border: 1px solid blue;
+            box-sizing: border-box;
+            width: 100%;
+            transition: 1s;
+        }
+
+/* 
+        #slideSet:hover{
+            transform: translateY(300px);
+        } */
+        
+        #slideImg img{
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+        }
+      
+        #slideImg img:nth-child(1){
+            top:0px;
+        }
+
+        #slideImg img:nth-child(2){
+            top:300px;
+        }
+        #slideImg img:nth-child(3){
+            top:600px;
+        }
+        #slideImg img:nth-child(4){
+            top:900px;
+        }
+        #slideImg img:nth-child(5){
+            top:1200px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="inner">
+                <h1>logo</h1>
+                <ul id="gnb">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="slideImg" class="inner">
+            <div id="slideSet">
+            <img src="img/bb1.png" alt="#img1">
+            <img src="img/bb2.png" alt="#img2">
+            <img src="img/bb3.png" alt="#img3">
+            <img src="img/bb4.png" alt="#img4">
+            <img src="img/bb5.png" alt="#img5">
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
+

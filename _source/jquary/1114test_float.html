@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        ul,
+        li,
+        div nav,
+        header,
+        section,
+        aside,
+        table,
+        tr, td, h1, h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .inner {
+            border: 3px solid violet;
+            width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        header nav .inner {
+            padding: 30px;
+            height: 100px
+        }
+
+        header nav{
+            background-color: thistle;
+
+        }
+
+        header h1 {
+            float: left;
+        }
+
+        header ul {
+            float: right;
+        }
+
+        header li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+
+        header li:last-child {
+            margin-right: 0px;
+        }
+
+
+
+
+
+
+        /* sectionB************************************************** */
+        /* sectionCr************************************************** */
+
+        #notice,
+        #gallery,
+        #banner {
+            height: 200px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            width: 398px;
+            float: left;
+        }
+
+        #sectionC {
+            height: 200px;
+
+        }
+        h2{
+         
+            width: 100px;
+            text-align: center;
+
+        }
+        #notice{
+        border: 3px solid black;
+            text-align: center;
+        }
+
+        #notice tr th{
+            background-color: gray;
+            color: white;
+            font-weight: normal;
+        }
+
+        #notice tr th:first-child,
+        #notice tr td:first-child{
+            width: 40px;
+        }
+        #notice tr th:last-child,
+        #notice tr td:last-child{
+            width: 340px;
+        }
+
+        #gallery{
+        
+        }        
+        #gallery img{
+            float: left;
+            width:110px;
+            height:110px;
+            margin-right: 5px;
+        }
+        #gallery img:first-child{
+            border: 3px solid black;
+            margin-left: 5px;
+        }
+        /* sectionDr************************************************** */
+        #sectionD {
+            background-color: thistle;
+            height: 100px;
+            /* border: 3px solid violet; */
+            box-sizing: border-box;
+
+        }
+
+        #sectionD .logo,
+        #sectionD .copyright,
+        #sectionD .sns {
+            /* border: 1px solid black; */
+            height: 100px;
+            float: left;
+            box-sizing: border-box;
+
+        }
+
+        #sectionD .copyright {
+            width: 792px;
+        }
+
+        #sectionD .sns,
+        #sectionD .logo {
+            width: 200px;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <header id="sectionA">
+        <nav>
+            <div class="inner">
+                <h1>LOGO</h1>
+                <ul>
+                    <li> <a href="#">111</a> </li>
+                    <li> <a href="#">222</a> </li>
+                    <li> <a href="#">333</a> </li>
+                    <li> <a href="#">444</a> </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="sectionB" class="inner">
+
+        <div id="setImg">
+            <img src="img/bb1.png" alt="img1">
+            <img src="img/bb2.png" alt="img2">
+            <img src="img/bb4.png" alt="img3">
+        </div>
+    </div>
+
+    <div id="sectionC" class="inner">
+
+        <section id="notice">
+            <h2>공지사항</h2>
+            <table>
+                <tr>
+                    <th>번호</th>
+                    <th>공지내용</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>공지사항입니다.</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>공지사항입니다.</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>공지사항입니다.</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>공지사항입니다.</td>
+                </tr>
+            </table>
+
+        </section>
+        <section id="gallery">
+                <h2>갤러리</h2>
+                <img src="img/b1.jpg" alt="sectionB gallery img1">
+                <img src="img/b2.jpg" alt="sectionB gallery img2">
+                <img src="img/b3.jpg" alt="sectionB gallery img3">
+            </section>
+        <aside id="banner">
+            <h2>배너</h2>
+        </aside>
+    </div>
+
+
+    <footer id="sectionD">
+        <div class="inner">
+            <div class="logo">logo</div>
+            <address class="copyright">copyright</address>
+            <div class="sns">sns</div>
+        </div>
+    </footer>
+</body>
+
+</html>
