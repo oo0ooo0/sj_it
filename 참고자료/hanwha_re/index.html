@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hye yeon</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400|Roboto:300,400&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/common.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="header" class="k_first">
+        <div>
+            <h1 id="logo"><a href="#"><span class="blind">DKG Holdings</span></a></h1>
+            <ul id="gnb" class="desktop">
+                <li>
+                    <a href="#" class="name">디케이지홀딩스</a>
+                    <ul class="subM">
+                        <li><a href="#">CEO 인사말</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">조직도</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="#">채용안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="name">사업영역</a>
+                    <ul class="subM">
+                        <li><a href="#">개발부문</a></li>
+                        <li><a href="#">마케팅부문</a></li>
+                        <li><a href="#">PM/컨설팅</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="name">포트폴리오</a>
+                    <ul class="subM">
+                        <li><a href="#">포트폴리오</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="name">고객지원</a>
+                    <ul class="subM">
+                        <li><a href="#">회사소개서</a></li>
+                        <li><a href="#">온라인문의</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="menubar">
+                <span class="barTop"></span>
+                <span class="barMiddle"></span>
+                <span class="barBottom"></span>
+            </div>
+            <div id="allMenu">
+                <div>
+                    <div id="bar_wrap">
+                        <div class="menubar">
+                            <span class="barTop"></span>
+                            <span class="barMiddle"></span>
+                            <span class="barBottom"></span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#" class="subject">디케이지홀딩스</a>
+                            <ul>
+                                <li><a href="#">CEO 인사말</a></li>
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="#">채용안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="subject">사업영역</a>
+                            <ul>
+                                <li><a href="#">개발부문</a></li>
+                                <li><a href="#">마케팅부문</a></li>
+                                <li><a href="#">PM/컨설팅</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="subject">포트폴리오</a>
+                            <ul>
+                                <li><a href="#">포트폴리오</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="subject">고객지원</a>
+                            <ul>
+                                <li><a href="#">회사소개서</a></li>
+                                <li><a href="#">온라인문의</a></li>
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scrollDown">
+        <p>Scroll</p>
+        <span><img src="img/icon_scroll.png" alt=""></span>
+    </div>
+    <div id="fullpage">
+        <div id="section0" class="section">
+            <div class="move">
+                <p class="title">
+                    WE WILL MAKE IT HAPPEN
+                </p>
+                <p class="explain">
+                    다양한 분야의 개발사업을 통해<br>
+                    고객만족을 실현하는 최고의 <strong>부동산 개발 전문기업</strong>
+                </p>
+                <p>잠실 푸르지오 월드마크</p>
+            </div>
+        </div>
+        <div id="section1" class="section">
+            <div>
+                <div class="move">
+                    <h2 class="title">BUSINESS</h2>
+                    <p class="explain">
+                        최고의 전문가들이 시작부터 준공까지 참여하여<br>
+                        고객의 모든 요구를 가능하게 만드는 <strong>부동산 개발 전문기업</strong>
+                    </p>
+                </div>
+                <ul id="section1_ul">
+                    <li>
+                        <a href="#">
+                            <div><img src="img/main_sec2_icon1.png"></div>
+                            <p>
+                                <strong>개발부문</strong>
+                                <span>공동주택&주상복합&오피스텔, 도시개발사업, 택지개발지구 주택사업, 복합용도개발사업, 공모사업</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="img/main_sec2_icon2.png"></div>
+                            <p>
+                                <strong>마케팅 부문</strong>
+                                <span>상품분석, 입지 및 분양환경 분석, 마케팅 전략수립</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="img/main_sec2_icon3.png"></div>
+                            <p>
+                                <strong>PM/컨설팅</strong>
+                                <span>사업성검토 및 환경분석, 토지매입, 컨셉 및 상품 기획 등</span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="section2" class="section">
+            <div class="move">
+                <h2 class="title">PORTFOLIO</h2>
+                <p class="explain">
+                    최고의 부동산 개발 전문가들이 진행한<br>
+                    <strong>최고의 결과물</strong>
+                </p>
+                <a href="#" id="view">VIEW MORE</a>
+            </div>
+            <div class="slick">
+                <div class="img">
+                    <a href="#">
+                        <img src="img/o_1dd2f2gso12aqlg9q0p1h1nqfqa.jpg">
+                        <p>범곳대화지구 도시개발사업</p>
+                    </a>
+                </div>
+                <div class="img">
+                    <a href="#">
+                        <img src="img/o_1dd2fmnt71e0e5aaril3qgq2va.jpg">
+                        <p>경기 광주 센트럴푸르지오</p>
+                    </a>
+                </div>
+                <div class="img">
+                    <a href="#">
+                        <img src="img/o_1dd2fl7lq5pa8pf62s1mnk1k05a.jpg">
+                        <p>천호역 한강푸르지오 시티</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="section3" class="section">
+            <div class="move">
+                <h2 class="title">COMMUNITY</h2>
+                <p class="explain">
+                    다양한 경험을 통한 최적의<br>
+                    <strong>개발 방안 제공</strong>
+                </p>
+            </div>
+            <a href="#">회사소개서</a>
+            <a href="#">온라인 문의</a>
+            <a href="#">공지사항</a>
+        </div>
+        <div id="footer" class="section fp-auto-height">
+            <p><a href="#">개인정보취급방침</a></p>
+            <p>㈜디케이지홀딩스 대표 : 강민성<br>주소 : 서울특별시 강남구 테헤란로 447 KB우준타워 8층 &nbsp;TEL. 02-553-7410,7430 &nbsp;FAX. 02-553-7409
+            </p>
+            <p>Copyright © 2019 DKG Holdings All rights reserved.</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js//fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+            navigation: true,
+            navigationTooltips: ['Main', 'Business', 'Portfolio', 'Community', 'none'],
+            showActiveTooltip: true,
+            menu: '#menu'
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        table {
+            width: 750px;
+            border: 1px solid blue;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td,
+        th {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        tr {
+            /* border: 1px solid red; */
+        }
+
+        .pic {
+            width: 120px;
+        }
+
+        .bg {
+            background-color: burlywood;
+        }
+
+        .con {
+            /* height: 300px;  안들어가서 성명에 넣을거예요*/
+            width: 250px;
+        }
+
+        .tdHeight {
+            /* height: 200px;  td에 넣으면 먹어*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>col!!! 세로열에 한번에 스타일 지정할 수 있는 !!</h1>
+    <h3>rowspan</h3>
+
+    <table>
+        <colgroup>
+            <col class="pic">
+            <col class="bg">
+            <col class="con">
+            <col class="bg">
+            <col class="con">
+        </colgroup>
+        <tr>
+
+            <!-- rowspan은 셀 세로병합 -->
+            <th rowspan="3">사진</th>
+            <th class="tdHeight" rowspan="2">성명</th>
+            <td>한글 이광목</td>
+            <th>생년월일</th>
+            <td>20151011</td>
+
+        </tr>
+        <tr>
+            <!-- <td respan=2>사진</td>
+            <th>성명</th> -->
+            <td>영문 이광목</td>
+            <th>휴대폰</th>
+            <td>0100000000</td>
+
+        </tr>
+        <tr>
+            <!-- <td respan=2>사진</td> -->
+            <th>현주소</th>
+            <td>안상시 고잔동</td>
+            <th>이메일</th>
+            <td>00000ooo@nn.com</td>
+
+        </tr>
+    </table>
+
+
+
+
+    <h3>span</h3>
+    <p>rowspan은 세로병합 colspan은 가로병합</p>
+    <table>
+        <tr>
+            <th rowspan="2">1</th>
+            <th colspan="2">2</th>
+        </tr>
+        <tr>
+            <th>a</th>
+            <th>b</th>
+        </tr>
+    </table>
+
+</body>
+
+</html>

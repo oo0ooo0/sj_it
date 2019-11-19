@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function getAvg1(){
+            var kor =30;
+            var eng =40;
+            var avg = (kor +eng)/2;
+            return avg;
+            return kor;   // 얘는 값이 다시 대입이 안되네 
+        }
+        console.log(getAvg1()); 
+
+
+//매개인자가 있는 함수선언
+        function getAvg2(kor, eng){
+            var avg = (kor +eng)/2;
+            return avg;
+            return kor;   // 얘는 값이 다시 대입이 안되네 
+        }
+        console.log(getAvg2(100,50)); 
+        console.log(getAvg2(100,0));    //         console.log(getAvg2(100,50)); 여기서 100 50은 매개인자 
+        
+
+        
+
+
+
+        //매개인자는 중복될수있어
+        function getAvg3(a), b){
+            var avg = (a +b)/2;
+            return avg;
+        }
+    
+
+        console.log(getAvg2(100,50)); 
+        console.log(getAvg2(100,0)); 
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

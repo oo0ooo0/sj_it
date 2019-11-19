@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>LifeLovePeople</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Kim Hye Young" />
+    <meta name="description" content="소개글...잘 써주세요^^" />
+    <meta name="keywords" content="키워드들을 많이 넣어주세요" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lacquer|Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+    <script>
+        $(function () {
+            $(window).resize(function () {
+                //    console.log("윈도우 리사이즈");
+                if ($(window).width() < 900) {
+                    console.log("모바일 모드");
+                    $("nav").css("display", "none");
+                    // 스크롤 막기
+                    $('#menu').on('scroll touchmove mousewheel', function (event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        return false;
+                    });
+                } else {
+                    console.log("데스크탑 모드");
+                    $("nav").css("display", "block");
+                    $("#menu").css("width", "100%");
+                    // 스크롤 풀기
+                    $('#menu').off('scroll touchmove mousewheel');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="desktop">
+        <ul id="menu">
+            <a href="javascript:void(0)" id="closeBtn" class="mobile_inline" onclick="closeNav()">&times;</a>
+            <li data-menuanchor="firstPage"><a href="#firstPage" onclick="closeNav()">About</a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage" onclick="closeNav()">Vision</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage" onclick="closeNav()">Work</a></li>
+            <li data-menuanchor="4thpage"><a href="#4thpage" onclick="closeNav()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="about_logo" class="t_white">
+        <span id="openBtn" class="mobile_inline" onclick="openNav()">&#9776;</span>
+        <h1 id="logo">Kim Hye Young</h1>
+        <p class="t_sub_text desktop">
+            <strong><mark class="mark_job">Publisher / UX Designer</mark></strong><br>
+            <strong class="back_black t_normal display_inline_block margin_b_5">Tel.010-4713-0892</strong><br>
+            <strong class="back_black t_normal display_inline_block margin_b_5"><a class="t_white"
+                    href="mailto:lifelovepeople@gmail.com">Mail.lifelovepeople@gmail.com</a></strong>
+        </p>
+    </div>
+    <script>
+        function openNav() {
+            console.log("open");
+            $("nav").css("display", "block");
+            $("#menu").css("width", "100%");
+            // document.getElementById("menu").style.width = "100%";
+        }
+        function closeNav() {
+            if ($(window).width() < 900) {
+                $("#menu").css("width", "0%");
+                // document.getElementById("menu").style.width = "0%";
+            }
+        }
+    </script>
+
+
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div id="back0" class="back"></div>
+            <h2>About</h2>
+            <div id="about_me" class="t_sub_text">
+                <p>
+                    행복한 강의를 하며, 주어진 인생속에서<br>
+                    감사와 평안으로 살아가는 중입니다.<br>
+                    엔게디캠퍼스를 운영하고 있으며,<br>
+                    엔게디를 통해 사람들이 행복해졌으면 좋겠습니다.<br>
+                    <button id="mouse_over" class="desktop">- mouse over -</button>
+                </p>
+            </div>
+        </div>
+        <script>
+            $("#mouse_over").mouseover(function () {
+                $("#back0").css("filter", "none");
+            });
+        </script>
+
+        <div class="section" id="section1">
+            <div id="back1" class="back"></div>
+            <h2>Vision</h2>
+        </div>
+        <div class="section" id="section2">
+            <h2>Work</h2>
+            <div class="slide" id="slide1">
+                <h3>포트폴리오1 - 부스트캠프</h3>
+            </div>
+            <div class="slide" id="slide2">
+                <h3>포트폴리오2 - thus</h3>
+            </div>
+            <div class="slide" id="slide3">
+                <h3>포트폴리오3 - 네이버 해커톤</h3>
+            </div>
+            <div class="slide" id="slide3">
+                <h3>포트폴리오4 - 한화케미칼 반응형</h3>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <h2>Contact</h2>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+            menu: '#menu',
+            lazyLoad: true
+        });
+    </script>
+
+</body>
+
+</html>

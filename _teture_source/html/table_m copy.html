@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        table {
+            /* border: 1px solid blue; */
+            /* border-collapse: collapse; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); */
+        }
+
+        tr:first-child th {
+            border-top: 1px solid red;
+
+        }
+
+        tr:nth-child(2) {
+            border-top: 3px solid black;
+        }
+        
+        tr:nth-child(2),tr:nth-child(3) {
+            border-bottom: 1px solid violet;
+        }
+
+        #aatable td {
+            width: 500px; 
+            /* white-space: nowrap; */
+            padding: 20px; background-color: none; 
+        }
+
+        
+        #bbtable td {
+            width: 500px; 
+            white-space: nowrap;
+            padding: 20px; background-color: none; 
+        }
+
+        #cctable{
+            table-layout: fixed;
+            width: 500px; 
+
+        }
+        #cctable td {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 20px; background-color: none; 
+        }
+
+        tr:nth-child(2) th:first-child, tr:nth-child(3) th:first-child{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    화이트 스페이스를 준 bbtable은 화이트스페이스가 영역을 끊임없이 확장하는 타노스가 된다.
+    <br><br><br><br><br>
+    <h1>#aatable</h1>
+    <table id="aatable">
+        <tr>
+            <th>구분</th>
+            <th>월요일</th>
+            <th>화요일</td>
+             
+        </tr>
+        <tr>
+            <th>아침</th>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam ipsum perferendis cum earum repudiandae laudantium necessitatibus ex! Amet laboriosam sint, nisi eveniet optio adipisci ullam eligendi libero eius architecto.</td>
+            <td>삼겹살</td>
+           
+        </tr>
+
+    </table>
+
+
+
+    <h1>#bbtable</h1>
+    <table id="bbtable">
+            <tr>
+                <th>구분</th>
+                <th>월요일</th>
+                <th>화요일</td>
+                 
+            </tr>
+            <tr>
+                <th>아침</th>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam ipsum perferendis cum earum repudiandae laudantium necessitatibus ex! Amet laboriosam sint, nisi eveniet optio adipisci ullam eligendi libero eius architecto.</td>
+                <td>삼겹살</td>
+               
+            </tr>
+    
+        </table>
+
+        
+
+        <h1>#cctable</h1>
+    <table id="cctable">
+            <tr>
+                <th>구분</th>
+                <th>월요일</th>
+                <th>화요일</td>
+                 
+            </tr>
+            <tr>
+                <th>아침</th>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam ipsum perferendis cum earum repudiandae laudantium necessitatibus ex! Amet laboriosam sint, nisi eveniet optio adipisci ullam eligendi libero eius architecto.</td>
+                <td>삼겹살</td>
+               
+            </tr>
+    
+        </table>
+</body>
+
+</html>

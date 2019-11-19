@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //선언적 함수 선언 
+        function process(){
+            var kor = 100;
+            var eng =90;
+            var avg = (kor + eng) / 2;
+       
+        }
+
+        process(); //console.log 도 document.write도 안해서 값을 확인 할 수 없지만 값은 존재함
+
+
+
+         //선언적 함수 선언 
+         function process(){
+            var kor = 100;
+            var eng =90;
+            var avg = (kor + eng) / 2;
+            return avg;    //존재하는 값을 return이라는 이름으로 저장해 뒀다가 불러와서 쓴다.
+        }
+
+        console.log(pprocess()); //이렇게 하면 저장되어있던 값이 콘솔에 출력됨
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
