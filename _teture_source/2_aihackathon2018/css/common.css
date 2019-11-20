@@ -93,14 +93,6 @@ em {
     color: white;
     /* text-decoration: underline; */
 }
-
-.btn_detail {
-    background-color: transparent;
-    border: none;
-    color: #5dc3a0;
-    text-decoration: underline;
-}
-
 #apply_btn {
     position: relative;
 }
@@ -108,8 +100,8 @@ em {
     content: "";
     position: absolute;
     width: 0;
-    top: 0px;
-    left: 0px;
+    top: 73px;
+    left: 5px;
     border-top: 8px solid #333;
     border-right: 5px solid transparent;
     border-bottom: 0px solid transparent;
@@ -136,29 +128,14 @@ em {
 }
 /* 초록 바탕에 검정세모그림자 - 비활성버튼*/
 .btn4 {
-   background-color: #63c5a4;
-   position: relative;
-   margin: 10px 0 50px 0;
-   padding: 20px;
-}
-.btn4:hover {
-   background-color: #fff;
-   text-decoration: underline;
-   color:inherit;
-}
-.btn4::after{
-    content: "";
-    position: absolute;
-    width: 0px;
-    top: 81px;
-    left: 0px;
-    border-top: 12px solid #000;
-    border-right: 5px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 310px solid transparent;
-    z-index: 1;
-}
 
+}
+.btn_detail {
+    background-color: transparent;
+    border: none;
+    color: #5dc3a0;
+    text-decoration: underline;
+}
 .inner {
     /* border: 3px solid pink; */
     max-width: 1200px;
