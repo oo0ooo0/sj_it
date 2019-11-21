@@ -35,6 +35,15 @@ p {
     font-size: 21px;
     line-height: 23px;
 }
+.title3 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 23px;
+    color: #333;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
 .description {
     font-size: 15px;
     color: #999;
@@ -47,6 +56,15 @@ p {
     color: #333;
     line-height: 16px;
     margin-top: 5px;
+}
+.description3 {
+    /* border: 2px solid red; */
+    display: block;
+    font-size: 14px;
+    color: #555;
+    line-height: 30px;
+    font-weight: lighter;
+    /* margin-top: 5px; */
 }
 .t_green {
     color: #009070;
@@ -115,12 +133,14 @@ em {
 .btn2 {
     background-color: transparent;
     border-radius: 3px;
+    border: 3px solid #333;
 
 }
 .btn2:hover {
     background-color: #333;
     color: white;
     cursor: pointer;
+    text-decoration: underline;
 }
 /* 초록 바탕에 검정세모그림자 - 활성버튼*/
 .btn3 {
