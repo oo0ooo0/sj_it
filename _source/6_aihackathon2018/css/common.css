@@ -8,7 +8,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, ol, dl, dt, dd {
 }
 .img {
     background-image: url("../img/sp_all_v4.png");
-}
+} 
 .mobile {
     display: none;
 }
