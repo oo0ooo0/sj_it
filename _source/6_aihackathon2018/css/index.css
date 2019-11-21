@@ -46,6 +46,19 @@
     margin-top: 0;
 }
 
+#section1 p:nth-of-type(4) {
+    margin-left: 50px;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes textMotion2 {
+    to{
+        margin-left:0;
+        opacity: 1;
+    }
+}
+
 #section1 strong {
     /* border: 3px solid red; */
     display: inline-block;
@@ -56,7 +69,7 @@
 }
 
 #section2 {
-    background-image: url("../img/bg2.jpg");
+    background-image: url("../img/bg_black.png");
     position: relative;
 }
 
@@ -173,15 +186,36 @@
     margin-top: 5px;
 }
 
+
+
+
+
+#mentor {
+    background-image: url("../img/bg_white.png");
+    position: relative;
+    /* border: 1px solid red; */
+}
+#mentor::after {
+    /* border: 10px solid blue; */
+    background-image: url("../img/bg_mento.png");
+    /* background-size: cover; */
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    height: 130px;
+}
+
 #mentor .gallery {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     /* height: 300px; */
     width: 85%;
     margin: 0 auto;
 }
 
 #mentor li {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* float: left; */
     /* width: 180px; */
     /* margin-right: 75px; */
@@ -244,10 +278,28 @@
 .slick-slide img {
     width: 100%;
 }
-#section4 {
-    /* background-color: teal; */
-    /* background-image: url("../img/bg1.jpg"); */
+#section4::after {
+    /* border: 5px solid blue; */
+    background-image: url("../img/bg_mission.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    content: "";
+    position: absolute;
+    top: -130px;
+    left: 0px;
+    width: 100%;
+    height: 250px;
 }
+#section4 {
+    margin-top:60px;
+    /* border: 10px solid #000; */
+    /* background-color: teal; */
+    /* background-image: url("../img/bg_green.jpg"); */
+    background-image: url("../img/bg_green.png");
+    position: relative;
+}
+
+
 
 #section6 table {
     /* width:580px; */
