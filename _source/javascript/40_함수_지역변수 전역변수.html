@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+   let name = 'jjajja';
+   var age = 10;
+   const gogo= 100;
+
+
+//const gogo=200; // const 중복 ㄴㄴ
+//let name = 'coco';    //let 중복선언 ㄴㄴㄴ  erro
+var age = 20; //var 중복선언  ok
+
+
+//gogo = 300; //값 변경도 ㄴㄴ
+name = 'coco';   //선언없이 값변경은 가능
+age = 30; //선언없이 값변경도 가능
+   
+  
+        
+//-----------------------------------------------------------------------------------------
+
+var kor = 100; //전역변수 
+//                 //어디서든지 값을 가져올수 있어서 주로 맨처음에 선언해준다.
+// function getScore(){
+//     kor = 100;
+//     return kor;
+// }
+
+function getScore1(){
+    var kor1 =40;
+    return kor1; //지역변수 
+}
+
+
+function getScore2(){
+    var kor2 =40;
+    return kor2; //지역변수 
+}
+getScore2();
+
+
+console.log(kor); // 전역변수는     어디서든 쓸수있음
+// console.log(kor1); //정의 되지 않음    
+console.log(kor2); //함수가 실행되어도 지역변수는 함수밖에서 불러 올수 어없음 정의 되지 않음 
+// 지역변수값은 리턴으로 내보내기 
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
