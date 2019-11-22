@@ -45,6 +45,36 @@
 #section1 p {
     margin-top: 0;
 }
+#section1 p:nth-of-type(1) {
+    margin-top: 30px;
+    opacity: 0;
+    /* border: 2px solid red; */
+    animation-name: textMotion1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes textMotion1 {
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+#section1 p:nth-of-type(4) {
+    margin-left: 50px;
+    opacity: 0;
+    /* border: 2px solid red; */
+    /* animation-name: textMotion2; */
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation-delay: 2.5s; */
+}
+@keyframes textMotion2 {
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
 
 #section1 strong {
     /* border: 3px solid red; */
@@ -352,6 +382,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    body {
+        /* border: 3px solid blue; */
+    }
     #section2::before {
         /* border: 5px solid blue; */
         top: -170px;
@@ -436,7 +469,12 @@
         top: 50px;
     }
     #section1 p {
+        /* border: 3px solid green;  */
         margin-top: 40px;
+    }
+    #section1 p:nth-of-type(1) {
+        /* border: 3px solid green; */
+        padding-top: 40px;
     }
     #section2 ol {
         /* border: 10px solid green; */
