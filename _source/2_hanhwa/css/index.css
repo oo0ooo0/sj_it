@@ -1,1 +1,5 @@
-#section1{border: 3px solid #000;}
+#section1{border: 3px solid #000; background-image: url("../img/vis_1_m.jpg");
+    background-size: cover;  
+    background-position-y: center;
+    height: 500px;
+}
