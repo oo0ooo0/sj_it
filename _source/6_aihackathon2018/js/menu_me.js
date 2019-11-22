@@ -120,6 +120,9 @@ $("#gnb li").click(function(){
 
 
 
+$(window
+
+
 
 
 
