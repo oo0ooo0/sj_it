@@ -25,7 +25,7 @@
     <link rel=stylesheet type="text/css" href="css/footer.css">
     <link rel=stylesheet type="text/css" href="css/index.css">
 
-    <!-- slick css -->
+    <!-- slick css ----------------------------------------->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
@@ -34,20 +34,33 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <!-- 메뉴는 동영상 전에 아래에서 불러오기로 함 -->
-    <!-- <script src="js/menu.js"></script>  -->
     <script src="js/slickGallery.js"></script>
     <script src="js/motion.js"></script>
 
 </head>
 
+
+
+
+
+
+
+
+
+
 <body>
     <header>
         <div class="inner">
-            <div id="triger">
-                <span class="triger_span"></span>
-                <span class="triger_span"></span>
-                <span class="triger_span"></span>
+
+
+
+
+
+    <!-- trigger------------------------------------------ -->
+            <div id="trigger">
+                <span class="trigger_span"></span>
+                <span class="trigger_span"></span>
+                <span class="trigger_span"></span>
             </div>
             <h1><a class="img" href="https://www.naver.com/" target="_blank"><span class="blind">NAVER</span></a></h1>
             <h2><a class="img" href="#"><span class="blind">Ai Hackathon 2018</span></a></h2>
@@ -63,8 +76,11 @@
                         target="_blank">Q&A</a></li>
             </ul>
 
-            <!-- 모바일 메뉴------------------------------ -->
-            <!-- <button id="m_gnb_close" class="mobile">&times;</button> -->
+
+
+
+
+    <!-- mobile menu-------------------------------------- -->
             <ul id="mobile_gnb" class="mobile">
                 <li id="m_gnb_close"><a href="#">&times;</a></li>
                 <li ><a href="#section1">Intro</a></li>
@@ -78,16 +94,31 @@
             </ul>
         </div>
     </header>
+
+
+
+
+
+    <!-- header menu animation jq
+        before video ------------------------------------- -->
     <script src="js/menu.js"></script>
 
+
+
+
+
+    <!-- video-------------------------------------------- -->
     <section id="section0">
         <h3 class="blind">Aihackathon2018 movie</h3>
         <video autoplay="autoplay" muted loop="loop">
             <source src="media/video.mp4" type="video/mp4">
-            <!-- <source src="movie.ogg" type="video/ogg"> -->
         </video>
     </section>
 
+
+
+
+    <!-- #section1>AI Vision----------------------------- -->
     <section id="section1">
         <div class="inner">
             <h3><span class="blind">AI Vision</span></h3>
@@ -117,6 +148,11 @@
         </div>
     </section>
 
+
+
+
+
+    <!-- #section2 > Schedule, Award----------------------- -->
     <section id="section2">
         <div class="inner">
             <h3>Schedule</h3>
@@ -148,6 +184,11 @@
         </div>
     </section>
 
+
+
+
+
+    <!-- #section3>Mentor--------------------------------- -->
     <section id="mentor"> 
         <div class="inner">
             <h3>Mentor</h3>
@@ -207,6 +248,11 @@
         </div>
     </section>
 
+
+
+
+
+    <!-- #section4>Mission-------------------------------- -->
     <section id="section4">
         <h3>Mission</h3>
         <dl>
@@ -226,10 +272,20 @@
         <button class="btn btn2">진행방식 및 심사기준</button>
     </section>
 
+
+
+
+
+    <!-- #section5>Registration---------------------------- -->
     <section id="section5">
         <h3>Registration</h3>
     </section>
 
+
+
+
+
+    <!-- #section6>Share----------------------------------- -->
     <section id="section6">
         <h3>Share</h3>
         <div class="inner">
@@ -303,6 +359,11 @@
         </div>
     </section>
 
+
+
+    
+
+    <!-- #section7>FAQ--------------------------- -->
     <section id="section7">
         <div class="inner">
             <h3>FAQ</h3>
@@ -321,6 +382,12 @@
         </div>
     </section>
 
+
+
+
+
+
+    <!-- footer--------------------------------- -->
     <footer>
         <p>NAVERClova</p>
         <ul>
