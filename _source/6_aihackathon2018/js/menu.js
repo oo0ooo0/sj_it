@@ -49,7 +49,7 @@ $(window).resize(function() {
 });
 // --------------------------------------------------------------------
 // 햄버거 버튼 제어
-$("#triger").click(function() {
+$("#trigger").click(function() {
   $("#mobile_gnb").css("width", "170px"); // css transition
   $("body").animate({ right: "170px" }, 500);
 });

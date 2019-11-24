@@ -84,32 +84,32 @@
   // 초록바를 위한 함수 호출
   menubarSetting();
 
-  // triger를 클릭할때
-  document.getElementById("triger").onclick = function() {
+  // trigger를 클릭할때
+  document.getElementById("trigger").onclick = function() {
     if (menuOpen == false) {
       menuOpen = true;
       console.log("클릭 열기");
       document.getElementById("mobile_gnb").style.display = "block";
       document.getElementById("m_gnb_close").style.display = "block";
-      // console.log(document.getElementsByClassName("triger_span"));
-      // console.log(document.getElementsByClassName("triger_span")[0]);
-      // console.log(document.getElementsByClassName("triger_span")[1]);
-      // console.log(document.getElementsByClassName("triger_span")[2]);
-      // document.getElementsByClassName("triger_span")[0].style.backgroundColor = "red";
-      document.getElementsByClassName("triger_span")[0].style.transform =
+      // console.log(document.getElementsByClassName("trigger_span"));
+      // console.log(document.getElementsByClassName("trigger_span")[0]);
+      // console.log(document.getElementsByClassName("trigger_span")[1]);
+      // console.log(document.getElementsByClassName("trigger_span")[2]);
+      // document.getElementsByClassName("trigger_span")[0].style.backgroundColor = "red";
+      document.getElementsByClassName("trigger_span")[0].style.transform =
         "translateY(15px) rotate(45deg)";
-      document.getElementsByClassName("triger_span")[1].style.opacity = "0";
-      document.getElementsByClassName("triger_span")[2].style.transform =
+      document.getElementsByClassName("trigger_span")[1].style.opacity = "0";
+      document.getElementsByClassName("trigger_span")[2].style.transform =
         "translateY(-15px) rotate(-45deg)";
     } else {
       console.log("클릭 닫기");
       menuOpen = false;
       document.getElementById("mobile_gnb").style.display = "none";
       document.getElementById("m_gnb_close").style.display = "none";
-      document.getElementsByClassName("triger_span")[0].style.transform =
+      document.getElementsByClassName("trigger_span")[0].style.transform =
         "translateY(0px) rotate(0deg)";
-      document.getElementsByClassName("triger_span")[1].style.opacity = "1";
-      document.getElementsByClassName("triger_span")[2].style.transform =
+      document.getElementsByClassName("trigger_span")[1].style.opacity = "1";
+      document.getElementsByClassName("trigger_span")[2].style.transform =
         "translateY(0px) rotate(0deg)";
     }
   };
@@ -120,10 +120,10 @@
     document.getElementById("m_gnb_close").style.display = "none";
     // this.style.display = "none";
     // console.log(this);
-    document.getElementsByClassName("triger_span")[0].style.transform =
+    document.getElementsByClassName("trigger_span")[0].style.transform =
       "translateY(0px) rotate(0deg)";
-    document.getElementsByClassName("triger_span")[1].style.opacity = "1";
-    document.getElementsByClassName("triger_span")[2].style.transform =
+    document.getElementsByClassName("trigger_span")[1].style.opacity = "1";
+    document.getElementsByClassName("trigger_span")[2].style.transform =
       "translateY(0px) rotate(0deg)";
   };
   // 윈도우 리사이즈 이벤트
@@ -137,10 +137,10 @@
       document.getElementById("m_gnb_close").style.display = "none";
     } else {
       menuOpen = false;
-      document.getElementsByClassName("triger_span")[0].style.transform =
+      document.getElementsByClassName("trigger_span")[0].style.transform =
         "translateY(0px) rotate(0deg)";
-      document.getElementsByClassName("triger_span")[1].style.opacity = "1";
-      document.getElementsByClassName("triger_span")[2].style.transform =
+      document.getElementsByClassName("trigger_span")[1].style.opacity = "1";
+      document.getElementsByClassName("trigger_span")[2].style.transform =
         "translateY(0px) rotate(0deg)";
     }
   };

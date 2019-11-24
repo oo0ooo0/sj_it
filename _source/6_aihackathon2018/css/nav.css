@@ -97,8 +97,8 @@ header #gnb #greenBar {
         /* border: 1px solid red; */
         margin-left: 20px;
     }
-    /* triger 메뉴 start ------------------------------------------------------------------ */
-    #triger {
+    /* trigger 메뉴 start ------------------------------------------------------------------ */
+    #trigger {
         cursor: pointer;
         /* border: 2px solid blue; */
         width: 40px;
@@ -108,21 +108,21 @@ header #gnb #greenBar {
         margin-left: 0px;
         margin-top: -8px;
     }
-    #triger:hover span {
+    #trigger:hover span {
         background-color: #009070;
     }
     /*
-    #triger:hover span:nth-of-type(1) {
+    #trigger:hover span:nth-of-type(1) {
         transform: translateY(15px) rotate(45deg);      
     }
-    #triger:hover span:nth-of-type(2) {
+    #trigger:hover span:nth-of-type(2) {
         opacity: 0;    
     }
-    #triger:hover span:nth-of-type(3) {
+    #trigger:hover span:nth-of-type(3) {
         transform: translateY(-15px) rotate(-45deg);      
     }
     */
-    #triger span {
+    #trigger span {
         /* border: 1px solid red; */
         display: block;
         height: 4px;
@@ -135,17 +135,17 @@ header #gnb #greenBar {
         /* top: 0;
     left: 0; */
     }
-    #triger span:nth-of-type(1) {
+    #trigger span:nth-of-type(1) {
         top: 0;
         /* transform: rotate(45deg); */
     } 
-    #triger span:nth-of-type(2) {
+    #trigger span:nth-of-type(2) {
         top: 15px;
     }
-    #triger span:nth-of-type(3) {
+    #trigger span:nth-of-type(3) {
         top: 30px;
     }
-    /* triger 메뉴 end ------------------------------------------------------------------ */
+    /* trigger 메뉴 end ------------------------------------------------------------------ */
 
     /* 모바일 메뉴 start ------------------------------------------------------------------ */
     #m_gnb_close {
@@ -237,7 +237,7 @@ header #gnb #greenBar {
     #gnb li:nth-of-type(4) {
         margin-left: 16px;
     }
-    #triger {
+    #trigger {
         /* border: 3px solid red; */
         margin-left: 15px;
     }
@@ -253,7 +253,7 @@ header #gnb #greenBar {
     h1 {
         display: none;
     }
-    #triger {
+    #trigger {
         margin-left: 15px;
     }
     header #gnb li:nth-of-type(3) {

@@ -143,7 +143,7 @@ $(window
 //***** mobile menu open && close
 //***** w3scool Curtain Menu
  
-$("#triger").click(function(){
+$("#trigger").click(function(){
     $("#mobile_gnb").css("width","170px");
 
 });

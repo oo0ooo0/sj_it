@@ -5,7 +5,7 @@ var menuNum = 7;
 // --------------------------------------------------------------------
 
 
-$("#triger").click(function() {
+$("#trigger").click(function() {
   $("#mobile_gnb").css("width", "170px"); // css transition
   $("body").animate({ right: "170px" }, 500);
   // $("body").css("right", "170px"); // css transition
