@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>코드변경 함수</title>
+    
+    <style>
+        h1 {
+            /* color: blue; */
+        }
+        h1:hover {
+            color: blue;  
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">코드변경 함수 eval()</h1>
+    <h2 id="title2">안녕하세요.</h2>
+    <script>
+        // console.log(document.getElementById("title"));
+        // document.getElementById("title").style.color = "blue";
+        var mytitle = document.getElementById("title");
+        console.log(mytitle);
+        mytitle.onmouseover = function(){
+            mytitle.style.color = "red";
+        }
+        console.log("title2");
+        console.log(document.getElementById("title2"));
+        console.log(eval("title2"));
+        eval("title2").style.color = "pink";
+    </script>
+</body>
+</html>

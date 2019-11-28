@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 전역 변수
+        var num1 = 17;
+        // let num1 = 15; // 변수 중복 에러
+        console.log(num1);
+        
+        {
+            console.log("{}");
+            // var num1 = 15; // 전역 변수(var {} 지역변수 선언 안됨)
+            let num1 = 15; //지역 변수(let {} 지역변수 선언 됨)
+            console.log("{}: "+ num1);
+        }
+        console.log(num1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

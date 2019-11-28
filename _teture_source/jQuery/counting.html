@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+    <h1 id="text1">box</h1>
+    <h1 id="text2">box</h1>
+    <h1 id="text3">box</h1>
+    <script>
+        function myCount(target, countNum) {
+            var count = 0;
+            var myCounting = setInterval(function () {
+                count++;
+                if (count == countNum) {
+                    clearInterval(myCounting);
+                }
+                target.text(count);
+            }, 100);
+        }
+        myCount($("#text1"), 15);
+        myCount($("#text2"), 30);
+        myCount($("#text3"), 45);
+    </script>
+</body>
+
+</html>

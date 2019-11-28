@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>표 만들기</title>
+    <style>
+        table {
+            /* border: 2px solid blue; */
+            border-collapse: collapse;
+        }
+
+        tr {
+            /* border: 2px solid red; */
+        }
+
+        th, td {
+            border-bottom: 2px solid #333;
+            padding: 20px;
+        }
+        th {
+            background-color: pink;
+        }
+        tr:first-child th {
+            border-top: 2px solid black;
+        }
+        tr:last-child th,  tr:last-child td {
+            border-bottom: 2px solid black;
+        }
+        tr th:first-child {
+            /* border-left: 1px solid red; */
+            border-left: none;
+        }
+        tr th:last-child, tr td:last-child {
+            /* border-right: 1px solid red; */
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>구분</th>
+            <th>월요일</th>
+            <th>화요일</th>
+            <th>수요일</th>
+            <th>목요일</th>
+            <th>금요일</th>
+        </tr>
+        <tr>
+            <th>아침</th>
+            <td>불고기</td>
+            <td>삼겹살</td>
+            <td>스테이크</td>
+            <td>오리고기</td>
+            <td>닭볶음탕</td>
+        </tr>
+        <tr>
+            <th>점심</th>
+            <td>불고기</td>
+            <td>삼겹살</td>
+            <td>스테이크</td>
+            <td>오리고기</td>
+            <td>닭볶음탕</td>
+        </tr>
+        <tr>
+            <th>저녁</th>
+            <td>불고기</td>
+            <td>삼겹살</td>
+            <td>스테이크</td>
+            <td>오리고기</td>
+            <td>닭볶음탕</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popUp.js"></script>
+    <style>
+        .inner {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .inner_grid {
+            /* border: 5px solid red; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-gap: 1rem; */
+            grid-gap: 30px;
+            /* display: flex; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+        }
+
+        #notice,
+        #gallery,
+        #banner {
+            /* border: 5px solid blue;  */
+            /* float: left; */
+            /* flex: 1; */
+            /* width: 380px; */
+            /* box-sizing: border-box; */
+        }
+
+        #gallery {
+            /* margin: 0 20px; */
+            /* margin: 0 30px; */
+        }
+
+        h2 {
+            border-bottom: 2px solid crimson;
+            color: crimson;
+            font-size: 18px;
+            height: 50px;
+            margin: 0;
+            box-sizing: border-box;
+            line-height: 60px;
+            margin-bottom: 10px;
+        }
+
+        #notice table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%;
+            height: 132px;
+        }
+
+        #notice th,
+        td {
+            border-bottom: 1px solid #333;
+        }
+
+        #notice th {
+            width: 50px;
+        }
+
+        #notice td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: crimson;
+        }
+
+        #popUp {
+            display: none;
+            border: 4px solid black;
+            background-color: burlywood;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 500px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -200px;
+            margin-left: -250px;
+        }
+
+        #popUp_close {
+            cursor: pointer;
+            margin-top: 150px;
+            margin-left: 400px;
+        }
+
+        footer li {
+            /* border: 2px solid red; */
+            display: inline-block;
+        }
+
+        footer li a {
+            /* border: 2px solid blue; */
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-image: url("img/icons_new2.png");
+        }
+
+        footer li a:hover {
+            background-position-y: -30px;
+        }
+
+        footer li:nth-child(2) a {
+            background-position-x: -30px;
+        }
+
+        footer li:last-child a {
+            background-position-x: -60px;
+        }
+
+        .blind {
+            font-size: 0;
+        }
+
+        #gallery a {
+            border: 1px solid #333;
+            /* display: inline-block; */
+            overflow: hidden;
+        }
+
+        #gallery a img {
+            transition: transform 0.5s;
+            display: block;
+        }
+
+        #gallery a:hover img {
+            /* filter: grayscale(100%); */
+            filter: contrast(120%);
+            transform: scale(1.1);
+        }
+
+        #gallery a:nth-of-type(1) {
+            /* border: 1px solid red; */
+            /* margin-right: 15px; */
+            float: left;
+        }
+
+        #gallery a:nth-of-type(2) {
+            /* border: 1px solid red; */
+            /* margin-right: 15px; */
+            float: right;
+        }
+
+        #banner a {
+            border: 1px solid #333;
+            display: block;
+        }
+
+        #banner a img {
+            display: block;
+        }
+
+        #banner a:hover img {
+            filter: contrast(120%);
+        }
+
+        #banner a:hover,
+        #gallery a:hover {
+            border: 1px solid crimson;
+        }
+
+        footer {
+            border-top: 2px solid crimson;
+            margin-top: 15px;
+        }
+
+        #footer_logo {
+            border: 1px solid red;
+            background-image: url("img/logo_sulwhasoo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            width: 170px;
+            height: 40px;
+            /* filter: grayscale(100%); */
+            opacity: 0.7;
+            float: left;
+            /* margin-top: 16px; */
+        }
+        #copyright {
+            border: 1px solid blue;
+            /* float: left; */
+            text-align: center;
+        }
+        #sns {
+            border: 1px solid green;
+            float: right;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner inner_grid">
+        <section id="notice">
+            <h2>공지사항</h2>
+            <table>
+                <tr>
+                    <th>1</th>
+                    <td><a href="#" id="popUp_open">설화수, ‘윤조에센스’ 대용량 리미티드 에디션 출시</a></td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td><a href="#">설화수 가정의 화목 소망하는 ‘봉황 컬렉션’ 출시</a></td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td><a href="#">설화수, 진주빛 광채 피부 선사하는 ‘자정 브라이트닝 쿠션’ 출시</a></td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td><a href="#">설화수, 글로벌 사회공헌 캠페인 ‘BEAUTY FROM YOUR CULTURE(뷰티 프롬 유어 컬처)’ 전개</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="gallery">
+            <h2>갤러리</h2>
+            <a href="#"><img src="img/gallery1.jpg" alt="설화수 화장품을 사용하는 여인"></a>
+            <a href="#"><img src="img/gallery2.jpg" alt="설화수 제품을 들고 있는 여인"></a>
+        </section>
+
+        <section id="banner">
+            <h2>배너</h2>
+            <a href="#"><img src="img/banner.jpg"></a>
+        </section>
+    </div>
+
+    <section id="popUp">
+        <h2>Title</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, blanditiis? Alias blanditiis numquam esse natus
+            modi repudiandae aut ipsa, hic molestias. Et optio expedita sunt itaque, distinctio corporis delectus
+            sapiente!</p>
+        <button id="popUp_close">닫기</button>
+    </section>
+    <footer>
+        <div class="inner">
+            <a id="footer_logo" href="#"><span class="blind">설화수</span></a>
+            <ul id="sns">
+                <li><a href="#"><span class="blind">facebook</span></a></li>
+                <li><a href="#"><span class="blind">youtube</span></a></li>
+                <li><a href="#"><span class="blind">instargram</span></a></li>
+            </ul>
+            <p id="copyright">© Copyright ...</p>
+        </div>
+    </footer>
+</body>
+
+</html>

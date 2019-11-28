@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이력서 만들기</title>
+    <style>
+        table {
+            border: 3px solid red;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th,td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .pic {
+            width: 120px;
+            color: red;
+            background-color: cadetblue;
+        }
+        .bg {
+            background-color: burlywood;
+        }
+        .content {
+            /* height: 100px; */
+            width: 250px;
+        }
+        .tdHeight {
+            /* height: 200px; */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col class="pic">
+            <col class="bg">
+            <col class="content">
+            <col class="bg">
+            <col class="content">
+        </colgroup>
+        <tr>
+            <th rowspan="3">사진</th>
+            <th rowspan="2" class="tdHeight">성명</th>
+            <td>(한글) 김혜영</td>
+            <th>생년월일</th>
+            <td>1975.4.11</td>
+        </tr>
+        <tr>
+            <!-- <td>사진</td> -->
+            <!-- <th>성명</th> -->
+            <td>(영문) Kim Hye Young</td>
+            <th>휴대폰</th>
+            <td>010-4713-0892</td>
+        </tr>
+        <tr>
+            <!-- <td>사진</td> -->
+            <th>현주소</th>
+            <td>서울시 은평구 .... </td>
+            <th>이메일</th>
+            <td>lifelovepeople@gmail.com</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    #container{
-        width: 500px;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        /* grid-gap: 20px; */
-        /* grid-gap: 1rem; */
-        grid-auto-rows: 150px;
-    }
-
-    #container>div{ 
-        border: 1px solid #000;
-        background-color: palegreen;
-        text-align: center;
-        font-size: 30px;    }
+        #container {
+            /* border: 5px solid red; */
+            width: 500px;
+            display: grid;
+            /* grid-template-columns: 30% 30% 40%; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: repeat(2, 250px); */
+            /* grid-template-columns: 200px 1fr 1fr 1fr; */
+               grid-template-columns: repeat(3, 1fr);
+               /* grid-gap: 20px; */
+               grid-gap: 2rem;
+               /* grid-auto-rows: 50px; */
+               grid-auto-rows: minmax(50px, auto);
+               /* justify-items: center; */
+               align-items: flex-end;
+               
+        }
+        #container>div {
+            border: 2px solid black;
+            background-color: burlywood;
+            text-align: center;
+            /* font-size: 30px; */
+            /* line-height: 150px; */
+            /* width: 33.333333333333333%; */
+            /* float: left; */
+            /* height: 50px; */
+            /* box-sizing:border-box; */
+        }
     </style>
 </head>
+
 <body>
-    
-
-    #container{
-        width: 500px;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 1rem;
-    }
-
-    #container>div{ 
-        /* border: 1px solid #000; */
-        background-color: palegreen;
-        text-align: center;
-        font-size: 30px;    }
-
-
     <div id="container">
-        <div>1 <p>text</p><p>text</p><p>text</p><p>text</p><p>text</p> </div>
+        <div>1<p>text</p><p>text</p></div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
@@ -49,7 +52,8 @@
         <div>7</div>
         <div>8</div>
         <div>9</div>
-        <div>10</div>
+        <!-- <div>10</div> -->
     </div>
 </body>
+
 </html>
