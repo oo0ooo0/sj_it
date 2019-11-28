@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>사용자 정의함수 - 선언적 함수, 익명함수, 즉시실행함수</title>
+    <script>
+        // 선언적 함수 선언 - function으로 함수 선언 방법
+        myFunction1();
+        function myFunction1(){
+            console.log("선언적 함수");
+        }
+        myFunction1(); // 선언적 함수 호출
+
+        // 익명 함수 선언
+        // myFunction2(); 에러
+        var myFunction2 = function(){
+            console.log("익명 함수");
+        }
+        myFunction2(); // 익명 함수 호출
+
+        // 즉시 실행 함수 선언 1 ()()
+        var myFunction3 = (function(){
+            console.log("즉시실행함수1");
+        })();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

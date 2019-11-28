@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>객체 선언</title>
+    <script>
+        var p_name = "홍길동"; // 변수 선언
+        var num = 10;
+        console.log(p_name);
+        
+        // 객체 선언, 속성 할당
+        var obj1 = { objName:"홍길동", age:20, height:180 };
+        console.log(obj1);
+
+        console.log("num 타입: " + typeof(num));
+        console.log("p_name 타입: " + typeof(p_name));
+        console.log("obj1 타입: " + typeof(obj1));
+        
+        // 객체의 속성 알아보자
+        // 객체.속성
+        console.log(obj1.objName);
+        console.log(obj1.age);
+        console.log(obj1.height);
+
+        // 객체 생성, 속성 할당
+        var obj2 = {
+            objName: "손오공",
+            age: 16,
+            height: 180,
+            printOut: function(weather){ // 메서드 선언(매개인자)
+                if(weather == "비"){
+                    document.write("비가오니, 손오공 커피를 마신다.");
+                } else if(weather == "눈"){
+                    document.write("눈이 오니, 손오공 춤을 춘다.");
+                }
+            }
+        }
+        console.log(obj2);
+        // 객체.속성
+        console.log(obj2.objName);
+        //객체.메서드(매개인자);
+        obj2.printOut("눈");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

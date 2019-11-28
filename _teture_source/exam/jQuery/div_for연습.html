@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 100px;
+            box-sizing: border-box;
+            background-size: cover;
+        }
+        /*
+        #box1 {
+            background-image: url("img/p1.png");
+        }
+        #box2 {
+            background-image: url("img/p2.png");
+        }
+        #box3 {
+            background-image: url("img/p3.png");
+        }
+        #box4 {
+            background-image: url("img/p4.png");
+        }
+        #box5 {
+            background-image: url("img/p5.png");
+        }*/
+    </style>
+</head>
+<body>
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
+    <div id="box4" class="box"></div>
+    <div id="box5" class="box"></div>
+
+    <script>
+        // console.log($("#box1"));
+        // console.log(document.getElementById("box1"));
+        //console.log("#box1");
+        //console.log("#box"+1);
+        console.log("url('img/p1.png')");
+        console.log("url('img/p" + 1 + ".png')");
+        
+        $("#box1").css("background-image", "url('img/p1.png')");
+        $("#box"+1).css("background-image", "url('img/p" + 1 + ".png')");
+
+
+        $("#box2").css("background-image", "url('img/p2.png')");
+        $("#box3").css("background-image", "url('img/p3.png')");
+        $("#box4").css("background-image", "url('img/p4.png')");
+        $("#box5").css("background-image", "url('img/p5.png')");
+    </script>
+</body>
+</html>

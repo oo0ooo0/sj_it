@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>배열</title>
+    <script>
+        var num = 10;
+        // console.log(num);
+        // 데이터타입 typeof() 함수
+        // console.log(typeof(num));
+        var eye1 = 1.5;
+        var eye2 = 1.0;
+        // console.log("나의 시력은 왼쪽은 "+ eye1 + ", 오른쪽은 "+ eye2 +" 입니다.");
+
+        var kor = 95;
+        var eng = 80;
+        var math = 60;
+        // console.log("국어점수: " + kor + " / 영어점수: " + eng + " / 수학점수: " + math);
+
+        // 배열(Array): 번호(index)와 번호에 대응하는 데이터들로 이루어진 자료 구조를 나타낸다
+        // 배열 선언, 생성 
+        var myArray = [95, 80, 60];
+        // 변수 선언과 할당
+        var num1 = 21;
+        // 변수 선언
+        var num2;
+        // console.log(typeof(myArray)); // object
+        // console.log(myArray);
+        // console.log(myArray[0]);
+        // console.log(myArray[3]);
+        // console.log(myArray.length);
+        // console.log("국어점수: " + myArray[0] + " / 영어점수: " + myArray[1] + " / 수학점수: " + myArray[2]);
+    </script>
+    <style>
+        #gnb {
+            border: 5px solid green;
+        }
+        #gnb li {
+            border: 5px solid black;
+        }
+        #gnb li a { 
+            border: 3px solid red;
+            padding: 30px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>배열 배우기</h1>
+    <ul id="gnb">
+        <li class="menu"><a href="#">menu1</a></li>
+        <li class="menu"><a href="#">menu2</a></li>
+        <li class="menu"><a href="#">menu3</a></li>
+    </ul>
+    <script src="../jQuery/js/jquery-3.4.1.js"></script>
+    <script>
+        // console.log("#gnb");
+        // console.log($("#gnb"));
+        // console.log($("#gnb").children());
+        // console.log($("#gnb").children()[0]);
+        // console.log($("#gnb").children()[2]);
+        // console.log("#gnb의 자식의 자식------------------");
+        // console.log($("#gnb").children().children());
+        console.log($("#gnb").children().children()[2]);
+        // console.log($($("#gnb").children()[2]).children());
+        $($($("#gnb").children()[2]).children()).css("color", "green");
+        // $($("#gnb").children().children()[2]).css("color", "red");
+        $("h1").css("color", "red");
+        // $("#gnb").children()[2]
+        // 제이쿼리 문법 형식
+        // $("요소").css("속성", "속성값");
+        // $("태그").css("속성", "속성값");
+        // $("#ID선택자").css("속성", "속성값");
+        // $(".클래스선택자").css("속성", "속성값");
+        // $("#gnb").children()[2].css("color", "red");
+        // $($("#gnb").children()[2]).css("background-color", "orange");
+    </script>
+</body>
+</html>

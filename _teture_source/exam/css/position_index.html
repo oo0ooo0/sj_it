@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 3px solid black;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+           
+        }
+        #box1 {
+            background-image: linear-gradient(120deg, red, pink);
+            position: absolute;
+            left: 60px;
+            top: 60px;
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            box-sizing: border-box;
+            z-index: 1;
+        }
+        #box2 {
+            background-image: linear-gradient(120deg, yellow, green);
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            width: 150px;
+            height: 150px;
+        }
+        #box3 {
+            background-image: linear-gradient(120deg, blue, aqua);
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 100px;
+            height: 100px;
+            
+        }
+        .normal {
+            border: 3px solid green;
+            background-color: cadetblue;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            z-index: 2;
+        }
+        #normal2 {
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="normal">
+        평민<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque alias iste mollitia unde fuga doloremque perferendis delectus, necessitatibus possimus consequatur tenetur atque quisquam placeat pariatur esse ipsam voluptas dolores!
+    </div>
+    <div id="normal2">ajfkldjakdlfjalkdfjalkdfjlajfkdl</div>
+</body>
+</html>

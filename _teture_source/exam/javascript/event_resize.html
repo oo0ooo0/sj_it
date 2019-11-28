@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // object.onresize = function(){myScript};
+        window.onresize = function(){
+            console.log("윈도우 사이즈가 변경되었군요!");
+            console.log(window.innerWidth);
+            if(window.innerWidth > 1000){
+                document.getElementById("box").style.backgroundColor = "blue";
+            } else {
+                document.getElementById("box").style.backgroundColor = "yellow";
+            }
+        }
+    </script>
+    <style>
+        #box {
+            background-color: yellow;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>윈도우 리사이즈 이벤트</h1>
+    <div id="box">box</div>
+</body>
+</html>

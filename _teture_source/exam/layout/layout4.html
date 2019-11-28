@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #container {
+            width: 1100px;
+            border: 3px solid red;
+            margin: 0 auto;
+
+        }
+
+        header {
+            border: 1px solid blue;
+            margin: 0 20px;
+        }
+
+        nav {
+            border: 1px solid green;
+            height: 100px;
+        }
+
+        h1 {
+            border: 1px solid black;
+            float: left;
+            margin-top: 40px;
+        }
+
+        ul {
+            border: 1px solid palevioletred;
+            float: right;
+            margin-top: 50px;
+        }
+
+        li {
+            border: 1px solid yellowgreen;
+            display: inline-block;
+        }
+
+        #section1 {
+            background-color: teal;
+            height: 300px;
+        }
+
+        #section2 {
+            /* border: 3px solid red; */
+            height: 200px;
+            margin-top: 30px;
+        }
+
+        #section2 article {
+            height: 200px;
+            float: left;
+            box-sizing: border-box;
+            border: 3px solid black;
+        }
+
+        #section2 article:first-child {
+            width: 520px;
+            margin: 0 20px;
+        }
+
+        #section2 article:last-child {
+            width: 520px;
+            margin-right: 20px;
+        }
+
+        #section3 {
+            /* border: 5px solid green; */
+            height: 350px;
+            margin-top: 30px;
+        }
+
+        #section3>div {
+            /* border: 2px solid blue; */
+            /* background-color: aqua; */
+            float: left;
+            width: 250px;
+            height: 350px;
+            margin-left: 20px;
+            box-sizing: border-box;
+        }
+        #section3 .people {
+            /* border: 2px solid red; */
+            border-radius: 125px;
+            width: 250px;
+            height: 250px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        #section3 .people img {
+            height: 100%;
+        }
+        #section3 p {
+            text-align: center;
+        }
+        footer {
+            border: 3px solid blue;
+            background-color: gray;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <h1>logo</h1>
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="section1">이미지</section>
+
+        <section id="section2">
+            <article>내용1</article>
+            <article>내용2</article>
+        </section>
+
+        <section id="section3">
+            <div>
+                <div class="people"><img src="img/dog.jpg" alt="불독이미지"></div>
+                <p>홍길동<br>프로젝트 매니저<br>서울 본사</p>
+            </div>
+            <div>
+                <div class="people"><img src="img/dog.jpg" alt="불독이미지"></div>
+                <p>홍길동<br>프로젝트 매니저<br>서울 본사</p>
+            </div>
+            <div>
+                <div class="people"><img src="img/dog.jpg" alt="불독이미지"></div>
+                <p>홍길동<br>프로젝트 매니저<br>서울 본사</p>
+            </div>
+            <div>
+                <div class="people"><img src="img/dog.jpg" alt="불독이미지"></div>
+                <p>홍길동<br>프로젝트 매니저<br>서울 본사</p>
+            </div>
+        </section>
+
+        <footer>
+            copyright
+            <address>기본 주소 정보</address>
+        </footer>
+    </div>
+</body>
+
+</html>

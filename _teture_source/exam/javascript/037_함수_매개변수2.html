@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 매개인자가 있는 함수 선언
+        function exam(name, h, c, j) {
+            var comment;
+            // A && B && C - A, B , C 모두 참이어야 참
+            if(h>=60 && c>=60 && j>=60){
+                comment = "패스입니다.";
+            } else {
+                comment = "재응시하세요.";
+            }
+            return name + "님"+ comment +"점수: html: " + h + " css: " + c + " javascript: " + j;
+        }
+        // 함수 호출 - 매개인자를 전달
+        console.log(exam("홍길동", 100, 90, 70));
+        console.log(exam("이시온", 90, 50, 80));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

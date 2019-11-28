@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if 조건문</title>
+    <script>
+        var math = 61;
+        var english = 70;
+        var science = 70;
+
+        var cutline = 60;
+        var total = math + english + science
+        var average = total / 3;
+        // 평균
+        document.write("총점: "+ total + "<br>");
+        document.write("세과목 평균: "+ average + "<br>");
+
+        if(math < cutline || english < cutline || science < cutline){
+            document.write("불합격");
+        } else if(average > 80){
+            document.write("평균이 80점 이상입니다.");
+        } else {
+            document.write("평균이 80점 미만입니다.");
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

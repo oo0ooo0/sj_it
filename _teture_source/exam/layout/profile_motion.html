@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function(){
+                // console.log("scroll");
+                if($(window).scrollTop() >= 130){
+                    $("#bar1").css("animation-name", "bar1Motion");
+                    $("#bar2").css("animation-name", "bar2Motion");
+                    $("#bar3").css("animation-name", "bar3Motion");
+                    $("#bar4").css("animation-name", "bar4Motion");
+                } else {
+                    $("#bar1").css("animation-name", "none");
+                    $("#bar2").css("animation-name", "none");
+                    $("#bar3").css("animation-name", "none");
+                    $("#bar4").css("animation-name", "none");
+                }
+            });
+
+        });
+    </script>
+    <style>
+        body {
+            height: 3000px;
+        }
+        .blind {
+            font-size: 0;
+        }
+
+        li {
+            list-style: none;
+            border: 3px solid blue;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .text {
+            /* border: 2px solid green; */
+            /* display: inline-block; */
+            width: 100px;
+            box-sizing: border-box;
+            text-align: right;
+            margin-right: 10px;
+            flex: 1;
+        }
+
+        .bar {
+            /* border: 2px solid red; */
+            /* display: inline-block; */
+            box-sizing: border-box;
+            font-size: 0;
+            height: 10px;
+            background-color: gray;
+            flex: 2;
+            /* width: 100px; */
+            position: relative;
+            /* z-index: 2; */
+        }
+
+        .redbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: red;
+            height: 10px;
+            /* width: 100%; */
+        }
+
+        #bar1 {
+            width: 0;
+            /* animation-name: bar1Motion; */
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes bar1Motion {
+            from {
+                width: 0; 
+            }
+            to {
+                width: 100%;
+            }
+        }
+        #bar2 {
+            width: 0;
+            /* animation-name: bar2Motion; */
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+        }
+        @keyframes bar2Motion {
+            from {
+                width: 0; 
+            }
+            to {
+                width: 90%;
+            }
+        }
+        #bar3 {
+            width: 0;
+            /* animation-name: bar3Motion; */
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+        @keyframes bar3Motion {
+            from {
+                width: 0; 
+            }
+            to {
+                width: 80%;
+            }
+        }
+        #bar4 {
+            width: 0;
+            /* animation-name: bar4Motion; */
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 1.5s;
+        }
+        @keyframes bar4Motion {
+            from {
+                width: 0; 
+            }
+            to {
+                width: 85%;
+            }
+        }
+        #section1 {
+            height: 1200px;
+            background-color:lightblue;
+        }
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="section1">
+
+    </section>
+    <h2>기술력<span class="blind">(단위 100% 기준)</span></h2>
+    <ul id="profile">
+        <li>
+            <span class="text">Html</span>
+            <span class="bar">100<span id="bar1" class="redbar"></span></span>
+        </li>
+        <li>
+            <span class="text">Css</span>
+            <span class="bar">90<span id="bar2" class="redbar"></span></span>
+        </li>
+        <li>
+            <span class="text">Javascript</span>
+            <span class="bar">80<span id="bar3" class="redbar"></span></span>
+        </li>
+        <li>
+            <span class="text">jQuery</span>
+            <span class="bar">85<span id="bar4" class="redbar"></span></span>
+        </li>
+    </ul>
+</body>
+
+</html>

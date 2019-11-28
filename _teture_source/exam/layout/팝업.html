@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <style>
+        #popUp {
+            border: 3px solid black;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a id="popUpOpen" href="#">팝업 열기</a>
+    <div id="popUp">
+        팝업창
+        <button>닫기</button>
+    </div>
+    
+    <script>
+        $("#popUpOpen").click(function(){
+            $("#popUp").css("display", "block");
+        });
+    </script>
+</body>
+
+</html>

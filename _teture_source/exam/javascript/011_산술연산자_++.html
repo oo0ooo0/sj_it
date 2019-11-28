@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // ++ 선치증가연산자, 후치증가연산자
+        var count = 0;
+        // var result;
+        // console.log(count++);
+        // console.log(++count);
+        console.log(count);
+        var timer = setInterval(function () {
+            count++;
+            console.log(count);
+            if(count == 5){
+                console.log("end");
+                clearInterval(timer);
+            }
+        }, 1000);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

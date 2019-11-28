@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <style>
+        #box {
+            border: 3px solid black;
+            height: 200px;
+            width: 200px;
+            background-color: burlywood;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="button">button</button>
+    <div id="box">box</div>
+    <script>
+        // 순수한 자바스크립트
+        document.getElementById("button").onclick = function () {
+            // document.getElementById("box").style.display = "none";
+        }
+        // 제이쿼리
+        $("#button").on("click", function(){
+            // $("#box").css("display", "none");
+            $("#box").hide();
+        });
+    </script>
+</body>
+
+</html>

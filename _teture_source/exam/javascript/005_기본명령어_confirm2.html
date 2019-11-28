@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var result = window.confirm("정말 삭제하겠습니까?");
+        console.log(result); // 확인: true 취소: false
+        if(result){
+            console.log("삭제 되었습니다.");
+            document.write("삭제 되었습니다.");
+        } else {
+            console.log("취소 되었습니다.");
+            document.write("취소 되었습니다.");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

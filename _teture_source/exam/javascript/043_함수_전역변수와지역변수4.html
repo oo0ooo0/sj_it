@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // var {} 안에서는 지역변수 선언이 안된다.
+        // var function 안에서는 지역변수 선언이 된다.
+        var sum1 = 10; // 전역 변수 선언 - 함수에서도 접근됨. 전영역에서...
+        function add1(){
+            // 지역변수 선언
+            var sum1 = 0;
+            sum1++;
+            console.log(sum1);
+        }
+        add1();
+        console.log(sum1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

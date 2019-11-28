@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        #gnbMenu {
+            border: 1px solid green;
+            float: right;
+        }
+
+        #gnbMenu>li {
+            border: 1px solid blue;
+            list-style: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 20px;
+            text-align: center;
+            position: relative;
+            /* width: 200px; */
+            /* float: left; */
+        }
+
+        #gnbMenu>li:last-child {
+            margin-right: 0;
+        }
+
+        #gnbMenu>li a {
+            display: block;
+            padding: 10px 20px;
+        }
+
+        #gnbMenu>li a:hover {
+            color: white;
+            background-color: darkorchid;
+        }
+        #gnbMenu>li:hover .subMenu {
+            display: block;
+            animation-name: menuIn;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes menuIn {
+            from {
+                opacity: 0;
+                height: 0;
+            }
+            to {
+                opacity: 1;
+                height: 164px;
+            }
+        }
+        .subMenu {
+            display: none;
+            border: 3px solid violet;
+            position: absolute;
+            top: 45px;
+            left: 50%;
+            width: 150px;
+            margin-left: -75px;
+            overflow: hidden;
+        }
+        .subMenu li {
+            font-size: 16px;
+            list-style: none;
+            text-align: center;
+            font-weight: normal;
+        }
+        .inner {
+            width: 1200px;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+        <header>
+            <nav>
+                <ul id="gnbMenu">
+                    <li>
+                        <a href="#">소장처별</a>
+                        <ul class="subMenu">
+                            <li><a href="#">한국</a></li>
+                            <li><a href="#">프랑스</a></li>
+                            <li><a href="#">이탈리아</a></li>
+                            <li><a href="#">독일</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">장르별</a>
+                        <ul class="subMenu">
+                            <li><a href="#">회화</a></li>
+                            <li><a href="#">판화</a></li>
+                            <li><a href="#">공예/고대유물</a></li>
+                            <li><a href="#">그외</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">테마별</a>
+                        <ul class="subMenu">
+                            <li><a href="#">초상화/인물</a></li>
+                            <li><a href="#">종교</a></li>
+                            <li><a href="#">신화/문학</a></li>
+                            <li><a href="#">일상/스포츠</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">시대별</a>
+                        <ul class="subMenu">
+                            <li><a href="#">1900년이전</a></li>
+                            <li><a href="#">1900년대</a></li>
+                            <li><a href="#">현대</a></li>
+                            <li><a href="#">그외</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+</body>
+
+</html>

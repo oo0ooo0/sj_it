@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            border: 10px solid green;
+            /* padding: 20px; */
+            margin: 0;
+            /* width: 800px; */
+            /* box-sizing: border-box; */
+        }
+
+        p {
+            margin: 0;
+            border: 3px solid blue;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            /* width: 400px; */
+            width: 100%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        /* 스크린 크기가 최소 768보다 크다면 */
+        @media screen and (min-width: 768px) {
+            p {
+                width: 49.5%;
+            }
+        }
+
+        /* 스크린 크기가 최소 1024보다 크다면 */
+        @media screen and (min-width: 1024px) {
+            p {
+                width: 24.7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>1가나다</p>
+    <p>2 가나다</p>
+    <p>3abc</p>
+    <p>4 abc</p>
+</body>
+
+</html>

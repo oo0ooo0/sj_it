@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #myTime {
+            /* border: 3px solid blue; */
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        #date {
+            /* border: 3px solid red; */
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #time {
+            /* border: 3px solid red; */
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="myTime">
+        <div id="date"></div>
+        <div id="time"></div>
+    </div>
+
+    <script>
+        // 변수 선언
+        var myDate;
+        var month;
+        var date;
+        var day;
+        var hour;
+        var minute;
+        var second;
+
+        // 요일 배열 생성 0 1 2 3 4 5 6
+        var myDay = ["일", "월", "화", "수", "목", "금", "토"];
+
+        // 함수 선언
+        function myTimeObj() {
+            // 시간 객체 생성
+            myDate = new Date();
+            month = myDate.getMonth() + 1;
+            date = myDate.getDate();
+            day = myDate.getDay(); // 0 1 2 3 4 5 6
+            hour = myDate.getHours();
+            minute = myDate.getMinutes();
+            second = myDate.getSeconds();
+            if (hour < 10) {
+                hour = "0" + hour;
+            }
+            if (minute < 10) {
+                minute = "0" + minute;
+            }
+            if (second < 10) {
+                second = "0" + second;
+            }
+            document.getElementById("date").innerText = month + "/" + date + " [" + myDay[day] + "]";
+            document.getElementById("time").innerText = hour + ":" + minute + ":" + second;
+        }
+
+        // 함수 호출
+        myTimeObj();
+
+        setInterval(function () {
+            // 반복함수 호출
+            myTimeObj();
+        }, 1000);
+    </script>
+</body>
+
+</html>

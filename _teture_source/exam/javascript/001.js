@@ -1,0 +1,1 @@
+document.write("이제 집에 갑시다.");

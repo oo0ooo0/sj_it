@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>변수란 무엇인가?</h1>
+    <p>계속 변하는 값이면서, 그 값을 저장하는 공간.</p>
+    <script>
+        var name = "김혜영";
+        var age;
+        var year = 1975;
+        var sex = true;
+        // 2019 - 1975 + 1
+        // 시간 객체(Object) 생성 - new 생성자
+        var myDate = new Date();
+        console.log(myDate.getFullYear() - 1975 + 1);
+
+        age = myDate.getFullYear() - 1975 + 1;
+        console.log(name +"님은 "+ age + "살");
+        if(age > 20){
+            console.log("당신은 성인");
+        } else {
+            console.log("당신은 미성년자");
+        }
+        if(sex){
+            console.log("여자");
+        } else {
+            console.log("남자");
+        }
+    </script>
+</body>
+</html>

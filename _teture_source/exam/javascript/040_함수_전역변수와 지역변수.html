@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>전역변수와 지역변수</title>
+    <script>
+        var kor = 90; // 전역변수
+        // function getScore(){
+        //     kor = 100;
+        //     return kor;
+        // }
+        function getScore2(){
+            var kor = 40;
+            console.log(kor);  
+            return kor;  
+        }
+        getScore2();
+        console.log(kor);  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

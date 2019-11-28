@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: cornflowerblue;
+            height: 600px;
+        }
+
+        .inner {
+            border: 3px solid black;
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        nav {
+            background-color: yellow;
+            height: 100px;
+        }
+
+        #circle {
+            width: 500px;
+            height: 500px;
+            border-radius: 250px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #gnb {
+            position: relative;
+        }
+        .inner::before {
+            content: "";
+            display: block;
+            width: 500px;
+            height: 500px;
+            border-radius: 250px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <!-- <div id="circle"></div> -->
+            <div id="gnb">
+                <h1>가상 선택자로 원을 만들어 봅시다</h1>
+                <nav>네비게이션 영역</nav>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
