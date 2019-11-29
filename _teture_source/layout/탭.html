@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function(){
+            $("#notice1 h2").css("background-color", "pink");
+
+            $("#notice2 h2").click(function(){
+                $("#notice1 table").css("visibility", "hidden");
+                $("#notice2 table").css("visibility", "visible");
+
+                $("#notice1 h2").css("background-color", "white");
+                $("#notice2 h2").css("background-color", "pink");
+            });
+            $("#notice1 h2").click(function(){
+                $("#notice1 table").css("visibility", "visible");
+                $("#notice2 table").css("visibility", "hidden");
+                
+                $("#notice1 h2").css("background-color", "pink");
+                $("#notice2 h2").css("background-color", "white");
+            });
+        });
+    </script>
+    <style>
+        body, h2 {
+            margin: 0;
+        }
+        #notice {
+            width: 400px;
+            position: relative;
+            /* border: 3px solid red; */
+            height: 170px;
+            margin: 50px;
+        }
+        #notice h2 {
+            border: 2px solid #333;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            float: left;
+            padding: 5px 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .notice table {
+            border-top: 3px solid #333;
+            width: 100%;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            border-collapse: collapse;
+        }
+        .notice table td {
+            padding: 5px;
+            font-size: 15px;
+            border-bottom: 1px solid #333;
+        }
+        .notice table td:first-child {
+            text-align: center;
+            color: slateblue;
+        }
+        .notice table tr:first-child td {
+            padding-top: 20px;
+        }
+        #notice1 table {
+            /* background-color: cadetblue; */
+        }
+        #notice2 table {
+            /* background-color: rosybrown; */
+            /* display: none; */
+            visibility: hidden;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section id="notice">
+        <article id="notice1" class="notice">
+            <h2>공지사항</h2>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>공지사항입니다....</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>공지사항입니다....</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>공지사항입니다....</td>
+                </tr>
+            </table>
+        </article>
+        <article id="notice2" class="notice">
+            <h2>취업소식</h2>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>취업소식입니다....</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>취업소식입니다....</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>취업소식입니다....</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+</body>
+
+</html>
