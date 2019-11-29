@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        var name = window.prompt("Can I get your name?", "name");
+        console.log("You are" + name);
+        var year = window.prompt("Can I get your birth year?", "year");
+        var date = new Date();   //이게 있어야  getFullYear()을 쓸수 있어
+        var age = date.getFullYear()-year+1;
+        console.log(age);
+        if (age > 20) {
+            console.log("I got it. You are enought");
+        } else {
+            console.log("Sorry. You are not enought");
+
+        }
+        var sex = window.prompt("Can I get a sex?", "sex");
+        if (sex == "w") {
+            console.log("Oh you are Women!");
+        }
+        else {
+            console.log("Oh you are not Women!");
+        }
+
+
+    </script>
+
+</body>
+ 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    var num = 10; //전역변수
+    if(num == 10){
+        console.log("num은 10");
+        let sum1 = 10; //지역변수
+        var sum2= 20;//전역변수
+    }
+    console.log(num);//전역변수 호출가능
+    console.log(sum1);//괄호안 let은 지역변수 호출불가
+    console.log(sum2);//괄호안 var는 전역변수 호출불가
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

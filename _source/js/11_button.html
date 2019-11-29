@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #navi{
+        display: none;
+        border: 3px solid red;  
+    }
+    #triger{
+        cursor: pointer;
+    }
+    </style>
+
+</head>
+<body>
+    <!-- <div id="triger" onclick='document.getElementById("navi").style.display = "block"''>button</!--> -->
+    <div id="triger">menu</div>
+        <div id="navi">Tis is menue</div>
+    <script>
+        document.getElementById("navi").style.display = "none";
+
+        document.getElementById("triger").onclick = "function";
+        colosole.log('버튼을 눌렀구나');     
+//  document.getElementById('navi').style.border = "3px solid blue";
+//  document.getElementById('navi').style.display = "none";
+    </script>
+</body>
+</html>

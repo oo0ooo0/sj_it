@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .inner {
+            border: 3px solid red;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: cadetblue;
+        }
+        footer .inner {
+            height: 100px;
+        }
+        #foot_logo, address, #foot_sns {
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        #foot_logo, #foot_sns {
+            /* flex: 1; */
+            width: 200px;
+        }
+        address {
+            /* flex: 4; */
+            width: 800px;
+            font-style: normal;
+        }
+        footer .inner {
+            /* display: flex; */
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="inner">
+            <div id="foot_logo">로고</div>
+            <address>copyright</address>
+            <div id="foot_sns">SNS</div>
+        </div>
+    </footer>
+</body>
+
+</html>
