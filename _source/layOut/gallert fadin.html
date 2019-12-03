@@ -10,13 +10,12 @@
         <script>
             $(function () {
                 var currentNum = 0;
-                var totalNum = $("#picSet").children(".pic").length;
-
-
+                var totalNum = ($("#picSet").children(".pic").length)-1;
+ 
 
 
                 //make img btn
-                for (var i = 0; i < totalNum; i++) {
+                for (var i = 0; i < totalNum+1; i++) {
                     $("#gallery").append('<button id="btn' + i + '" class="btn">' + i + '</button> ');
                 }
 
@@ -32,10 +31,17 @@
 
 
 
-
+                // clear && setting
                 function picView() {
                     //초기화
-                    $(".pic").css("display", "none");
+                    if(2 <= currentNum){
+                    $("#pic" + (currentNum-2)).fadeOut();
+                    }else if(currentNum == 0){
+                    $("#pic"+totalNum).hide();
+                    $("#pic"+(totalNum-1)).hide();
+                    }
+
+
                     $(".btn").css("background-color", "gray");
                     $(".btn").css("color", "black");
                     // 지금 이미지
@@ -44,12 +50,19 @@
                     $("#btn" + currentNum).css("color", "white");
                 }
 
+               if( $(".btn").click ){
+                if(currentNum < exCurrentNum){
+                    $(this).find(excurrentNum보다 작고 currentNum 보다 큰 이미지).hide();
+                }
+
+
+
 
 
                 //버튼제어
                 $("#prev_btn").click(function () {
                     if (currentNum == 0) {
-                        currentNum = totalNum - 1;
+                        currentNum = totalNum;
                     } else {
                         currentNum--;
                         console.log(currentNum);
@@ -72,14 +85,22 @@
 
 
 
+
+                //make currentNum
                 $(".btn").click(function () {
-                    console.log(this.id); // btn1
                     currentNum = this.id.substr(3, 4);
+                    
                     picView();
                 })
 
 
+
+
+
+
                 picView();
+                $(".pic").css("display", "none");
+                $("#pic" + currentNum).fadeIn();
 
 
             })
@@ -106,6 +127,9 @@
             }
 
             #picSet img {
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 500px;
                 height: 300px;
             }
