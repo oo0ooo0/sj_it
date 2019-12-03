@@ -1,130 +1,180 @@
 <!DOCTYPE html>
 <div lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="js/jquery-3.4.1.js"></script>
-    <script>
-    $(function(){
-    var currentNum = 0;
-    var totalNum = $("#picSet").children(".pic").length;
-
-    //make img byn
-        for(var i=0; i<totalNum; i++){
-            console.log(i);
-            $("#gallery").append('<button id="btn'+i+'" class="btn">'+i+'</button> ');
-        }
-
-    // make < > btn
-    $("#picSet").append('<button id="prev_btn" class="pn_btn">이전</button>');
-    $("#picSet").append('<button id="next_btn" class="pn_btn">다음</button>');
-
-
-
-    function picView(){
-    $(".pic").css("display", "none");
-    $("#pic"+currentNum).css("display", "block");  
-}
-
-    picView();
-
-    $(".btn").click(function(){
-        console.log(this.id);// btn1
-        currentNum = this.id.substr(3,4); 
-        picView();
-    })
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script src="js/jquery-3.4.1.js"></script>
+        <script>
+            $(function () {
+                var currentNum = 0;
+                var totalNum = $("#picSet").children(".pic").length;
 
 
 
 
-})
-    </script>
-    <style>
-        #gallery {
-            width: 1000px;
-            height: 500px;
-            background-color: #f2f2f2;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        #picSet {
-            width: 500px;
-            height: 300px;
-            position: relative;
-            border: 10px solid red;
-            /* overflow: hidden; */
-            margin: 0 auto;;
-            margin-bottom: 10px;
-        }
-
-        #picSet img {
-            width: 500px;
-            height: 300px;
-        }
-
-        /* //숫자 btn */
-        .btn {
-            border:none;
-            position: relative;
-            bottom: -50px;
-            width: 50px; height: 50px; 
-            border-radius: 50%;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        button:hover{
-            background: #fff;;
-
-        }
-
-        /* pn_btn */
-        .pn_btn{
-            position: absolute; top: 50%; transform: translateY(-50%);
-            border:none;
-            width: 50px; height: 50px; 
-            border-radius: 10%;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        #prev_btn{
-            left: -70px;
-        }
-        #next_btn{
-            right: -70px;
-        }
-
-    </style>
-</head>
-
-<body>
-    <section id="gallery">
-        <h2>gallery fadeIn</h2>
-        <div id="picSet">
-            
-
-            <!-- 그림은 0번부터 시작하자+ -->
-            <img id="pic0" class="pic" src="images/image-slider-1.jpg" alt="gallery img">
-            <img id="pic1" class="pic" src="images/image-slider-2.jpg" alt="gallery img">
-            <img id="pic2" class="pic" src="images/image-slider-3.jpg" alt="gallery img">
-            <img id="pic3" class="pic" src="images/image-slider-4.jpg" alt="gallery img">
-            <img id="pic4" class="pic" src="images/image-slider-5.jpg" alt="gallery img">
-            <img id="pic5" class="pic" src="images/image-slider-6.jpg" alt="gallery img">
-            <img id="pic6" class="pic" src="images/image-slider-7.jpg" alt="gallery img">
-            
-            <button id="next_btn" class="pn_btn">다음</button>
-
-        </div>
+                //make img btn
+                for (var i = 0; i < totalNum; i++) {
+                    $("#gallery").append('<button id="btn' + i + '" class="btn">' + i + '</button> ');
+                }
 
 
 
-    </section>
 
-</body>
+                // make < > btn
+                $("#picSet").append('<button id="prev_btn" class="pn_btn"> &lt; </button>');
+                $("#picSet").append('<button id="next_btn" class="pn_btn"> &gt; </button>');
+
+
+
+
+
+
+
+                function picView() {
+                    //초기화
+                    $(".pic").css("display", "none");
+                    $(".btn").css("background-color", "gray");
+                    $(".btn").css("color", "black");
+                    // 지금 이미지
+                    $("#pic" + currentNum).fadeIn();
+                    $("#btn" + currentNum).css("background-color", "orangered");
+                    $("#btn" + currentNum).css("color", "white");
+                }
+
+
+
+                //버튼제어
+                $("#prev_btn").click(function () {
+                    if (currentNum == 0) {
+                        currentNum = totalNum - 1;
+                    } else {
+                        currentNum--;
+                        console.log(currentNum);
+                    }
+                    picView();
+
+                })
+                $("#next_btn").click(function () {
+                    if (currentNum == 6) {
+                        currentNum = 0;
+                    } else {
+                        currentNum++;
+                        console.log(currentNum);
+                    }
+                    picView();
+
+                })
+
+
+
+
+
+                $(".btn").click(function () {
+                    console.log(this.id); // btn1
+                    currentNum = this.id.substr(3, 4);
+                    picView();
+                })
+
+
+                picView();
+
+
+            })
+        </script>
+
+        <style>
+            #gallery {
+                width: 1000px;
+                height: 500px;
+                background-color: #f2f2f2;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            #picSet {
+                width: 500px;
+                height: 300px;
+                position: relative;
+                border: 10px solid red;
+                /* overflow: hidden; */
+                margin: 0 auto;
+                ;
+                margin-bottom: 10px;
+            }
+
+            #picSet img {
+                width: 500px;
+                height: 300px;
+            }
+
+            /* //숫자 btn */
+            .btn {
+                position: relative;
+                bottom: -50px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+
+            button {
+                cursor: pointer;
+                border: none;
+                text-align: center;
+                transition: all 0.3s ease;
+
+
+            }
+
+            button:hover {
+                background: #fff;
+
+            }
+
+            /* pn_btn */
+            .pn_btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 50px;
+                height: 50px;
+                border-radius: 10%;
+                background: rgb(199, 187, 187);
+            }
+
+            #prev_btn {
+                left: -70px;
+            }
+
+            #next_btn {
+                right: -70px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="gallery">
+            <h2>gallery fadeIn</h2>
+            <div id="picSet">
+
+
+                <!-- 그림은 0번부터 시작하자+ -->
+                <img id="pic0" class="pic" src="images/image-slider-1.jpg" alt="gallery img">
+                <img id="pic1" class="pic" src="images/image-slider-2.jpg" alt="gallery img">
+                <img id="pic2" class="pic" src="images/image-slider-3.jpg" alt="gallery img">
+                <img id="pic3" class="pic" src="images/image-slider-4.jpg" alt="gallery img">
+                <img id="pic4" class="pic" src="images/image-slider-5.jpg" alt="gallery img">
+                <img id="pic5" class="pic" src="images/image-slider-6.jpg" alt="gallery img">
+                <img id="pic6" class="pic" src="images/image-slider-7.jpg" alt="gallery img">
+
+            </div>
+
+
+
+        </section>
+
+    </body>
 
 </div>
