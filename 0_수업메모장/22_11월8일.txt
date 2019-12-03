@@ -1,0 +1,43 @@
+if(조건식){
+
+} 
+
+if(조건식){
+
+} else {
+
+}
+
+if(조건식){
+
+} else if(조건식) {
+
+}
+
+if(조건식){
+
+} else if(조건식) {
+
+} else if(조건식) {
+
+} else {
+
+
+}
+
+
+* 폰트의 상대적 크기 값 
+em 변환기: http://pxtoem.com/
+
+* 배경 이미지 두개 활용의 예
+http://www.csszengarden.com/
+
+
+https://m-campaign.naver.com/aihackathon2018/
+
+
+
+리스트 크기: 168* 262
+
+
+

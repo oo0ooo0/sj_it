@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    var sub1 = {
+        myName:"aaa",
+        age:12,
+        printOut: function(){
+        return this.myName + "님의 나이는" + this.myAge +"입니다."
+    }
+    }
+
+
+
+
+
+    
+
+    //함수선언 
+    function Info(name,age){
+        this.myName = name;
+        this.myAge = age;
+        return this.myName + "님의 나이는" + this.myAge +"입니다."
+     }
+
+
+    //함수 호출(매개인자)
+    // console.log(Info("html", 1));
+    // console.log(sub1.printOut());
+
+
+    var sub2 = new Info("jjajja", 22);
+    console.log(sub2);
+    console.log(sub2.myName);
+    console.log(sub2.myAge);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<div lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+    $(function(){
+    var currentNum = 0;
+    var totalNum = $("#picSet").children().length;
+        // console.log($("#picSet").children().length);
+
+        for(var i=0; i<totalNum; i++){
+            console.log(i);
+            $("#gallery").append('<button id="btn'+i+'" class="btn">'+i+'</button>');
+        }
+      
+
+
+    $(".pic").css("display", "none");
+    $("#pic"+currentNum).css("display", "block");  
+    $(".btn").click(function(){
+        console.log(this.id);// btn1
+        currentNum = this.id.substr(3,4); //1
+        $(".pic").css("display", "none");
+        $("#pic"+currentNum).css("display", "block");
+
+
+    })
+
+
+
+
+})
+    </script>
+    <style>
+        #gallery {
+            width: 1000px;
+            height: 500px;
+            background-color: #f2f2f2;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #picSet {
+            width: 500px;
+            height: 300px;
+            position: relative;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-70%);
+            border: 10px solid red;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        #picSet img {
+            width: 500px;
+            height: 300px;
+        }
+
+        button {
+            border:none;
+            position: relative;
+            bottom: -50px;
+            width: 50px; height: 50px; 
+            border-radius: 50%;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #fff;;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="gallery">
+        <h2>gallery fadeIn</h2>
+        <div id="picSet">
+            <!-- 그림은 0번부터 시작하자+ -->
+            <img id="pic0" class="pic" src="images/image-slider-1.jpg" alt="gallery img">
+            <img id="pic1" class="pic" src="images/image-slider-2.jpg" alt="gallery img">
+            <img id="pic2" class="pic" src="images/image-slider-3.jpg" alt="gallery img">
+            <img id="pic3" class="pic" src="images/image-slider-4.jpg" alt="gallery img">
+            <img id="pic4" class="pic" src="images/image-slider-5.jpg" alt="gallery img">
+            <img id="pic5" class="pic" src="images/image-slider-6.jpg" alt="gallery img">
+            <img id="pic6" class="pic" src="images/image-slider-7.jpg" alt="gallery img">
+        </div>
+
+
+
+
+        <!-- btn은 스크립트로 만들거예용 
+        <button class="btn">1</button>
+        <button class="btn">2</button> -->
+    </section>
+
+</body>
+
+</div>

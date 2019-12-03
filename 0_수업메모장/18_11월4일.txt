@@ -1,0 +1,7 @@
+* ai 해커톤 검색 - 
+데스크탑: https://campaign.naver.com/aihackathon2018/
+모바일: https://m-campaign.naver.com/aihackathon2018/
+
+https://campaign.naver.com/aihackathon2018/img/sp_all_v4.png
+
+* 스프라이트 이미지 - 통으로 된 이미지

@@ -1,0 +1,12 @@
+<자바스크립트>
+* 변수
+var 변수이름 = 값;
+var name = "홍길동";
+
+변수값: "문자", 숫자, Boolean(true, false), 객체(시간, 배열)
+
+* 데이터값
+"문자", 숫자, Boolean(true, false), 객체, undefined
+객체(시간, 배열)
+
+* 자바스크립트 반복실행

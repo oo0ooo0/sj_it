@@ -1,0 +1,29 @@
+자바스크립트 - 객체지향 방식
+OOP : Object Oriented Programming
+
+객체: 독립된 사물
+
+사람 - Object obj2
+
+* 속성 : Property
+이름: "손오공"
+키: 180
+나이: 20
+
+* 행동 방식: Method(매개인자)
+비가 오면 (춤)을 춘다.
+눈이 오면 (커피)를 마신다.
+
+* 제이쿼리 제외 선택자
+$( 'p' ).not( 'p.abc' ).css( 'color', 'green');
+ p 요소 중 abc를 클래스 값으로 가지지 않은 것을 선택합니다.
+
+제이쿼리 텍스트 넣기
+
+https://www.behance.net/
+
+
+
+
+
+

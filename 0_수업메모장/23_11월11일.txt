@@ -1,0 +1,3 @@
+jQuery 플러그인 - 스와이프
+slick
+https://kenwheeler.github.io/slick/

@@ -1,0 +1,14 @@
+[갤러리 소스 - 플러그인]
+javascript gallery source 검색
+
+* javascript gallery.js 검색
+https://photoswipe.com/
+
+* 자바스크립트 갤러리 소스 검색
+- https://mygumi.tistory.com/40
+
+* slick 검색
+https://kenwheeler.github.io/slick/
+
+* jqueryUI 검색
+https://jqueryui.com/

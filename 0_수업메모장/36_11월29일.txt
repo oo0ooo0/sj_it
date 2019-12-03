@@ -1,0 +1,11 @@
+주제선정
+데스크탑 리서치(경쟁사분석, 트렌드 분석, 프로젝트 분석)
+콘텐츠 수집, 기초데이터 수집 및 스케치(Paper Layout sketch)
+아이디어발상, 컨셉도출(Brainstorming, Mind Map)
+레퍼런스 분석, 크리에이티브 전략
+디자인 구성요소 설계(스토리보드, 기획서)
+프로토타입(Prototype) 제작(XD)
+사용성 테스트(Usability Test)
+UI Design, UI Component Design(XD)  
+Publishing(Html, Css, Javascript, jQuery) - 웹표준 및 웹접근성, 크로스 브라우징
+수정보완

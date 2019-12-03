@@ -1,0 +1,43 @@
+fullpage.js 구글 검색
+https://colorhunt.co/ 
+https://www.flaticon.com/
+
+gif animation 
+배경 넣어서 쓰는 방법, 흰색
+
+* animation
+- jQuery, js
+- css
+- gif 파일(배경 조심)
+- 스크립트 애니메이션 파일 제어
+
+https://www.jamendo.com/
+
+* http://www.q-net.or.kr/ 웹디자인기능사 - 공개문제
+* http://license.youngjin.com/ 웹디자인기능사 실기 시험문제
+
+
+img/bg_intro.png
+https://campaign.naver.com/aihackathon2018/img/bg_intro.png
+
+* 텍스트 스타일 가이드
+본문
+강조
+영어 인용구
+세부설명
+
+
+* html 인용문 태그: blockquote
+
+
+
+
+
+
+
+
+
+
+
+
+
