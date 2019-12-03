@@ -11,8 +11,6 @@
     $(function(){
     var currentNum = 0;
     var totalNum = $("#picSet").children().length;
-        // console.log($("#picSet").children().length);
-
         for(var i=0; i<totalNum; i++){
             console.log(i);
             $("#gallery").append('<button id="btn'+i+'" class="btn">'+i+'</button>');
@@ -62,7 +60,7 @@
             height: 300px;
         }
 
-        button {
+        .btn {
             border:none;
             position: relative;
             bottom: -50px;
@@ -95,10 +93,7 @@
 
 
 
-
-        <!-- btn은 스크립트로 만들거예용 
-        <button class="btn">1</button>
-        <button class="btn">2</button> -->
+ 
     </section>
 
 </body>
