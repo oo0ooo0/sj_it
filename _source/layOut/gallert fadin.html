@@ -10,23 +10,31 @@
     <script>
     $(function(){
     var currentNum = 0;
-    var totalNum = $("#picSet").children().length;
+    var totalNum = $("#picSet").children(".pic").length;
+
+    //make img byn
         for(var i=0; i<totalNum; i++){
             console.log(i);
-            $("#gallery").append('<button id="btn'+i+'" class="btn">'+i+'</button>');
+            $("#gallery").append('<button id="btn'+i+'" class="btn">'+i+'</button> ');
         }
-      
+
+    // make < > btn
+    $("#picSet").append('<button id="prev_btn" class="pn_btn">이전</button>');
+    $("#picSet").append('<button id="next_btn" class="pn_btn">다음</button>');
 
 
+
+    function picView(){
     $(".pic").css("display", "none");
     $("#pic"+currentNum).css("display", "block");  
+}
+
+    picView();
+
     $(".btn").click(function(){
         console.log(this.id);// btn1
-        currentNum = this.id.substr(3,4); //1
-        $(".pic").css("display", "none");
-        $("#pic"+currentNum).css("display", "block");
-
-
+        currentNum = this.id.substr(3,4); 
+        picView();
     })
 
 
@@ -47,11 +55,9 @@
             width: 500px;
             height: 300px;
             position: relative;
-            top:50%;
-            left: 50%;
-            transform: translate(-50%,-70%);
             border: 10px solid red;
-            overflow: hidden;
+            /* overflow: hidden; */
+            margin: 0 auto;;
             margin-bottom: 10px;
         }
 
@@ -60,6 +66,7 @@
             height: 300px;
         }
 
+        /* //숫자 btn */
         .btn {
             border:none;
             position: relative;
@@ -74,6 +81,24 @@
             background: #fff;;
 
         }
+
+        /* pn_btn */
+        .pn_btn{
+            position: absolute; top: 50%; transform: translateY(-50%);
+            border:none;
+            width: 50px; height: 50px; 
+            border-radius: 10%;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        #prev_btn{
+            left: -70px;
+        }
+        #next_btn{
+            right: -70px;
+        }
+
     </style>
 </head>
 
@@ -81,6 +106,8 @@
     <section id="gallery">
         <h2>gallery fadeIn</h2>
         <div id="picSet">
+            
+
             <!-- 그림은 0번부터 시작하자+ -->
             <img id="pic0" class="pic" src="images/image-slider-1.jpg" alt="gallery img">
             <img id="pic1" class="pic" src="images/image-slider-2.jpg" alt="gallery img">
@@ -89,11 +116,13 @@
             <img id="pic4" class="pic" src="images/image-slider-5.jpg" alt="gallery img">
             <img id="pic5" class="pic" src="images/image-slider-6.jpg" alt="gallery img">
             <img id="pic6" class="pic" src="images/image-slider-7.jpg" alt="gallery img">
+            
+            <button id="next_btn" class="pn_btn">다음</button>
+
         </div>
 
 
 
- 
     </section>
 
 </body>
