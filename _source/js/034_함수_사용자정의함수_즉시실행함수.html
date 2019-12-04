@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 함수 선언(선언적 함수)
+        function myFunction1(){
+            console.log("선언적 함수");
+        }
+        // 함수 호출
+        // myFunction1();
+
+        // 즉시 실행 함수1 - 바로 실행되는 함수
+        var myFunction2 = (function(){
+            console.log("즉시실행함수 형태1");
+        })();
+
+        // 즉시 실행 함수2
+        (function(){
+            console.log("즉시실행함수 형태2");
+        })();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

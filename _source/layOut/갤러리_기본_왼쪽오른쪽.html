@@ -11,24 +11,39 @@
         $(function () {
             // 버튼 제어
             let move = 0;
-            const moveNum = $("#totalSet").width();
+            const moveNum = $("#totalSet").width(); // 700
             const totalNum = $("#picSet").children().length; // 상수 선언
             let currentNum = 1;
 
             $("#totalSet").prepend('<button id="prev_btn" class="gallery_btn"><</button>');
             $("#totalSet").append('<button id="next_btn" class="gallery_btn">></button>');
-           
+
             // 버튼 생성
-            for(var i=1; i<=totalNum; i++){
+            for (var i = 1; i <= totalNum; i++) {
                 console.log(i);
                 // $("#gallery").append('<button id="btn1" class="number_btn">1</button>');
                 // $("#gallery").append('<button id="btn'+1+'" class="number_btn">'+1+'</button>');
-                $("#gallery").append('<button id="btn'+i+'" class="number_btn">'+i+'</button>');
-            }
-            // 원버튼 클릭 제어
-            $("#btn2").click(function(){
+                $("#gallery").append('<button id="btn' + i + '" class="number_btn">' + i + '</button>');
                 
-            });
+                $("#btn"+i).click(function () {
+                    console.log("this.id: -------- "+this.id);
+                    console.log("this.id substr(): ---- "+this.id.substr(3,4));
+                    currentNum = this.id.substr(3,4);
+                    move = (currentNum - 1) * -moveNum;
+                    // (currentNum-1) * -moveNum
+                    $("#picSet").css("left", (currentNum - 1) * -moveNum + "px");
+                    buttonCheck();
+                });
+            }
+            console.log(i);
+            // 원버튼 클릭 제어
+            // $("#btn1").click(function(){
+            //     currentNum = 1;
+            //     move = (currentNum-1) * -moveNum;
+            //     // (currentNum-1) * -moveNum
+            //     $("#picSet").css("left", (currentNum-1) * -moveNum + "px");
+            //     buttonCheck();
+            // });
             // console.log(1);
             // console.log(2);
             // console.log(3);
@@ -49,13 +64,16 @@
             // console.log($("#picSet").children());
             // console.log($("#picSet").children().length);
 
-            
+
 
 
             // 버튼 셋팅 - 현재 그림에 따라 활성, 비활성화
             function buttonCheck() {
+                console.log("currentNum: " + currentNum);
+                console.log("move: " + move);
                 if (currentNum == 1) {
                     $("#next_btn").attr("disabled", true);
+                    $("#next_btn").css("box-shadow", "none");
                     $("#next_btn").css("background-color", "gray");
                     $("#next_btn").css("cursor", "auto");
                 } else {
@@ -65,6 +83,7 @@
                 }
                 if (currentNum == totalNum) {
                     $("#prev_btn").attr("disabled", true);
+                    $("#prev_btn").css("box-shadow", "none");
                     $("#prev_btn").css("background-color", "gray");
                     $("#prev_btn").css("cursor", "auto");
                 } else {
@@ -75,18 +94,30 @@
                 // 원버튼도 현재 선택된 컬러 셋팅
                 // $("#btn1").css("background-color", "red");
                 $(".number_btn").css("background-color", "gray");
-                $("#btn"+currentNum).css("background-color", "red");
+                $("#btn" + currentNum).css("background-color", "red");
             }
             buttonCheck();
+
+            $(".gallery_btn").hover(
+                function () {
+                    // hover 할때
+                    $(this).css("background-color", "black");
+                    $(this).css("box-shadow", "2px 2px 4px rgba(0, 0, 0, 0.4)");
+                },
+                function () {
+                    // hover 아웃될때
+                    $(this).css("background-color", "teal");
+                    $(this).css("box-shadow", "none");
+                }
+            );
 
             $("#prev_btn").on("click", function () {
                 console.log("이전버튼");
                 if (currentNum < totalNum) {
                     currentNum++;
-                    console.log(currentNum);
                     move = move - moveNum; // -700
                     // $("#picSet").css("transform", "translateX(-700px)");
-                    $("#picSet").css("transform", "translateX(" + move + "px)");
+                    $("#picSet").css("left", move + "px");
                 }
                 buttonCheck();
             });
@@ -94,10 +125,9 @@
                 console.log("다음버튼");
                 if (currentNum > 1) {
                     currentNum--;
-                    console.log(currentNum);
                     move = move + moveNum; // -700
                     // $("#picSet").css("transform", "translateX(700px)");
-                    $("#picSet").css("transform", "translateX(" + move + "px)");
+                    $("#picSet").css("left", move + "px");
                 }
                 buttonCheck();
             });
@@ -105,7 +135,7 @@
     </script>
     <style>
         /*section*/
-        #gallery { 
+        #gallery {
             /* border: 4px solid blue; */
             text-align: center;
         }
@@ -139,10 +169,10 @@
             z-index: 1;
         }
 
-        .gallery_btn:hover {
+        /* .gallery_btn:hover {
             background-color: black;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-        }
+        } */
 
         #prev_btn {
             left: -80px;
@@ -155,8 +185,11 @@
 
         #picSet {
             /* border: 3px solid blue; */
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 4900px;
-            transition: transform 1s;
+            transition: left 1s;
             /* transform: translateX(-700px); */
         }
 
@@ -170,6 +203,7 @@
             border: 3px solid blue;
             height: 100%;
             overflow: hidden;
+            position: relative;
         }
 
         .number_btn {
@@ -181,6 +215,10 @@
             font-size: 12px;
             color: white;
             margin: 20px 5px;
+        }
+
+        button:focus {
+            /* outline: none; */
         }
     </style>
 </head>

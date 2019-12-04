@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button {
+            cursor: pointer;
+        }
+        #demo {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button onclick="document.getElementById('demo').innerHTML='<h1>안녕</h1>'">button</button> -->
+    <button>button</button>
+    <button onclick="console.log('hi')">button</button>
+    <p id="demo" onclick="console.log('hi')">나는 단락입니다.</p>         
+    <script>
+        console.log("demo");
+        console.log(document.getElementById("demo"));
+        
+        // 함수 선언
+        function check(num) {
+            var result = num + 3;
+            console.log("결과:" + result);
+        }
+        // 함수 호출
+        check(10);
+
+        // Date 객체 생성
+        var time = new Date();
+        console.log(time);
+    </script>
+</body>
+
+</html>

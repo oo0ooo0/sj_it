@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>객체 리터럴 방식으로 객체 생성</title>
+    <script>
+        // 객체 리터럴 방식으로 객체 생성 ----------------------------------------
+        var info = {
+            subject: "css", 
+            credit: 1,
+            myOut: function(name){
+                // console.log(this);
+                return name + "님의 수강신청 과목: " +this.subject;
+            }
+        } // 객체 생성
+        // console.log(info);
+        // 객체.속성
+        // console.log(info.subject);
+        // console.log(info.myOut("김혜영"));
+
+        // object 생성자로 객체 생성 -------------------------------------------
+        // new 생성자
+        var info2 = new Object();
+        console.log(info2);
+
+        // 객체 리터럴 방식으로 객체 생성
+        var info3 = {};
+        console.log(info3);
+
+        // Number 생성자로 변수 생성
+        var num = new Number();
+        console.log(num);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
