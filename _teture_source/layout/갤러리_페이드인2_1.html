@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            var currentNum = 0;
+            var totalNum = $("#picSet").children(".pic").length;
+            var index = 100;
+            var count = 0;
+            var myAuto;
+            console.log(currentNum);
+            // console.log(totalNum);
+            // console.log($("#picSet").children(".pic").length);
+
+            // 스크립트로 버튼 생성
+            for (var i = 0; i < totalNum; i++) {
+                // console.log(i);
+                $("#gallery").append('<button id="btn' + i + '" class="btn">' + i + '</button>');
+            }
+            $("#picSet").prepend('<button id="prev_btn" class="pn_btn">&lt;</button>');
+            $("#picSet").append('<button id="next_btn" class="pn_btn">&gt;</button>');
+
+            function picView() {
+                console.log(currentNum); // 2
+                // 초기화
+                count = 0;
+                $(".btn").css("background-color", "gray");
+                $(".btn").css("color", "black");
+                // 보여지는 그림
+                index++;
+                $("#pic" + currentNum).css("display", "none")
+                $("#pic" + currentNum).css("z-index", index);
+                $("#pic" + currentNum).fadeIn();
+                $("#btn" + currentNum).css("background-color", "orangered");
+                $("#btn" + currentNum).css("color", "white");
+            }
+            // 버튼 제어
+            $("#prev_btn").click(function () {
+                if (currentNum == 0) {
+                    currentNum = totalNum - 1;
+                } else {
+                    currentNum--;
+                }
+                picView();
+            });
+            $("#next_btn").click(function () {
+                if (currentNum == totalNum - 1) {
+                    currentNum = 0;
+                } else {
+                    currentNum++;
+                }
+                picView();
+            });
+            $(".btn").click(function () {
+                currentNum = this.id.substr(3, 4);
+                picView();
+            });
+            $("#auto_stop").click(function(){
+                clearInterval(myAuto);
+            });
+            $("#auto_play").click(function(){
+                count = 0;
+                autoPlay();
+            });
+            // 자동 플레이: 3초마다
+            function autoPlay() {
+                myAuto = setInterval(function () {
+                    count++;
+                    console.log("count: " + count);
+                    if (count % 6 == 0) {
+                        console.log("6의 배수: " + count);
+                        if (currentNum == totalNum - 1) {
+                            currentNum = 0;
+                        } else {
+                            currentNum++;
+                        }
+                        picView();
+                    }
+                }, 1000);
+            }
+            // var autoPlay = setInterval(function(){
+            //     console.log("자동플레이");
+            //     if(currentNum == totalNum-1){
+            //         currentNum = 0;
+            //     } else {
+            //         currentNum++;
+            //     }
+            //     picView();
+            // }, 3000);
+            autoPlay();
+            picView();
+            $(".pic").css("display", "none");
+            $("#pic" + currentNum).fadeIn();
+        });
+    </script>
+    <style>
+        #gallery {
+            border: 5px solid green;
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #picSet {
+            width: 700px;
+            height: 306px;
+            border: 4px solid red;
+            position: relative;
+            margin: 0 auto 10px auto;
+        }
+
+        #picSet img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .btn {
+            width: 20px;
+            height: 20px;
+            background-color: lightgrey;
+            border: none;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .pn_btn {
+            position: absolute;
+            background-color: burlywood;
+            font-size: 30px;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            margin-top: -25px;
+            z-index: 1;
+        }
+
+        #prev_btn {
+            left: -70px;
+        }
+
+        #next_btn {
+            right: -70px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="gallery">
+        <h2>페이드인되는 갤러리 만들기</h2>
+        <div id="picSet">
+            <!-- <button id="prev_btn" class="pn_btn">이전</button> -->
+            <!-- 그림은 다음번에는 0번으로 하자 -->
+            <img id="pic0" class="pic" src="images/image-slider-1.jpg" alt="갤러리그림1">
+            <img id="pic1" class="pic" src="images/image-slider-2.jpg" alt="갤러리그림2">
+            <img id="pic2" class="pic" src="images/image-slider-3.jpg" alt="갤러리그림3">
+            <img id="pic3" class="pic" src="images/image-slider-4.jpg" alt="갤러리그림4">
+            <img id="pic4" class="pic" src="images/image-slider-5.jpg" alt="갤러리그림5">
+            <img id="pic5" class="pic" src="images/image-slider-6.jpg" alt="갤러리그림6">
+            <img id="pic6" class="pic" src="images/image-slider-7.jpg" alt="갤러리그림7">
+            <!-- <button id="next_btn" class="pn_btn">다음</button> -->
+        </div>
+        <!-- <button id="btn1" class="btn" title="그림1">1</button>
+        <button id="btn2" class="btn" title="그림2">2</button> -->
+        <button id="auto_stop">자동플레이 끄기</button>
+        <button id="auto_play">자동플레이 켜기</button>
+    </section>
+
+</html>
