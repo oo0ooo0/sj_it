@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #touch{border: 1px solid #000; width: 500px; height: 500px; background: pink;}
+    </style>
+</head>
+<body>
+    <h2>touch event</h2>
+    <div id="touch"></div>
+    <script>
+    document.getElementById("touch").onclick = function(){
+        // console.log("onclick");
+    }
+    document.getElementById("touch").ontouchstart = function(e){
+        console.log("ontouchstart"+e.changedTouches[0].pageX);
+        // console.log("ontouchstart"+e.changedTouches[0].pageY);
+        // console.log("ontouchstart");
+    }
+    document.getElementById("touch").ontouchend = function(e){
+        console.log("ontouchend"+e.changedTouches[0].pageX);
+        // console.log("ontouchend"+e.changedTouches[0].pageY);
+        // console.log("ontouchend");
+    }
+    </script>
+</body>
+</html>
