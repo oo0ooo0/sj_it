@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+        header {
+            background-color: cadetblue;
+            height: 100px;
+        }
+        nav {
+            border: 3px solid green;
+        }
+
+        .inner {
+            border: 3px solid blueviolet;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            float: left;
+        }
+
+        #gnbMenu {
+            border: 3px solid blue;
+            float: right;
+        }
+
+        #gnbMenu>li {
+            display: inline-block;
+        }
+
+        #slideImg {
+            border: 3px solid red;
+            height: 300px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="inner">
+            <h1>Logo</h1>
+            <ul id="gnbMenu">
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="slideImg" class="inner">
+        <img src="img/back1.jpg" alt="우리는 어디에서나 협업을 합니다.">
+        <img src="img/back2.jpg" alt="우리는 늘 함께합니다.">
+        <img src="img/back3.jpg" alt="우리는 협업의 가치를 소중히 합니다.">
+    </section>
+
+</body>
+
+</html>

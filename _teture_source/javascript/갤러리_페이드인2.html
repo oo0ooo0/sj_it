@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function(){
+            var currentNum = 0;
+            var totalNum = $("#picSet").children().length; // 7
+            // console.log($("#picSet").children().length);
+
+            //for(초기화; 조건식; 증감/증가식){
+            for(var i=0; i<totalNum; i++){
+                console.log(i);
+                $("#gallery").append('<button id="btn'+i+'" class="btn">'+i+'</button>');
+            }
+            console.log("for문 종료후: " + i);
+            // console.log(0);
+            // console.log(1);
+            // console.log(2);
+            // console.log(3);
+            // console.log(4);
+            // console.log(5);
+            // console.log(6);
+            // $("#gallery").append('<button id="btn0" class="btn">0</button>');
+            // $("#gallery").append('<button id="btn1" class="btn">1</button>');
+            // $("#gallery").append('<button id="btn2" class="btn">2</button>');
+            // $("#gallery").append('<button id="btn3" class="btn">3</button>');
+            // $("#gallery").append('<button id="btn4" class="btn">4</button>');
+            // $("#gallery").append('<button id="btn5" class="btn">5</button>');
+            // $("#gallery").append('<button id="btn6" class="btn">6</button>');
+
+            $(".pic").css("display", "none");
+            $("#pic"+currentNum).css("display", "block");
+            // $("#pic2").css("display", "none");
+
+            $(".btn").click(function(){
+                // console.log(this);
+                console.log(this.id); // btn1
+                console.log(this.id.substr(3,4)); 
+                currentNum = this.id.substr(3,4); //1
+                $(".pic").css("display", "none");
+                $("#pic"+currentNum).css("display", "block");
+            });
+            // $("#btn1").click(function(){
+            //     console.log("click");
+            //     $("#pic1").css("display", "block");
+            //     $("#pic2").css("display", "none");
+            // });
+            // $("#btn2").click(function(){
+            //     console.log("click");
+            //     $("#pic1").css("display", "none");
+            //     $("#pic2").css("display", "block");
+            // });
+
+        });
+    </script>
+    <style>
+        #picSet {
+            width: 700px;
+            height: 306px;
+            border: 4px solid red;
+            /* overflow: hidden; */
+            position: relative;
+            margin-bottom: 10px;
+        }
+        #picSet img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .btn {
+            width: 50px;
+            height: 50px;
+            background-color: cornflowerblue;
+            border: none;
+            border-radius: 25px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="gallery">
+        <h2>페이드인되는 갤러리 만들기</h2>
+        <div id="picSet">
+            <!-- 그림은 다음번에는 0번으로 하자 -->
+            <img id="pic0" class="pic" src="images/image-slider-1.jpg" alt="갤러리그림1">
+            <img id="pic1" class="pic" src="images/image-slider-2.jpg" alt="갤러리그림2">
+            <img id="pic2" class="pic" src="images/image-slider-3.jpg" alt="갤러리그림3">
+            <img id="pic3" class="pic" src="images/image-slider-4.jpg" alt="갤러리그림4">
+            <img id="pic4" class="pic" src="images/image-slider-5.jpg" alt="갤러리그림5">
+            <img id="pic5" class="pic" src="images/image-slider-6.jpg" alt="갤러리그림6">
+            <img id="pic6" class="pic" src="images/image-slider-7.jpg" alt="갤러리그림7">
+        </div>
+        <!-- <button id="btn1" class="btn" title="그림1">1</button>
+        <button id="btn2" class="btn" title="그림2">2</button> -->
+    </section>
+
+</html>

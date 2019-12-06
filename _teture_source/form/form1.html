@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .blind {
+            font-size: 0;
+            border: 2px solid red;
+            position: absolute;
+            top: 0;
+            left: -10000px;
+        }
+
+        form {
+            border: 2px solid blue;
+            padding: 40px;
+        }
+
+        .login {
+            display: block;
+            width: 100%;
+            /* width: 400px; */
+            height: 40px;
+            padding: 0 10px;
+            margin-top: -2px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+            color: purple;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            /* border-radius: 5px; */
+        }
+
+        #login_submit {
+            cursor: pointer;
+            background-color: #ff4A51;
+            color: white;
+            display: block;
+            border: none;
+            width: 100%;
+            height: 48px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 17px;
+            /* font-weight: bold; */
+        }
+        .myCheck {
+            /* 따로 커스터마이징해야 함 */
+            /* background-color: #ff4A51;
+            border: 1px solid red;
+            width: 30px; */
+            margin-top: 10px;
+            position: absolute;
+            top: 0;
+            left: -10000px;
+        }
+        .myCheck:checked~.checkmark::before {
+            background-color: #ff4A51;
+        }
+        .myCheck:checked~.checkmark::after {
+            display: block;
+        }
+        .checkmark {
+            /* border: 2px solid blue; */
+            position: relative;
+            padding-left: 28px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .checkmark:hover {
+            color: #ff4A51;
+        }
+        .checkmark:hover::before {
+            background-color: #aaa;
+        }
+        .checkmark::before {
+            content: "";
+            /* display: inline-block; */
+            width: 22px;
+            height: 22px;
+            background-color: #3333;
+            border-radius: 11px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .checkmark::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 7px;
+            width: 5px;
+            height: 8px;
+            border: 2px solid white;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            transform: rotate(45deg);
+            display: none;
+        }
+        #user_password {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="login_section">
+        <h2>로그인</h2>
+        <form>
+            <label for="user_id" class="blind">아이디</label>
+            <input type="email" placeholder="아이디" maxlength="50" id="user_id" class="login">
+
+            <label for="user_password" class="blind">비밀번호</label>
+            <input type="password" placeholder="비밀번호" maxlength="10" id="user_password" class="login">
+
+            <label>
+                <input type="checkbox" checked="checked" id="keep_id" class="myCheck">
+                <span class="checkmark">아이디저장</span>
+            </label>
+
+            <label>
+                <input type="checkbox" id="auto_login" class="myCheck">
+                <span class="checkmark">자동로그인</span>
+            </label>
+
+            <button type="submit" id="login_submit">로그인</button>
+        </form>
+    </section>
+</body>
+
+</html>

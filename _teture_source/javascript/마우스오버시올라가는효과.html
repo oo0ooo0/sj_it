@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #work ul {
+            margin-top: 30px;
+            /* border: 3px solid green; */
+            padding-left: 0;
+            position: relative;
+            height: 640px;
+            width: 420px;
+        }
+
+        #work li {
+            border: 1px solid #aaa;
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+            list-style: none;
+            width: 200px;
+            height: 300px;
+            /* margin-right: 20px; */
+            position: absolute;
+            transition: top 0.5s;
+        }
+        #li1 {
+            top: 0;
+            left: 0;
+        }
+        #li1:hover {
+            top: -20px;
+        }
+        li:hover img {
+            /* opacity: 0.5; */
+            filter:contrast(150%);
+        }
+        #li2 {
+            top: 0;
+            left: 220px;
+        }
+        #li2:hover {
+            top: -20px;
+        }
+        #li3 {
+            top: 340px;
+            left: 0;
+        }
+        #li3:hover {
+            top: 320px;
+        }
+        #li4 {
+            top: 340px;
+            left: 220px;
+        }
+        #li4:hover {
+            top: 320px;
+        }
+        #work li:hover {
+           
+        }
+        #work dl {
+            /* border: 3px solid violet; */
+            margin: 0;
+            /* margin-top: 10px; */
+            padding: 10px;
+        }
+
+        #work dt {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #work dd {
+            /* border: 3px solid green; */
+            margin-left: 0;
+            font-size: 14px;
+        }
+
+        #work a {
+            /* border: 5px solid red; */
+            height: 100%;
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        #work img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="work">
+        <h2>포트폴리오</h2>
+        <ul>
+            <li id="li1">
+                <a href="#">
+                    <img src="img/dog.jpg">
+                    <dl>
+                        <dt>작품제목</dt>
+                        <dd>작품설명이 여기에 블라블라 들어갑니다.</dd>
+                    </dl>
+                </a>
+            </li>
+            <li  id="li2">
+                <a href="#">
+                    <img src="img/dog.jpg">
+                    <dl>
+                        <dt>작품제목</dt>
+                        <dd>작품설명이 여기에 블라블라 들어갑니다.</dd>
+                    </dl>
+                </a>
+            </li>
+            <li  id="li3">
+                <a href="#">
+                    <img src="img/dog.jpg">
+                    <dl>
+                        <dt>작품제목</dt>
+                        <dd>작품설명이 여기에 블라블라 들어갑니다.</dd>
+                    </dl>
+                </a>
+            </li>
+            <li  id="li4">
+                <a href="#">
+                    <img src="img/dog.jpg">
+                    <dl>
+                        <dt>작품제목</dt>
+                        <dd>작품설명이 여기에 블라블라 들어갑니다.</dd>
+                    </dl>
+                </a>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

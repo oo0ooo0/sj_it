@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>객체 - 사용자정의객체</title>
+    <script>
+        // 객체 생성 - 내장객체, 사용자 정의 객체
+        // 사용자 정의 객체 - 리터럴 방식, 객체생성자 함수 
+
+        //  sub1이라는 이름의 오브젝트 생성하되, 리터럴(literal) 방식으로 오브젝트 생성
+        var sub1 = {
+            myName: "홍길동",
+            myAge: 20,
+            printOut: function(){
+                return this.myName + "님의 나이는" + this.myAge +"입니다.";
+                // return this.age;
+                // return name;
+            }
+        }
+        var sub3 = {
+            myName: "김혜영",
+            myAge: 22,
+            printOut: function(){
+                return this.myName + "님의 나이는" + this.myAge +"입니다.";
+                // return this.age;
+                // return name;
+            }
+        }
+        // console.log(sub1);
+        // console.log(sub1.name);
+        // console.log(sub1.age);
+        // console.log(sub1.printOut());
+
+        // 함수 선언 Info()
+        function Info(name, age){
+            this.myName =  name;
+            this.myAge = age;
+            this.printOut = function(){
+                return "이름: " + this.myName + " 나이: "+ this.myAge;
+            }
+        }
+        // 함수 호출(매개인자)
+        console.log(Info("김혜영", 22));
+        // console.log(Info("이시온", 11));
+
+        // 객체 생성자(new) 함수로 오브젝트 생성
+        var sub2 = new Info("김혜영", 22);
+        var sub4 = new Info("이시온", 11);
+        console.log(sub2);
+        console.log(sub2.myName);
+        console.log(sub2.myAge);
+        console.log(sub4.printOut());
+        
+
+
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

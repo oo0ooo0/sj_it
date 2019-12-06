@@ -1,0 +1,19 @@
+/* 배경으로만 쓰일 경우 */
+
+#section1 {
+    border: 3px solid yellow;
+    box-sizing: border-box;
+    height: 100vh;
+    background-image: url("../img/vis_1.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+@media screen and (max-width: 768px) {
+    #section1 {
+        height: 70vh; 
+        background-image: url("../img/vis_1_m.jpg");
+    }
+}

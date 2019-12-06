@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="parent">
+        <input type="text">
+    </div> -->
+    <ul>
+        <li class="parent">
+            <a href="#">text</a>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        $('.parent').focusin(function () {
+            console.log('부모 focusin!');
+        });
+        $('.parent a').focusin(function () {
+            console.log('인풋 focusin!');
+        });
+        // $('input').focusin(function () {
+        //     console.log('인풋 focusin!');
+        // });
+        $('.parent').focus(function () {
+            console.log('부모 focus!');
+        });
+        // $('input').focus(function () {
+        //     console.log('인풋 focus!');
+        // });
+        $('.parent a').focus(function () {
+            console.log('인풋 focus!');
+        });
+    </script>
+    <!-- 출처: https://ibrahimovic.tistory.com/13 [Web Standard] -->
+</body>
+
+</html>

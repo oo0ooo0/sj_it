@@ -1,0 +1,32 @@
+/* 이미지 슬라이드일 경우 slide.js */
+#totalSet {
+    border: 10px solid red;
+    box-sizing: border-box;
+    /* width: 900px;
+    height: 800px; */
+    position: relative;
+    overflow: hidden;
+}
+
+#picSet {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+}
+
+.pic {
+    border: 10px solid yellow;
+    box-sizing: border-box;
+    display: inline-block;
+    /* width: 900px;
+    height: 800px; */
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.pic img {
+    display: inline-block;
+}
+

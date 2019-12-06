@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <h1>이미지 로드하기</h1>
+    <img id="pic1" alt="이미지1">
+
+    <script>
+        var img1 = new Image();
+        img1.src = "img/ico.png";
+        $("#pic1").drawImage(img1, 50, 0);
+
+        img1.onload = function () {
+            console.log("image is loaded");
+        }
+
+        // $("#pic1").attr("src", "img/top.png");
+
+
+        // var img2 = new Image();
+        // img2.onload = function () {
+        //     console.log("image is loaded");
+        // }
+        // img2.src = "img/ico.png";
+    </script>
+</body>
+
+</html>

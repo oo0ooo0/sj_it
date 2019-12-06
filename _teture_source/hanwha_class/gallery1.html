@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 500px;
+        }
+        #set {
+            position: relative;
+            width: 500px;
+            height: 188px;
+            margin: 0 auto;
+        }
+        #totalSet {
+            border: 3px solid red;
+            width: 500px;
+            height: 188px;
+            position: relative;
+            /* overflow: hidden; */
+        }
+        #picSet {
+            border: 3px solid blue;
+            width: 500px;
+            white-space: nowrap;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 1s;
+            /* transform: translateX(-300px); */
+        }
+        .btn {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            margin-top: -25px;
+            top: 50%;
+            z-index: 1;
+        }
+
+        #prevBtn {
+            left: -70px;
+        }
+
+        #nextBtn {
+            right: -70px;
+        }
+
+        .pic {
+            display: inline-block;
+            transition: transform 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>gallery</h1>
+    <div id="set">
+        <button id="prevBtn" class="btn">prev</button>
+        <div id="totalSet">
+            <div id="picSet">
+                <div id="pic0" class="pic"><img src="img/product_1.jpg"></div>
+                <div id="pic1" class="pic"><img src="img/product_2.jpg"></div>
+                <div id="pic2" class="pic"><img src="img/product_3.jpg"></div>
+            </div>
+        </div>
+        <button id="nextBtn" class="btn">next</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var picWidth = 500;
+        var moveX = 0;
+
+        $("#prevBtn").click(function () {
+            $("#picSet #pic2").insertBefore($("#picSet #pic0"));
+            $("#picSet").css("left", "-500px");
+            // console.log($("#picSet #pic2").position().left);
+            $("#picSet").css("transform", "translateX(500px)");
+        });
+        $("#nextBtn").click(function () {
+            // $("#picSet div").css("transform", "translateX(-500px)");
+        });
+    </script>
+</body>
+<!-- 1440 * 540       700*262-->
+
+</html>

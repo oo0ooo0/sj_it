@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>갤러리</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            // 버튼 제어
+            let move = 0;
+            const moveNum = $("#totalSet").width(); // 700
+            const totalNum = $("#picSet").children().length; // 상수 선언
+            let currentNum = 1;
+
+            $("#totalSet").prepend('<button id="prev_btn" class="gallery_btn"><</button>');
+            $("#totalSet").append('<button id="next_btn" class="gallery_btn">></button>');
+
+            // 버튼 생성
+            for (var i = 1; i <= totalNum; i++) {
+                console.log(i);
+                // $("#gallery").append('<button id="btn1" class="number_btn">1</button>');
+                // $("#gallery").append('<button id="btn'+1+'" class="number_btn">'+1+'</button>');
+                $("#gallery").append('<button id="btn' + i + '" class="number_btn">' + i + '</button>');
+                
+                $("#btn"+i).click(function () {
+                    console.log("this.id: -------- "+this.id);
+                    console.log("this.id substr(): ---- "+this.id.substr(3,4));
+                    currentNum = this.id.substr(3,4);
+                    move = (currentNum - 1) * -moveNum;
+                    // (currentNum-1) * -moveNum
+                    $("#picSet").css("left", (currentNum - 1) * -moveNum + "px");
+                    buttonCheck();
+                });
+            }
+            console.log(i);
+            // 원버튼 클릭 제어
+            // $("#btn1").click(function(){
+            //     currentNum = 1;
+            //     move = (currentNum-1) * -moveNum;
+            //     // (currentNum-1) * -moveNum
+            //     $("#picSet").css("left", (currentNum-1) * -moveNum + "px");
+            //     buttonCheck();
+            // });
+            // console.log(1);
+            // console.log(2);
+            // console.log(3);
+            // console.log(4);
+            // console.log(5);
+            // console.log(6);
+            // console.log(7);
+
+            // $("#gallery").append('<button id="btn1" class="number_btn">1</button>');
+            // $("#gallery").append('<button id="btn2" class="number_btn">2</button>');
+            // $("#gallery").append('<button id="btn3" class="number_btn">3</button>');
+            // $("#gallery").append('<button id="btn4" class="number_btn">4</button>');
+            // $("#gallery").append('<button id="btn5" class="number_btn">5</button>');
+            // $("#gallery").append('<button id="btn6" class="number_btn">6</button>');
+            // $("#gallery").append('<button id="btn7" class="number_btn">7</button>');
+
+            // console.log($("#totalSet").width());
+            // console.log($("#picSet").children());
+            // console.log($("#picSet").children().length);
+
+
+
+
+            // 버튼 셋팅 - 현재 그림에 따라 활성, 비활성화
+            function buttonCheck() {
+                console.log("currentNum: " + currentNum);
+                console.log("move: " + move);
+                if (currentNum == 1) {
+                    $("#next_btn").attr("disabled", true);
+                    $("#next_btn").css("box-shadow", "none");
+                    $("#next_btn").css("background-color", "gray");
+                    $("#next_btn").css("cursor", "auto");
+                } else {
+                    $("#next_btn").attr("disabled", false);
+                    $("#next_btn").css("background-color", "teal");
+                    $("#next_btn").css("cursor", "pointer");
+                }
+                if (currentNum == totalNum) {
+                    $("#prev_btn").attr("disabled", true);
+                    $("#prev_btn").css("box-shadow", "none");
+                    $("#prev_btn").css("background-color", "gray");
+                    $("#prev_btn").css("cursor", "auto");
+                } else {
+                    $("#prev_btn").attr("disabled", false);
+                    $("#prev_btn").css("background-color", "teal");
+                    $("#prev_btn").css("cursor", "pointer");
+                }
+                // 원버튼도 현재 선택된 컬러 셋팅
+                // $("#btn1").css("background-color", "red");
+                $(".number_btn").css("background-color", "gray");
+                $("#btn" + currentNum).css("background-color", "red");
+            }
+            buttonCheck();
+
+            $(".gallery_btn").hover(
+                function () {
+                    // hover 할때
+                    $(this).css("background-color", "black");
+                    $(this).css("box-shadow", "2px 2px 4px rgba(0, 0, 0, 0.4)");
+                },
+                function () {
+                    // hover 아웃될때
+                    $(this).css("background-color", "teal");
+                    $(this).css("box-shadow", "none");
+                }
+            );
+
+            $("#prev_btn").on("click", function () {
+                console.log("이전버튼");
+                if (currentNum < totalNum) {
+                    currentNum++;
+                    move = move - moveNum; // -700
+                    // $("#picSet").css("transform", "translateX(-700px)");
+                    $("#picSet").css("left", move + "px");
+                }
+                buttonCheck();
+            });
+            $("#next_btn").on("click", function () {
+                console.log("다음버튼");
+                if (currentNum > 1) {
+                    currentNum--;
+                    move = move + moveNum; // -700
+                    // $("#picSet").css("transform", "translateX(700px)");
+                    $("#picSet").css("left", move + "px");
+                }
+                buttonCheck();
+            });
+        });
+    </script>
+    <style>
+        /*section*/
+        #gallery {
+            /* border: 4px solid blue; */
+            text-align: center;
+        }
+
+        h2 {
+            /* border: 4px solid red; */
+            text-align: center;
+        }
+
+        #totalSet {
+            border: 5px solid red;
+            width: 700px;
+            height: 306px;
+            margin: 0 auto;
+            position: relative;
+            /* margin-bottom: 10px; */
+        }
+
+        .gallery_btn {
+            background-color: teal;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+            z-index: 1;
+        }
+
+        /* .gallery_btn:hover {
+            background-color: black;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        } */
+
+        #prev_btn {
+            left: -80px;
+        }
+
+        #next_btn {
+            right: -80px;
+
+        }
+
+        #picSet {
+            /* border: 3px solid blue; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4900px;
+            transition: left 1s;
+            /* transform: translateX(-700px); */
+        }
+
+        #picSet img {
+            /* 공백때문에 별로다 */
+            /* display: inline-block; */
+            float: left;
+        }
+
+        #picTotal {
+            border: 3px solid blue;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .number_btn {
+            background-color: gray;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            border: none;
+            font-size: 12px;
+            color: white;
+            margin: 20px 5px;
+        }
+
+        button:focus {
+            /* outline: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <section id="gallery">
+        <h2>갤러리 기본</h2>
+        <div id="totalSet">
+            <!-- <button id="prev_btn" class="gallery_btn">이전</button> -->
+            <div id="picTotal">
+                <div id="picSet">
+                    <!--  4900 -->
+                    <img src="images/image-slider-1.jpg" alt="갤러리 이미지1">
+                    <img src="images/image-slider-2.jpg" alt="갤러리 이미지2">
+                    <img src="images/image-slider-3.jpg" alt="갤러리 이미지3">
+                    <img src="images/image-slider-4.jpg" alt="갤러리 이미지4">
+                    <img src="images/image-slider-5.jpg" alt="갤러리 이미지5">
+                    <img src="images/image-slider-6.jpg" alt="갤러리 이미지6">
+                    <img src="images/image-slider-7.jpg" alt="갤러리 이미지7">
+                </div>
+            </div>
+            <!-- <button id="next_btn" class="gallery_btn">다음</button> -->
+        </div>
+        <!-- <button id="btn1" class="number_btn">1</button>
+        <button id="btn2" class="number_btn">2</button>
+        <button id="btn3" class="number_btn">3</button>
+        <button id="btn4" class="number_btn">4</button>
+        <button id="btn5" class="number_btn">5</button>
+        <button id="btn6" class="number_btn">6</button>
+        <button id="btn7" class="number_btn">7</button> -->
+    </section>
+</body>
+
+</html>

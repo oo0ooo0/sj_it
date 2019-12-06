@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+nav a {
+    color: white;
+}
+
+.blind {
+    position: absolute;
+    /* border: 1px solid red; */
+    /* clip: rect(0 30px 30px 0px); */
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* top start ----------------------------------------*/
+
+#top {
+    /* border: 3px solid red; */
+    position: fixed;
+    right: 30px;
+    bottom: 160px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    transition: all .5s;
+   
+}
+
+#top .mobile {}
+
+/* top end ----------------------------------------*/
+
+@media screen and (min-width: 768px) {
+    /* top start ----------------------------------------*/
+    #top {
+        /* border: 3px solid red; */
+        background: none;
+        color: black;
+        border-radius: 0;
+        font-size: 0.9em;
+        line-height: 1.4em;
+        right: 50px;
+        bottom: 80px;
+    }
+    #top div:nth-child(2) {
+        width: 36px;
+        height: 36px;
+        margin: 0 auto;
+        /* border: 3px solid green; */
+        background: url("../images/2x/baseline_arrow_upward_black_18dp.png");
+        background-position-x: center;
+    }
+    #top div:nth-child(3) {
+        /* border: 3px solid blue; */
+        margin-top: -10px;
+        color: #666;
+    }
+    #top:hover div:nth-child(2) {
+        background: url("../images/2x/baseline_arrow_upward_orange_18dp.png");
+        background-position-x: center;
+    }
+    #top:hover div:nth-child(3) {
+        color: orangered;
+    }
+    /* top end ----------------------------------------*/
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        border: 6px solid red;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}

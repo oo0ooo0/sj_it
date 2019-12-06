@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 500px;
+        }
+
+        #set {
+            position: relative;
+            width: 500px;
+            height: 188px;
+            margin: 0 auto;
+        }
+
+        #totalSet {
+            /* border: 3px solid red; */
+            width: 500px;
+            height: 188px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #picSet {
+            /* border: 3px solid blue; */
+            width: 500px;
+            white-space: nowrap;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* transition: transform 0.5s; */
+            /* transform: translateX(-300px); */
+        }
+
+        .btn {
+            /* border: 1px solid red; */
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            margin-top: -25px;
+            top: 50%;
+            z-index: 1;
+            cursor: pointer;
+            font-size: 50px;
+            /* background-color: transparent; */
+            /* border: none; */
+            /* outline: none; */
+        }
+
+        #prevBtn {
+            left: -70px;
+        }
+
+        #nextBtn {
+            right: -70px;
+        }
+
+        .pic {
+            display: inline-block;
+            /* transition: transform 1s; */
+        }
+
+        #listSet {
+            /* border: 1px solid red; */
+            padding-left: 0;
+            text-align: center;
+        }
+
+        #listSet li {
+            /* border: 1px solid blue; */
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>gallery</h1>
+    <div id="set">
+        <!-- <button id="prevBtn" class="btn">prev</button> -->
+        <div id="totalSet">
+            <div id="picSet">
+                <div id="pic0" class="pic"><img src="img/product_1.jpg" alt="그림1 설명"></div>
+                <div id="pic1" class="pic"><img src="img/product_2.jpg" alt="그림2 설명"></div>
+                <div id="pic2" class="pic"><img src="img/product_3.jpg" alt="그림3 설명"></div>
+            </div>
+        </div>
+        <!-- <button id="nextBtn" class="btn">next</button> -->
+        <!-- <ul id="listSet">
+            <li id="list0"></li>
+            <li id="list1"></li>
+            <li id="list2"></li>
+        </ul> -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var picWidth = 500;
+        var moveX = 0;
+        var btnEnabled = false;
+        var currentNum = 0;
+        var speed = 2000;
+        var totalNum = 3;
+        $("#picSet").css("transition", "transform " + speed / 1000 + "s");
+        // $("h1").before("<h2>요것바라</h2>");
+        $("#totalSet").before('<div id="prevBtn" class="btn">&lt;</div>');
+        $("#totalSet").after('<div id="nextBtn" class="btn">&gt;</div>');
+        $("#totalSet").after('<ul id="listSet"><li id="list0"></li><li id="list1"></li><li id="list2"></li></ul>');
+
+        var myListColor = function () {
+            $("#listSet li").css("background-color", "gray");
+            $("#list" + currentNum).css("background-color", "red");
+        }
+        var prevMove = function () {
+            myListColor();
+            btnEnabled = true;
+            $(".btn").css("cursor", "default");
+            $("#listSet li").css("cursor", "default");
+            // $(".btn").attr("disabled", "disabled");
+            moveX = moveX + picWidth;
+            $("#picSet").children("div:last").insertBefore($("#picSet").children("div:first"));
+            $("#picSet").css("left", -moveX + "px");
+            $("#picSet").css("transform", "translateX(" + moveX + "px)");
+            var movePrev = setInterval(function () {
+                btnEnabled = false;
+                $(".btn").css("cursor", "pointer");
+                $("#listSet li").css("cursor", "pointer");
+                // $(".btn").removeAttr("disabled");
+                clearInterval(movePrev);
+            }, speed);
+        }
+        var nextMove = function () {
+            myListColor();
+            btnEnabled = true;
+            $(".btn").css("cursor", "default");
+            $("#listSet li").css("cursor", "default");
+            moveX = moveX - picWidth;
+            $("#picSet").css("transform", "translateX(" + moveX + "px)");
+            var moveNext = setInterval(function () {
+                $("#picSet").children("div:first").insertAfter($("#picSet").children("div:last"));
+                $("#picSet").css("left", -moveX + "px");
+                btnEnabled = false;
+                $(".btn").css("cursor", "pointer");
+                $("#listSet li").css("cursor", "pointer");
+                clearInterval(moveNext);
+            }, speed);
+        }
+
+        $("#list0").click(function () {
+            if (btnEnabled == false) {
+                switch (currentNum) {
+                    case 0:
+                        break;
+                    case 1:
+                        currentNum = 0;
+                        prevMove();
+                        break;
+                    case 2:
+                        currentNum = 0;
+                        // nextMove();
+                        prevMove();
+                        prevMove();
+                        break;
+                    default:
+                        console.log("기타");
+                }
+            }
+        });
+        $("#list1").click(function () {
+            if (btnEnabled == false) {
+                switch (currentNum) {
+                    case 0:
+                        currentNum = 1;
+                        nextMove();
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        currentNum = 1;
+                        prevMove();
+                        break;
+                    default:
+                        console.log("기타");
+                }
+            }
+        });
+        $("#list2").click(function () {
+            if (btnEnabled == false) {
+                switch (currentNum) {
+                    case 0:
+                        currentNum = 2;
+                        nextMove();
+                        nextMove();
+                        break;
+                    case 1:
+                        currentNum = 2;
+                        nextMove();
+                        break;
+                    case 2:
+                        break;
+                    default:
+                        console.log("기타");
+                }
+            }
+        });
+
+        $("#prevBtn").click(function () {
+            if (btnEnabled == false) {
+                if (currentNum == 0) {
+                    currentNum = totalNum - 1;
+                } else {
+                    currentNum--;
+                }
+                prevMove();
+            }
+        });
+
+        $("#nextBtn").click(function () {
+            if (btnEnabled == false) {
+                if (currentNum == totalNum - 1) {
+                    currentNum = 0;
+                } else {
+                    currentNum++;
+                }
+                nextMove();
+            }
+        });
+        myListColor();
+    </script>
+</body>
+<!-- 1440 * 540 -->
+
+</html>

@@ -1,0 +1,117 @@
+#section2 {
+    /* border: 3px solid blue; */
+    padding: 0 12.5%;
+}
+
+.aboutList {
+    /* border: 3px solid blue; */
+    margin: 0 auto;
+}
+
+.aboutList li {
+    /* border: 3px solid red; */
+    list-style: none;
+    width: 33.3333333%;
+    text-align: left;
+}
+
+/* 480*3 = 1,440 1920-1440=480 ---- 240 */
+
+/* 240/1920 * 100 = 12.5 */
+
+.aboutList li .thumb {
+    /* border: 3px solid green; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.aboutList li .thumb img {
+    /* transition: transform 0.5s ease-out; */
+    width: 100%;
+    display: block;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.aboutList li a {
+    color: #333;
+}
+
+.aboutList li a:hover {
+    color: #333 !important;
+}
+
+.aboutList li a:hover .thumb img {
+    transform: scale(1.1);
+}
+
+.aboutList:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.aboutList .more2 {
+    display: block;
+    margin-top: 10px;
+}
+
+.aboutList .more2::before {
+    content: "→";
+    display: inline-block;
+    background-color: #f37321;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.aboutList .about_text {
+    /* border: 3px solid green;  */
+    margin: 30px 0 0 30px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 20px;
+}
+
+.aboutList .about_text strong {
+    font-size: 20px;
+}
+
+.aboutList .about_text p {
+    /* border: 1px solid blue;  */
+    height: 70px;
+}
+
+@media screen and (max-width: 1440px) {
+    #section2 {
+        padding: 0 6%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #section2 {
+        padding: 0 3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #section2 {
+        padding: 0 10%;
+    }
+    .aboutList li {
+        width: 100%;
+    }
+    .aboutList .about_text p {
+        height: auto;
+    }
+    .aboutList .about_text {
+        /* border: 3px solid green;  */
+        margin: 5px 0 0 0;
+        border-bottom: none;
+        padding-bottom: 40px;
+    }
+}

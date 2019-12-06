@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function(){
+            $("#gnb>li").on("mouseover", function(){
+                // console.log("click");
+                // console.log($(this).children());
+                // console.log($(this).children(".subMenu"));
+                // $(this).children(".subMenu").css("display", "block");
+
+                // 메뉴 & .plus 초기화 / 애니메이션 초기화
+                $("#gnb>li>a").css("color", "black");
+                $("#gnb>li>a").css("background-color", "transparent");
+                $(".plus").text("+");
+                $(".plus").css("color", "black");
+                $(".plus").css("animation-name", "none");
+               
+                // 선택된 메뉴 컬러 변경
+                console.log("sssssss--------");
+                console.log($(this).children()[0]);
+                $($(this).children()[0]).css("color", "red");
+                $($(this).children()[0]).css("background-color", "black");
+                // 서브 메뉴 열기(기존것 닫고)
+                $(".subMenu").not($(this).children(".subMenu")).slideUp();
+                $(this).children(".subMenu").slideDown();
+
+                // + 회전하기
+                console.log($(this).children().children()[0]);
+                var target = $(this).children().children()[0];
+                $(target).css("animation-name", "rotate");
+                var plusRotate = setInterval(function(){
+                    console.log(this);
+                    $(target).text("-");
+                    $(target).css("color", "red");
+                    clearInterval(plusRotate);
+                }, 500);
+            });
+        });
+    </script>
+    <style>
+        body {
+            margin: 0;
+        }
+        a {
+            /* border: 3px solid red; */
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+        header {
+            /* border: 5px solid green; */
+            background-color: thistle;
+            width: 300px;
+            height: 100vh;
+        }
+        h1 {
+            /* border: 3px solid red; */
+            margin: 0;
+            text-align: center;
+            height: 80px;
+            line-height: 80px;
+        }
+       .subMenu {
+           display: none;
+       }
+       ul {
+        /* border: 3px solid blue; */
+        margin: 0;
+        padding-left: 0;
+        background-color: thistle;
+        
+       }
+       li {
+           list-style: none;
+           /* border: 3px solid black; */
+           
+       }
+       #gnb {
+        padding: 0 30px;
+       }
+
+       #gnb>li {
+           
+           border-bottom: 2px solid #666;
+           position: relative;
+       }
+       #gnb>li>a {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 20px;
+       }
+       .subMenu>li>a {
+            font-size: 15px;
+            padding: 10px 20px;
+       }
+       .subMenu>li>a:hover {
+           color: red;
+           background-color: black;
+       }
+       .subMenu>li:first-child {
+           margin-top: -10px;
+       }
+       .subMenu>li:last-child {
+           padding-bottom: 20px;
+       }
+       .plus {
+           /* border: 2px solid red; */
+           font-size: 23px;
+           position: absolute;
+           top: 20px;
+           right: 20px;
+           /* animation-name: rotate; */
+           animation-duration: 0.5s;
+           animation-iteration-count: 1;
+       }
+       @keyframes rotate {
+           from {
+               transform: rotate(0deg);
+           }
+           to {
+            transform: rotate(360deg);
+           }
+       }
+       #quickMenu {
+        /* border: 5px solid red;  */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+       }
+       #quickMenu li {
+           /* display: inline-block; */
+           float: left;
+           width: 50%;
+           box-sizing: border-box;
+           text-align: center;
+           background-color: cadetblue;
+           padding: 20px;
+       }
+       #quickMenu li:nth-of-type(1) {
+           position: relative;
+       }
+       #quickMenu li:nth-of-type(1)::after {
+        content: "|";
+        color: white;
+        position: absolute;
+        top: 18px;
+        right: 0;
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>로고</h1>
+        <nav>
+            <ul id="gnb">
+                <li>
+                    <a href="#">축제소개<span class="plus">+</span></a>
+                    <ul class="subMenu">
+                        <li><a href="#">초대의 글</a></li>
+                        <li><a href="#">축제개요</a></li>
+                        <li><a href="#">축제연혁</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">행사안내<span class="plus">+</span></a>
+                    <ul class="subMenu">
+                        <li><a href="#">셔틀버스안내</a></li>
+                        <li><a href="#">행사안내</a></li>
+                        <li><a href="#">행사일정</a></li>
+                        <li><a href="#">소공연장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">홍보마당<span class="plus">+</span></a>
+                    <ul class="subMenu">
+                        <li><a href="#">축제소식</a></li>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">음식레시피</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">참여마당<span class="plus">+</span></a>
+                    <ul class="subMenu">
+                        <li><a href="#">참가후기</a></li>
+                        <li><a href="#">연꽃갤러리</a></li>
+                        <li><a href="#">포토갤러리</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 퀵메뉴 -->
+            <!-- <ul id="quickMenu">
+                <li><a href="#">퀵메뉴1</a></li>
+                <li><a href="#">퀵메뉴2</a></li>
+            </ul> -->
+        </nav>
+    </header>
+</body>
+
+</html>

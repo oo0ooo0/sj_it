@@ -1,0 +1,735 @@
+/* 메인 모바일 */
+* {
+    /* transition: all 1s; */
+}
+h2 {
+    /* border: 5px solid plum; */
+    text-align: center;
+    margin-top: 50px;
+    line-height: 1em;
+}
+h2 div:nth-of-type(2) {
+    color: dimgray;
+}
+h2 span {
+    color: orangered;
+}
+h3 {
+    font-size: 1em; 
+}
+#about {
+    /* border: 3px solid blue; */
+    padding: 20px;
+}
+.aboutBox {
+    border: 1px solid #ccc;
+    margin-top: 12px;
+    padding: 20px;
+    position: relative;
+}
+.about_text_mobile {
+    /* border: 2px solid green; */
+    width: 88%;
+    font-size: 0.8em;       
+}
+.about_more_mobile {
+    /* border: 2px solid pink; */
+    width: 10%; 
+    position: absolute;
+    top: 25px;
+    right: 16px;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.about_more_mobile a {
+    color: orangered;
+}
+.about_more_mobile a:hover {
+    color: orange;
+}
+/* product start ----------------------------- */
+#product {
+    /* border: 3px solid green; */
+    position: relative;
+}
+#productSet {
+    /* border: 3px solid green; */
+    padding: 30px 0 30px 0;
+    position: relative;
+}
+#productList {
+    /* border: 3px solid blue; */
+    text-align: center;
+    position: absolute;
+    top: 420px;
+    left: 0;
+    width: 100%;
+    z-index: 6;
+}
+#productList li {
+    display: inline-block;
+    border: 1px solid gray;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+
+#productPic {
+    /* border: 5px solid blue; */
+    width: 80%;
+    height: 350px;
+    margin: 0 auto;
+    /* 이부분 추가 ------*/
+    position: relative;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* 이부분 추가 ------*/
+#picSet {
+    /* border: 1px solid blue; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#picSet div {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    /* background: pink; */
+}
+/* 이부분 추가 ------*/
+
+
+#productSetA {
+    /* border: 5px solid red; */
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    width: 80%;
+    height: 170px;
+    padding: 20px;
+    left: 0;
+    top: 210px; /* 30+ 350 = 380  380-170=210*/ 
+    margin-left: 10%; 
+    color: white;
+    font-size: 0.9em;
+    z-index: 4;
+}
+#productSetA h3 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+/* product end ----------------------------- */
+/* challenge320 mobile start ------------------------------*/
+#challenge {
+    /* border: 3px solid green; */
+    margin-top: 40px;
+    background: url("../images/fullbg_main.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position-x: right;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+#challenge h2 {
+    /* border: 3px solid green; */
+    margin-bottom: 30px;
+}
+#challenge h3 {
+    cursor: pointer;
+    /* border: 3px solid blue; */
+    background-color: rgba(255,255,255, 0.7);
+    background-image: url("../images/challenge_arrow.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-origin: content-box;
+    background-size: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+/* case1 - margin-top */
+#recruitLink {
+    /* border: 2px solid red; */
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+}
+#recruit {
+    display: inline-block;
+    /* block */
+    /* margin: 0 auto;  */
+    color: white;
+    width: 70%;
+    max-width: 300px;
+    background: orangered;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    /* margin-top: 100px; */
+}
+
+/* case2 - position */
+/* #recruit {
+    width: 70%;
+    max-width: 300px;
+    background: orangered;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    
+    position: absolute;
+    top: 350px;
+    margin-left: 15%;
+
+} */
+#recruit:hover {
+    background: black;
+    color: orange;
+}
+/* challenge end ------------------------------*/
+
+/* sns mobile start --------------------------------*/
+#sns_title {
+    /* border: 3px solid red; */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#sns_title h3 {
+    display: inline-block;
+    /* border: 1px solid green; */
+    padding: 0;
+}
+#sns_title div {
+    display: inline-block;
+    /* border: 1px solid blue; */
+    width: 60px;
+}
+/* start */
+#sns_container {
+    /* border: 3px solid blue; */
+    /* margin-top: 20px; */
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 20px; */
+}
+#sns_set1, #sns_set2, #sns_set3 {
+    /* border: 3px solid red; */
+    /* width: 80%; */
+    /* padding: 0 20px; */
+}
+#sns_set2 {
+    margin: 20px 0;
+}
+.sns_picSet {
+    /* border: 3px solid green; */
+    height: 200px;
+    /* background: orange; */
+}
+.sns_title{
+    /* border: 2px solid green; */
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: orangered;
+    font-weight: bold;
+}
+.sns_text{
+    /* border: 2px solid green; */
+    /* margin-bottom: 10px; */
+    font-weight: bold;
+}
+.sns_date{
+    /* border: 2px solid green; */
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 40px;
+}
+#sns_pic1 {
+    background: url("../images/about_1.jpg");
+    background-size: cover;
+    height: 100%;
+}
+#sns_pic2 {
+    background: url("../images/about_2.jpg");
+    background-size: cover;
+    height: 100%;
+}
+#sns_pic3 {
+    background: url("../images/about_3.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+/* sns mobile end --------------------------------*/
+
+/*  세로 태블릿 버전 */
+@media screen and (min-width: 768px){
+    h2 {
+        font-size: 2.5em;
+    }
+    h2 div:nth-child(2) {
+        color: black;
+    }
+    h2 div {
+        display: inline-block;
+    }
+    .h2_text {
+        margin-top: 10px;
+        text-align: center;
+    }
+    /* 주가정보 */
+    .finance {
+        text-align: center;
+        margin: 50px 0;
+        font-size: 0.9em;
+        color: #666;
+    }
+    .finance span {
+        font-weight: bold;
+    }
+    .finance span:nth-of-type(1) {
+        color: black;
+        font-size: 1.5em;
+    }
+    .finance span:nth-of-type(2) {
+        color: red;
+        font-size: 1.2em;
+    }
+    .finance img {
+        width: 16px;
+    }
+    .aboutBox {
+        border: none;
+        position: static;
+        padding: 0;
+        margin-top: 0;
+    }
+    .about_text_mobile {
+        width: 100%;
+    }
+    #about_container {
+        /* border: 10px solid red; */
+        width: 80%;
+        /* min-width: 768px; */
+        /* max-width: 1440px; */
+        display: flex;
+        margin: 0 auto;
+    }
+    #about_container>div {
+        /* border: 3px solid blue; */
+        flex: 1;
+    }
+    /* about 사진 오버 효과 start------------------ */
+    .aboutPic {
+        /* border: 3px solid blue; */
+        /* height: 200px; */
+        overflow: hidden;
+    }
+    .aboutPic img {
+        transition: all 1s;
+        width: 100%;
+        display: block;
+    }
+    .aboutPic:hover img {
+        transform: scale(1.3);
+    }
+    /* about 사진 오버 효과 end ------------------ */
+    h3 {
+        /* border: 2px solid blue; */
+        padding-top: 30px;
+        padding-left: 30px;
+        font-size: 1.2em;
+    }
+    .about_text_desk {
+        /* border: 2px solid blue; */
+        padding-left: 30px;
+        font-size: 1em;
+        height: 60px;
+        word-break: keep-all; /* 단어별로 줄바꿈 */
+    }
+    /* more */
+    .about_arrow {
+        /* border: 2px solid blue; */
+        padding: 30px 0 30px 70px;
+        background: url("../images/arrow.png");
+        background-repeat: no-repeat;
+        background-position-x: 30px;
+        background-position-y: center;
+        font-weight: bold;
+        color: #666;
+    }
+    #about_container hr {
+        border: 0.5px solid #aaa;
+        margin-left: 30px;
+    }
+    /* section 2 product start -------------------------------------*/
+    #product_our {
+        color: black;
+    }
+    #product>h2>span {
+        /* border: 1px solid blue; */
+        display: inline;
+    }
+    #product>h2>div {
+        display: inline-block;
+        /* border: 1px solid red; */
+    }
+    /* section 2 product end -------------------------------------*/
+
+    /* product start ----------------------------- */
+    #productSetA {
+        background: black;
+        padding: 0;
+        width: 70%;
+        margin-left: 15%;
+        top: 400px;
+        padding: 40px 40px 40px 40px;
+        display: flex;
+        height: 170px;
+    }
+    #productSetA h3 {
+        /* border: 2px solid white; */
+        padding: 0;
+        flex: 0.7;
+    }
+    #productSetA div {
+        /* border: 2px solid white; */
+    }
+    #productSetA div:nth-of-type(1) {
+        flex: 2;
+        word-break: keep-all; /* 단어별로 줄바꿈 */
+        padding: 0 15px;
+    }
+    #productSetA div:nth-of-type(2) {
+        flex: 0.7;
+        text-align: right;
+    }
+    #productSetA div:nth-of-type(2) div {
+        background: orangered;
+        color: white;
+        display: inline-block;
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    #productSetB {
+        /* border: 3px solid palevioletred; */
+        width: 70%;
+        margin-left: 15%;
+        background: white;
+        display: flex;
+        height: 80px;
+        align-items: center;
+        padding: 0 40px;
+        position: absolute;
+        z-index: 5;
+        top: 320px; /* 400-80=320 */
+    }
+    #productSetB h4 {
+        /* border: 2px solid black; */
+        flex: 5;
+    }
+    #productSetB h4 span {
+        /* border: 2px solid red; */
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        color: orangered;
+    }
+    #productSetB>div {
+        /* border: 2px solid black; */
+        flex: 0.5;
+        font-size: 2em;
+        text-align: right;
+        color: #666;
+    }
+    #productSet {
+        padding: 0;
+        margin-top: 30px;
+    }
+    #productPic {
+        height: 400px;
+    }
+    #productPic img {
+        /* margin-left: 0;  */
+        /* width: 1440px; */
+        /* height: 540px; */
+        /* border: 2px solid red; */
+    }
+    #productList {
+        top: 380px;
+    }
+    /*제품 상세보기 */
+    #productView:hover div {
+        background: white !important;
+        color: orangered !important;
+    }
+
+    /* product end ----------------------------- */
+
+    /* challenge768 start ----------------------------*/
+    #challenge_container {
+        /* border: 1px solid pink; */
+        width: 80%;
+        margin: 50px auto 0 auto;
+    } 
+    #challenge {
+        /* border: 5px solid green; */
+        margin-top: 200px;
+        height: 900px;
+    }
+    #challenge h2 {
+        margin-bottom: 0;
+    }
+    #challenge h3 {
+        /* border: 1px solid blue; */
+        background: none;
+        width: 100%;
+        padding: 30px 30px 30px 90px;
+        margin-bottom: 0px;
+    }
+    #line1 {
+        border: 2px solid black;
+    }
+    #line2, #line3 {
+        border: 0.5px solid #aaa;
+    }
+    .challengeText {
+        /* border: 1px solid pink; */
+        color: #333;
+        padding: 0 90px;
+        line-height: 1.6em;
+        word-break: keep-all;
+    }
+    #challenge_more {
+        /* border: 1px solid red; */
+        font-weight: bold;
+        margin: 20px 0 70px 0;
+        color: black;
+        font-size: 1.1em;
+    }
+    #challenge_more span {
+        color: orangered;
+    }
+    .challengeText table {
+        /* background: rgba(255,255,255,0.7); */
+    }
+    .challengeText table, .challengeText th, .challengeText td {
+        /* border-top: 1px solid #aaa;
+        border-bottom: 1px solid #aaa;
+        border-collapse: collapse; */
+    }
+    .challengeText table {
+        margin-top: 10px;
+    }
+    .challengeText th {
+        width: 100px;
+        text-align: left;
+        vertical-align: top;
+        padding: 5px;
+    }
+    .challengeText td {
+        vertical-align: top;
+        padding: 5px;
+        /* 백그라운드로 블릿을 넣는 경우 */
+        /* padding-left: 30px;
+        background: url("../images/arrow.png");
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position-y: center; */
+    }
+    .challengeText table span {
+        /* border: 1px solid red; */
+        color: orangered;
+        display: inline-block;
+        width: 30px;
+    }
+    .challengeText strong {
+        color: orangered;
+    }
+    /* challenge end ----------------------------*/ 
+
+    /* sns768 start -------------------------------*/
+    #sns_container {
+        display: flex;
+    }
+    #sns_set1, #sns_set2, #sns_set3 {
+        flex: 1;
+    }
+    #sns_set2 {
+        margin: 0 20px;
+    }
+    .sns_picSet {
+        height: 250px;;
+    }
+
+    
+    .sns_title{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .sns_text{
+        margin-bottom: 30px;
+    }
+    .sns_date{
+        margin-bottom: 40px;
+    }
+
+    .sns_picSet {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .orangeRec {
+        display: none;
+        /* border: 2px solid orange; */
+        width: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0; 
+        left: 0;
+        animation-name: orangeAni;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes orangeAni {
+        from {
+
+        }
+        to {
+            width: 100%; 
+        }
+    }
+    .blog_btn {
+        display: none;
+        /* border: 1px solid #aaa; */
+        background:white;
+        /* display: flex; */
+        width: 150px;
+        height: 50px;
+        /* text-align: center; */
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -75px;
+        margin-top: -25px;
+        display: none;
+        animation-name: blog_btnAni;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        border-radius: 25px;
+        color: orangered;
+        opacity: 0;
+    }
+    @keyframes blog_btnAni {
+        from {
+            
+        }
+        to {
+            opacity: 1; 
+        }
+    }
+    .blog_btn div {
+        /* border: 2px solid white; */
+        flex: 1;
+    }
+    .blog_btn div:nth-child(1) {
+        padding-left: 20px;
+    }
+    .blog_btn div:nth-child(2) {
+        text-align: right;
+        padding-right: 20px;
+        font-size: 2em;
+        margin-top: 5px;
+    }
+    .smallRec {
+        width: 50px;
+        height: 50px;
+        background: orangered;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+    }
+    .sns_picSet:hover .orangeRec {
+        display: block;
+    }
+    .sns_picSet:hover .blog_btn {
+        display: flex;
+    }
+    .sns_picSet:hover .smallRec {
+        display: none;
+    }
+    /* sns768 end -------------------------------*/
+}
+/* 1024px 이상 */
+@media screen and (min-width: 1024px){
+    #productSetA {
+        height: 140px;
+    }
+    /* challenge1024 start ----------------------------*/ 
+    #challenge {
+        margin-top: 190px;
+    }
+
+    /* challenge end ----------------------------*/
+}
+/* 1440px 이상 */
+@media screen and (min-width: 1440px){
+    #about_container {
+        max-width: 1440px;
+    }
+    #productPic {
+        height: 450px;
+    }
+    #productSetA {
+        top:450px;
+        height: 130px;
+    }
+    #productSetB {
+        top: 370px;  /*450-80 = 370 */
+    }
+    #productList {
+        top: 430px;
+    }
+    /* challenge1440 start ----------------------------*/ 
+    #challenge {
+        margin-top: 180px;
+    }
+
+    /* challenge end ----------------------------*/
+}
+@media screen and (min-width: 1800px){
+    #productPic, #challenge_container, #sns_container {
+       width: 1440px;
+    }
+}
+
+
+
+
+
+

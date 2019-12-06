@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/gallery1.js"></script>
+    <style>
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        nav {
+            /* border: 3px solid green; */
+            background-color: cadetblue;
+            height: 100px;
+        }
+
+        .inner {
+            border: 3px solid blueviolet;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            float: left;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        /* nav> ul */
+        #gnbMenu {
+            /* border: 3px solid blue; */
+            float: right;
+            margin-top: 35px;
+        }
+
+        #gnbMenu>li {
+            display: inline-block;
+            /* border: 1px solid black; */
+            margin-right: 30px;
+        }
+
+        #gnbMenu>li {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #slideImg {
+            border: 5px solid red;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        #slideSet>div {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #slideSet>div>p{
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 100px;
+        }
+        #slideSet>div:nth-child(2) {
+            top: -300px;
+        }
+        #slideSet>div:nth-child(3) {
+            top: -600px;
+        }
+        #slideSet>div:nth-child(4) {
+            top: -900px;
+        }
+        #slideSet>div:last-child {
+            top: -1200px;
+        }
+        #slideSet {
+            position: relative;
+            transition: transform 1s;
+        }
+
+        #slideSet:hover {
+            /* transform: translateY(300px); */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="inner">
+                <h1>Logo</h1>
+                <ul id="gnbMenu">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="slideImg" class="inner">
+            <div id="slideSet">
+                <div>
+                    <img src="img/back1.png" alt="">
+                    <p>1. Text</p>
+                </div>
+                <div>
+                    <img src="img/back1.png" alt="">
+                    <p>2. Text</p>
+                </div>
+                <div>
+                    <img src="img/back1.png" alt="">
+                    <p>3. Text</p>
+                </div>
+                <div>
+                    <img src="img/back1.png" alt="">
+                    <p>4. Text</p>
+                </div>
+                <div>
+                    <img src="img/back1.png" alt="">
+                    <p>5. Text</p>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

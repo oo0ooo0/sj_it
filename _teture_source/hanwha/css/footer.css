@@ -1,0 +1,104 @@
+/* 모바일 버전 */
+footer {
+    /* border: 5px solid purple; */
+    margin-top: 50px;
+    padding: 20px;
+}
+#foot_logo {
+    height: 30px;
+    background: url("../images/hanwha_logo_b.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 3px solid red; */
+}
+#foot_family {
+    font-size: 1em;
+    font-weight: bold;
+    /* border: 3px solid blue; */
+    padding: 15px 0;
+    background: url("../images/family_arrow.png") no-repeat center right;
+    background-size: 14px;
+}
+footer hr {
+    border: 1.5px solid black;
+}
+footer li {
+    list-style: none;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+footer ul {
+    /* border: 3px solid red; */
+    margin: 20px 0;
+}
+address {
+    font-style: normal;
+    font-size: 1em;
+    font-weight: bold;
+    color: #666;
+}
+.foot_text {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #666;
+    margin: 5px 0;
+}
+.foot_text a {
+    font-size: 1.2em;
+}
+footer a {
+     color: black;
+}
+#foot_line {
+    margin: 30px 0;
+    border: 0.3px solid #999;
+}
+/* 세로 태블릿 */
+@media screen and (min-width: 768px){
+
+}
+/* 태블릿 - 데스크탑 버전 */
+
+/* 데스크탑 버전 1440px 이상 */
+@media screen and (min-width: 1440px){
+    footer hr {
+        display: none;
+    }
+    footer {
+        /* border: 5px solid blue; */
+        border-top: 1px solid #bbb;
+        padding: 50px 70px;
+        height: 200px;
+    }
+    footer>div {
+        /* border: 3px solid palevioletred; */
+        float: left;
+    }
+    #foot_logo {
+        width: 130px;
+    }
+    #foot_aside {
+        float: right;
+        margin-right: 30px;
+    }
+    #foot_aside ul, #foot_aside li, #foot_family {
+        display: inline-block;
+    }
+    #foot_aside ul {
+        /* border: 5px solid green; */
+    }
+    #foot_aside li {
+        /* border: 1px solid black; */
+        font-size: 0.9em;
+        margin-right: 20px;
+    }
+    #foot_family {
+        /* border: 5px solid blue; */
+        width: 250px;
+        float: right;
+        margin-left: 30px;
+        padding: 20px;
+    }
+
+}

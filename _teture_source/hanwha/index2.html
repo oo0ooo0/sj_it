@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>한화케미칼</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/visulImg_main.css" rel="stylesheet" type="text/css">
+    <link href="css/triger.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/slideGallery.js"></script>
+
+    <script>
+        $(function () {
+            /* challenge start --------------------*/
+            $("#challenge2").css("display", "none");
+
+            $("#challengeBtn1").on("click", function(){
+                console.log("버튼1을 눌렀군요");
+                //console.log($("#challenge1"));
+                //$("#challenge1").css("display", "block");
+                //$("#challenge2").css("display", "none");
+                
+                $("#challenge1").slideDown();
+                $("#challenge2").slideUp();
+            });
+            $("#challengeBtn2").on("click", function () {
+                console.log("버튼2를 눌렀군요");
+                //$("#challenge1").css("display", "none");
+                //$("#challenge2").css("display", "block");
+                $("#challenge1").slideUp();
+                $("#challenge2").slideDown();
+            });
+            /* challenge end --------------------*/
+        }); 
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="gnb">
+                <a href="http://hcc.hanwha.co.kr/ko/" target="_self"><h1><span class="blind">한화케미칼</span></h1></a>
+                
+                <a id="menu7" class="menu-trigger" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <div id="m_search" class="mobile"></div>
+                <ul class="desktop">
+                    <li id="menu1"><a href="#">회사소개</a></li>
+                    <li id="menu2"><a href="#">사업영역</a></li>
+                    <li id="menu3"><a href="#">인재채용</a></li>
+                </ul>
+            </div>
+
+            <div id="snb" class="desktop">
+                <ul>
+                    <li id="menu4"><a href="#">알기쉬운 제품공정</a></li>
+                    <li id="menu5"><a href="#">내 삶속의 한화케미칼</a></li>
+                </ul>
+                <div id="menu6"><a href="#">kor</a></div>
+                <a href="#"><div id="search">search</div></a>
+            </div>
+        </nav>
+
+        <div id="main_title" class="title">Be Creative & Competitive<br>
+            to take Chemical Leadership</div>
+        <div id="sub_title" class="title">창의적이고 경쟁력 있는 선도 화학기업</div>
+        <a href="#"><div id="view_more" class="desktop">VIEW MORE <span>&rarr;</span></div></a>
+        <div id="scroll_down" class="desktop">SCROLL DOWN<br><span>&dArr;</span></div>
+    </header>
+<!-- top start------------------------------>
+    <!-- <a href="#gnb"> -->
+        <div id="top">
+            <div class="mobile">&UpTeeArrow;</div>
+            <div class="desktop"></div>
+            <div class="desktop">top</div>
+        </div>
+    <!-- </a> -->
+    <!-- 스크롤 start------------------------------>
+    <script>
+        $("#top").css("opacity", "0");
+        $("#top").css("cursor", "pointer");
+
+        $(window).on("scroll", function () {
+            console.log($(window).scrollTop());
+            var scrollNum = $(window).scrollTop();
+            if(scrollNum > 800){
+                $("#top").css("opacity", "1");
+            } else {
+                $("#top").css("opacity", "0");
+            }
+            if($(window).width() < 768 && scrollNum > 2400){
+                console.log("768이하");
+                $("#top").css("bottom", "160px");
+            } else if(scrollNum > 3000){
+                if($(window).width() < 1024) {
+                    console.log("1024이하");
+                    $("#top").css("bottom", "180px");
+                } else {
+                    console.log("1024이상");
+                    $("#top").css("bottom", "260px");
+                }
+            } else {
+                $("#top").css("bottom", "80px");
+            } 
+        });
+        //$(window).off("scroll");
+
+        $( '#top' ).click( function() {
+	        $( 'html, body' ).animate( { scrollTop : 0 }, 1000 );
+	        return false;
+        } );    
+
+    </script>
+    <!-- 스크롤 end------------------------------>
+
+    <section id="about">
+        <h2>
+            <div>ABOUT</div>
+            <div>Hanwha Chemical<span>.</span></div>
+        </h2>
+        <div class="desktop h2_text">대한민국 대표 석유화학 기업, 한화케미칼을 소개합니다.</div>
+        <div class="desktop finance">
+            <span>19,450</span>
+            <img src="images/triangle_up.png" alt="상승">
+            <span>100</span>
+            2018.12.04 09:08:36 <!-- 자바스크립트 현재시간 뿌려주기 -->
+        </div>
+
+        <div id="about_container">
+            <div class="aboutBox">
+                <div class="desktop aboutPic"><a href="#"><img src="images/about_1.jpg"></a></div>
+                <h3>회사소개</h3>
+                <div class="about_text_mobile about_text_desk">삶의 가치를 높이는 기술기업, 한화케미칼</div>
+                <div class="about_more_mobile mobile"><a href="#">+</a></div>
+                <div class="desktop about_arrow">more</div>
+                <hr class="desktop">
+            </div>
+        
+            <div class="aboutBox">
+                <div class="desktop aboutPic"><a href="#"><img src="images/about_2.jpg"></a></div>
+                <h3>중앙연구소</h3>
+                <div class="about_text_mobile mobile">풍요로운 내일을 만들어가는 중앙연구소</div>
+                <div class="desktop about_text_desk">설립 이래 한결 같은 자세로 기술 개발에 전념해 오고 있습니다.</div>
+                <div class="about_more_mobile mobile"><a href="#">+</a></div>
+                <div class="desktop about_arrow">more</div>
+                <hr class="desktop">
+            </div>
+        
+            <div class="desktop">
+                <div class="aboutPic"><a href="#"><img src="images/about_3.jpg"></a></div>
+                <h3>투자정보</h3>
+                <div class="about_text_desk">한화케미칼의 주요 경영사항을 제공합니다.</div>
+                <div class="mobile">+</div>
+                <div class="about_arrow">more</div>
+                <hr>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="product">
+        <h2>
+            <span class="desktop" id="product_our">OUR</span>
+            <div>PRODUCT INNOVATIONS<span>.</span></div>
+        </h2>
+        <div class="desktop h2_text">끊임없는 기술 혁신으로 미래 성장 동력을 지속 발굴합니다.</div>
+    
+        <div id="productSet">
+            <div id="productSetA">
+                <h3></h3>
+                <div id="productMainText"></div>
+                <div class="desktop"><a id="productView" href="#"><div>제품상세보기</div></a></div>
+            </div>
+            <div id="productSetB">
+                <h4 class="desktop">
+                    <div id="productBt0">01<span>.</span>Chlorinated Polyvinyl Chloride</div>
+                    <div id="productBt1">02<span>.</span>Chlorinated Polyvinyl Chloride</div>
+                    <div id="productBt2">03<span>.</span>Chlorinated Polyvinyl Chloride</div>
+                </h4>
+                <div id="prev" class="desktop">&larr;</div>
+                <div id="next" class="desktop">&rarr;</div>
+            </div>
+            <div id="productPic">
+                    <div id="picSet">
+                        <div id="pic0"></div><div id="pic1"></div><div id="pic2"></div>
+                    </div>
+            </div>
+        </div>
+        <ul id="productList">
+            <li id="pli0"></li>
+            <li id="pli1"></li>
+            <li id="pli2"></li>
+        </ul>
+    
+    </section>
+
+
+
+    <section id="challenge">
+        <h2>
+            <div>CHALLENGE ME<span>.</span></div>
+        </h2>
+        <div class="desktop h2_text">한화와 함께 꿈을 키워 갈 인재를 기다립니다.</div>
+        
+        <div id="challenge_container">
+            <hr id="line1" class="desktop">
+            <h3 id="challengeBtn1">
+                <div class="mobile">직무소개</div>
+                <div class="desktop">직무특성 및 소개</div>
+            </h3>
+            <div id="challenge1" class="desktop challengeText">
+                <div>한국 케미칼 산업의 역사를 이끌어 온 한화케미칼이 미래를 선도하는 글로벌 케미칼리더로 함께 성장해 나갈 인재를 모집합니다.
+                    글로벌 시장 진출 및 사업다각화가 본격화됨에 따라 체계적 · 전문적인 인재 육성의 중요성을 인식하고, 그에 걸맞은 다양한 교육프로그램과 인사제도를 폭넓게 실시하고 있습니다.
+                    경영지원, 영업/마케팅, 기술/엔지니어, R&D 분야의 직무별 특성에 맞는 인재를 채용합니다.
+                </div>
+                <div id="challenge_more">more <span>></span></div>
+            </div>
+            <hr id="line2" class="desktop">
+            <h3 id="challengeBtn2">
+                <div>인재상</div>
+            </h3>
+            <div id="challenge2" class="desktop challengeText">
+                <div id="challengePeople">한화는 신용과 의리에 기반하여 ‘도전, 헌신, 정도’를 3대 핵심가치로 삼는 인재상을 추구하고 있습니다.</div>
+                <table aria-describedby="challengePeople">
+                    <tr>
+                        <th>Challenge</th>
+                        <td><span>ㆍ</span></td>
+                        <td>기존의 틀에 안주하지 않고 변화와 혁신을 통해 최고를 추구하는 <strong>도전적인 한화인</strong></td>
+                    </tr>
+                    <tr>
+                        <th>Dedication</th>
+                        <td><span>ㆍ</span></td>
+                        <td>회사, 고객, 동료와의 인연을 소중히 여기고 큰 목표를 위해 혼신의 힘을 다하는 <strong>헌신적인 한화인</strong></td>
+                    </tr>
+                    <tr>
+                        <th>Integrity</th>
+                        <td><span>ㆍ</span></td>
+                        <td>자긍심을 바탕으로 원칙에 따라 바르고 공정하게 행동하는 <strong>정도의 한화인</strong></td>
+                    </tr>
+                </table>
+                
+                <div id="challenge_more">more <span>></span></div>
+            </div>
+
+            <hr id="line3" class="desktop">
+            <div id="recruitLink"><a id="recruit" href="#">한화인 채용 사이트 바로가기</a></div>
+        </div>
+
+    </section>
+
+    <aside id="sns">
+        <h2>
+            <div>SNS CHANNEL<span>.</span></div>
+        </h2>
+        <div class="desktop h2_text">SNS를 통해 한화케미칼의 다양한 모습을 만나보세요.</div>
+
+        <div id="sns_title">
+            <h3>BLOG</h3>
+            <div>ㆍ</div>
+            <h3>FACEBOOK</h3>
+        </div>
+
+        <div id="sns_container">
+            <div id="sns_set1">
+                <div class="sns_picSet">
+                    <div id="sns_pic1"></div>
+                    <div class="desktop orangeRec"></div>
+                    <div class="desktop blog_btn">
+                        <div>BLOG</div>
+                        <div>&rarr;</div>
+                    </div>
+                    <div class="desktop smallRec">+</div>
+                </div>
+                <div class="sns_title">뉴스</div>
+                <div class="sns_text">내일을 키우는 에너지 교실, '교육기부대상' 수상</div>
+                <div class="sns_date">2018.12.07 09:21</div>
+            </div>
+
+            <div id="sns_set2">
+                <div class="sns_picSet">
+                    <div id="sns_pic2"></div>
+                    <div class="desktop orangeRec"></div>
+                    <div class="desktop blog_btn">
+                        <div>BLOG</div>
+                        <div>&rarr;</div>
+                    </div>
+                    <div class="desktop smallRec">+</div>
+                </div>
+                <div class="sns_title">뉴스</div>
+                <div class="sns_text">내일을 키우는 에너지 교실, '교육기부대상' 수상</div>
+                <div class="sns_date">2018.12.07 09:21</div>
+            </div>
+
+            <div id="sns_set3">
+                <div class="sns_picSet">
+                    <div id="sns_pic3"></div>
+                    <div class="desktop orangeRec"></div>
+                    <div class="desktop blog_btn">
+                        <div>BLOG</div>
+                        <div>&rarr;</div>
+                    </div>
+                    <div class="desktop smallRec">+</div>
+                </div>
+                <div class="sns_title">뉴스</div>
+                <div class="sns_text">내일을 키우는 에너지 교실, '교육기부대상' 수상</div>
+                <div class="sns_date">2018.12.07 09:21</div>
+            </div>
+        </div>
+        
+
+    </aside>
+
+    <footer>
+        <div id="foot_logo"></div>
+
+        <div id="foot_aside">
+            <div id="foot_family">FAMILY SITE</div>
+            <hr>
+            <ul>
+                <li class="desktop"><a href="#">온라인 구매시스템</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </div>
+    
+        <div>
+            <hr id="foot_line">
+            <address>04541 서울특별시 중구 청계천로 86 한화빌딩</address>
+            <div class="foot_text">TEL. 02-0000-0000 MAIL. <a href="mailto:ssss@ssss.com">ssss@ssss.com</a></div>
+            <div class="foot_text">Copyright 2018 Hanwha Chemical Corporation. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>

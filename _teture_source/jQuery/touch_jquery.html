@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>터치이벤트</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function(){
+            document.getElementById("touch").ontouchstart = function(){
+                console.log("touchstart");
+            };
+            document.getElementById("touch").ontouchend = function(){
+                console.log("touchend");
+            };
+            $("#touch2").on("touchstart", function(event){
+                // console.log("touchstart");
+                console.log(event.changedTouches[0].pageX);
+            });
+            $("#touch2").on("touchend", function(){
+                // console.log("touchend");
+            });
+        });
+        
+    </script>
+    <style>
+        #touch {
+            height: 300px;
+            background-color: cadetblue;
+        }
+        #touch2 {
+            height: 300px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>터치이벤트 - jQuery</h1>
+    <div id="touch"></div>
+    <div id="touch2"></div>
+</body>
+</html>

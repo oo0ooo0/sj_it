@@ -1,0 +1,35 @@
+#section1 {
+    /* border: 5px solid yellow; */
+}
+#totalSet {
+    /* border: 5px solid red; */
+    box-sizing: border-box;
+    /* width: 900px;
+    height: 800px; */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#picSet {
+    /* border: 6px solid yellow; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+    /* overflow: hidden; */
+}
+
+.pic {
+    /* border: 2px solid blue; */
+    box-sizing: border-box;
+    /* width: 900px;
+    height: 800px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* overflow: hidden; */
+}
+
+.pic img {
+    display: block;
+}

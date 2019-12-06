@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>터치 이벤트</title>
+    <style>
+        #touch {
+            border: 5px solid red;
+            height: 300px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>터치 이벤트</h2>
+    <div id="touch"></div>
+    <script>
+        var touchStartX;
+        var touchStartY;
+        var touchEndX;
+        var touchEndY;
+
+        document.getElementById("touch").onclick = function () {
+            // console.log("click");
+        }
+        document.getElementById("touch").ontouchstart = function (e) {
+            // console.log(e.changedTouches);
+            // console.log(e.changedTouches[0]);
+            // console.log("touch start");
+            // console.log("start pageX: "+touchStartX);
+            // console.log("start pageY: "+ e.changedTouches[0].pageY);
+            touchStartX = e.changedTouches[0].pageX;
+            touchStartY = e.changedTouches[0].pageY;
+        }
+        document.getElementById("touch").ontouchend = function (e) {
+            // console.log("touch end");
+            // console.log("end pageX: "+touchEndX);
+            // console.log("end pageY: "+ e.changedTouches[0].pageY);
+            // console.log(touchEndX - touchStartX);
+            touchEndX = e.changedTouches[0].pageX;
+            touchEndY = e.changedTouches[0].pageY;
+            console.log("y: "+ Math.abs(touchEndY - touchStartY))
+            if (Math.abs(touchEndY - touchStartY) < 25) {
+                if ((touchEndX - touchStartX) > 0) {
+                    console.log("오른쪽");
+                } else {
+                    console.log("왼쪽");
+                }
+            }
+        }
+        console.log(Math.abs(-25));
+    </script>
+</body>
+
+</html>

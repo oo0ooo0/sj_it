@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $("#dt1").click(function(){
+                $("#qna dd").slideUp();
+                $("#dd1").slideDown();
+            });
+            $("#dt2").click(function(){
+                $("#qna dd").slideUp();
+                $("#dd2").slideDown();
+            });
+            $("#dt3").click(function(){
+                $("#qna dd").slideUp();
+                $("#dd3").slideDown();
+            });
+        });
+    </script>
+    <style>
+        #qna dd {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="qna">
+        <dl>
+            <dt id="dt1">제목1</dt>
+            <dd id="dd1">설명1이 들어갑니다.</dd>
+
+            <dt id="dt2">제목2</dt>
+            <dd id="dd2">설명2이 들어갑니다.</dd>
+
+            <dt id="dt3">제목3</dt>
+            <dd id="dd3">설명3이 들어갑니다.</dd>
+        </dl>
+    </section>
+
+</body>
+
+</html>
